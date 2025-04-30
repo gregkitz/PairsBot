@@ -1,0 +1,61 @@
+2025-03-19 08:02:53,792 [INFO] flower.command: Visit me at http://0.0.0.0:5555
+2025-03-19 08:02:53,799 [INFO] flower.command: Broker: redis://localhost:6379/0
+2025-03-19 08:02:53,802 [INFO] flower.command: Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'tasks.batch_cointegration_test',
+ 'tasks.batch_process_data',
+ 'tasks.calculate_half_life',
+ 'tasks.cleanup_task_results',
+ 'tasks.collect_cointegration_results',
+ 'tasks.collect_grid_search_results',
+ 'tasks.get_active_tasks',
+ 'tasks.inventory_data_directory',
+ 'tasks.parameter_grid_search',
+ 'tasks.process_data_file',
+ 'tasks.run_backtest',
+ 'tasks.test_pair_cointegration']
+2025-03-19 08:02:53,807 [INFO] kombu.mixins: Connected to redis://localhost:6379/0
+2025-03-19 08:30:59,180 [INFO] __main__: Selected pairs for grid search:
+2025-03-19 08:30:59,180 [INFO] __main__: ALI-SI with half-life 6.76 days
+2025-03-19 08:30:59,180 [INFO] __main__: BFX-RTY with half-life 8.04 days
+2025-03-19 08:30:59,180 [INFO] __main__: BFX-ZN with half-life 8.41 days
+2025-03-19 08:30:59,181 [INFO] __main__: Starting grid search for ALI-SI
+2025-03-19 08:30:59,181 [INFO] __main__: Base config: {'symbol1': 'ALI', 'symbol2': 'SI', 'hedge_ratio': 0.7572436741454343, 'data_dir': 'data/processed', 'lookback': 20, 'entry_zscore': 2.0, 'exit_zscore': 0.5, 'account_size': 100000, 'commission': 0.0002, 'slippage': 0.0001, 'trade_delay': 1}
+2025-03-19 08:30:59,181 [INFO] __main__: Parameter grid: {'lookback': [10, 20, 30, 50], 'entry_zscore': [1.5, 2.0, 2.5, 3.0], 'exit_zscore': [0.0, 0.5, 1.0]}
+2025-03-19 08:30:59,181 [INFO] __main__: Output directory: data/results/grid_search/ALI_SI_20250319_083059
+2025-03-19 08:30:59,237 [INFO] __main__: Grid search task started with ID: 70dc2809-ee2d-48c1-96b6-aaf8d7e6817c
+2025-03-19 08:30:59,257 [INFO] __main__: Waiting for grid search task 70dc2809-ee2d-48c1-96b6-aaf8d7e6817c to complete...
+2025-03-19 08:31:59,262 [INFO] __main__: Grid search completed for ALI-SI
+2025-03-19 08:31:59,262 [INFO] __main__: Results: {'total_tasks': 48, 'task_ids': ['58318050-5cc4-4b86-a9c9-00f48051c76a', '9747b153-809d-4031-b003-7f824cca1bff', '02de9e90-6c29-4356-810c-218d936b17b2', '41de0070-6de5-49ca-94f9-f35c823b4b1a', '1c30f5cc-b15c-489b-887f-c2f6c1e378f5', 'e065a755-80f7-4bef-8337-3e9525507afc', '2594bf51-8cc8-44a8-ab8d-73a9d982c032', '03c79ee5-b348-4cc1-b868-8bfc4cce098a', '0abf25d8-b1c9-4225-8a04-a2cb31f0a6ec', '1195fe5e-2370-44c6-985e-59c15378ca63', 'c2fbf87d-0a1b-40d2-b09b-d1486b7155a4', 'b5874825-49ec-4970-87b8-a69439d5e658', '1016d411-f66f-4fb5-9004-5a2af180399c', 'bb6bf3d6-c533-4de6-ab35-844004c5e721', '7d9ff3be-6883-4d32-a21e-f45852e83922', 'fe3dc1f0-a2e1-4778-9ad9-6c40cd3f9cb4', 'c496c493-b1f8-45f8-866a-0000e0d931d5', '245824ba-a2bb-4b96-954a-fa13a91056da', 'b8ea2113-5324-4fab-b7ba-f9fb19612b1d', 'f4ba5617-ddb4-42d2-bec7-dbba587670c6', 'e2039f76-942f-4e9e-8860-fcc22ea0d8a5', '6a98ebdf-08f2-46a6-bf38-1df44d16873d', '172d9537-7f6e-4544-9d82-5de1aa6e3fc8', 'dbb318b6-3be3-4576-b3a6-d97b95f91aad', '8f6e8a11-32b8-4a8c-b83c-c94f57b756e7', '7fe30924-3a7a-444d-ba98-5eb97c6464d3', '6fdfba6e-6b58-434e-9032-1ae70918d554', '8e50a7af-e499-42c4-9cb1-2ec11988f399', 'db43a7a7-a18a-4cb7-bfe9-8ab90bdc0ea8', 'fa1fb415-2cb3-40d5-a010-f611a7eb8e55', '27e27da8-847c-4e01-a57b-67401be92783', 'db810810-a407-4fce-aa49-8dd13ee4b359', '205eb5b6-49f1-4c86-a743-7320ab969c13', 'e8020d4a-3310-4461-a790-1659ea9ae497', '1e2bf4be-0c47-4024-ab4c-a899954ff4ee', '3a105b44-6261-476d-958a-15e04b38bd14', '6f663b92-4154-4c38-a716-0857f4a2affd', 'f5ff856d-3145-4b90-9635-24eead4415b4', '4e8a188d-cbd5-4bbc-8d85-18a1f1f8a038', '6a3c52b1-1a71-4ae1-8de2-f2763d5dfe42', '9cb8a103-92cd-4b71-b351-21da67af1958', '12b1e3fb-745b-4969-a0fc-e15888490ae7', '27b9ea12-8ab8-44cc-8ad8-4f1c44fcdefe', '58cb3ec2-3757-40be-8ac4-491fc3a17584', 'f684a09e-4e82-48e0-bb45-40f29ad5621e', '0f8d8fdf-447d-4e93-8c3f-88c9ddc1f33b', '41795a85-ac7e-4db8-b4cd-6b07037eb8c4', '5690c934-8e63-481c-bb49-687198115cba']}
+2025-03-19 08:31:59,263 [INFO] __main__: Starting grid search for BFX-RTY
+2025-03-19 08:31:59,263 [INFO] __main__: Base config: {'symbol1': 'BFX', 'symbol2': 'RTY', 'hedge_ratio': 0.1989071449080977, 'data_dir': 'data/processed', 'lookback': 20, 'entry_zscore': 2.0, 'exit_zscore': 0.5, 'account_size': 100000, 'commission': 0.0002, 'slippage': 0.0001, 'trade_delay': 1}
+2025-03-19 08:31:59,263 [INFO] __main__: Parameter grid: {'lookback': [10, 20, 30, 50], 'entry_zscore': [1.5, 2.0, 2.5, 3.0], 'exit_zscore': [0.0, 0.5, 1.0]}
+2025-03-19 08:31:59,263 [INFO] __main__: Output directory: data/results/grid_search/BFX_RTY_20250319_083159
+2025-03-19 08:31:59,264 [INFO] __main__: Grid search task started with ID: 9a3d7f2e-703d-4121-a3ff-79255048f435
+2025-03-19 08:31:59,264 [INFO] __main__: Waiting for grid search task 9a3d7f2e-703d-4121-a3ff-79255048f435 to complete...
+2025-03-19 08:32:59,277 [INFO] __main__: Waiting for grid search task 9a3d7f2e-703d-4121-a3ff-79255048f435 to complete...
+2025-03-19 08:33:59,281 [INFO] __main__: Waiting for grid search task 9a3d7f2e-703d-4121-a3ff-79255048f435 to complete...
+2025-03-19 08:34:59,288 [INFO] __main__: Waiting for grid search task 9a3d7f2e-703d-4121-a3ff-79255048f435 to complete...
+2025-03-19 08:35:59,299 [INFO] __main__: Waiting for grid search task 9a3d7f2e-703d-4121-a3ff-79255048f435 to complete...
+2025-03-19 08:36:59,314 [INFO] __main__: Grid search completed for BFX-RTY
+2025-03-19 08:36:59,314 [INFO] __main__: Results: {'total_tasks': 48, 'task_ids': ['8f11aec9-3a53-4bda-8e2c-0996608f8900', '76e8dc36-0d6a-460f-94ab-cb06cac2d4bc', 'cc652bd1-fb94-4d63-8389-56713b4665dd', 'a180473f-ec99-425d-a150-25e8a81e90ac', '8175f976-8d5a-44aa-97ea-e524fe8d0907', '7ac5cbac-dfe1-4238-bfd6-da961af50bff', 'c085bde6-341c-4e8e-af56-15ab2c87ed19', 'a8468707-7128-4df8-af5c-b49b81fa3646', '4327dc08-a9ca-48cf-a262-b240a18fdec4', '5cab903b-919c-4a13-ba41-5f6b85f5e887', '34cfa186-18fa-4aeb-9128-a1b74048523a', '47d55dea-7955-48c9-be94-eac0e3207434', 'f2aaa882-1e7e-4824-8980-31a50c89085d', '1fa66e01-60d2-4473-8e9d-9e7408ac0742', '3a542381-f065-48d4-9def-f2a0bbfb1d86', '9686754b-4d08-491a-a6d6-a47bb0e971d7', 'b2063a51-f6aa-4195-b3ee-862768996c25', 'b6582b8f-2222-440a-9ce8-6523f7f37b91', '0e5dc263-4b27-40fd-b48b-d5377e62e6e7', '55018129-dc6e-4b61-9f14-ae28990635ad', '1bbf6680-7e40-4da7-87ca-d5c290e96042', '6133214b-9ccf-4f67-ac9b-bdeedf2aad89', 'a5330e7c-724e-4ae9-b72e-8c30c60d0a93', '7ad89985-3bb7-454a-bce0-bac485baf5c8', 'b4f3045a-fc0f-45b1-9ea1-165863827db3', '8044316e-39d0-4ec4-b24b-24c7aa1eefcb', 'a5bd06c9-0608-492b-9b4f-00e75cdcece9', '6cb273c3-2ca9-4278-bbbd-7519318a9204', '486da6af-db5d-4ad4-94fa-3abe7a00e489', '9c9d4488-5711-4f0c-a7c2-9784758ecb14', '13eb7e01-22b9-453a-a973-f6f5013a539c', '7c61298e-4c14-4750-bebd-ab9b1ccedcbf', 'a3becd7d-69e1-4e4b-933c-f9e9cb6a8f08', '12e497b9-b26e-489b-a4fc-7caa82dc48f1', '293feae1-9bed-4e3c-ae98-baf7d3c37041', '0d3b4e54-094f-4a54-b1e0-4875801cf22c', '3e270afe-a84f-40d5-a402-48c1f57b7f09', '259147f3-4a71-4f6e-a918-3801affae51e', '04de8f1c-1628-4513-a958-0a0b4e6122e7', '453b25d9-0688-42cc-a58a-f8725962d0da', 'd573dd05-8dc8-4cef-b512-d852b7828184', '446a893a-5401-460b-8556-b6a9ee6170bc', '9f7c3402-bd24-419d-ab61-6f2118d2cab1', '4744c232-e0b5-41a4-9cc9-6539853196c2', '704b231b-999d-4a1d-b221-4666e1454d53', 'ad9a54cf-7f54-4e9a-9564-529a90cf0977', '58a2f462-305b-4bda-9f69-28a2319d4447', '0c02b285-d387-4b24-875d-7d7a550bcd65']}
+2025-03-19 08:36:59,316 [INFO] __main__: Starting grid search for BFX-ZN
+2025-03-19 08:36:59,316 [INFO] __main__: Base config: {'symbol1': 'BFX', 'symbol2': 'ZN', 'hedge_ratio': 0.5774521323492694, 'data_dir': 'data/processed', 'lookback': 20, 'entry_zscore': 2.0, 'exit_zscore': 0.5, 'account_size': 100000, 'commission': 0.0002, 'slippage': 0.0001, 'trade_delay': 1}
+2025-03-19 08:36:59,316 [INFO] __main__: Parameter grid: {'lookback': [10, 20, 30, 50], 'entry_zscore': [1.5, 2.0, 2.5, 3.0], 'exit_zscore': [0.0, 0.5, 1.0]}
+2025-03-19 08:36:59,316 [INFO] __main__: Output directory: data/results/grid_search/BFX_ZN_20250319_083659
+2025-03-19 08:36:59,317 [INFO] __main__: Grid search task started with ID: 67b6b912-f22a-406c-ad6e-8b2e9455b23d
+2025-03-19 08:36:59,318 [INFO] __main__: Waiting for grid search task 67b6b912-f22a-406c-ad6e-8b2e9455b23d to complete...
+2025-03-19 08:37:59,330 [INFO] __main__: Waiting for grid search task 67b6b912-f22a-406c-ad6e-8b2e9455b23d to complete...
+2025-03-19 08:38:59,331 [INFO] __main__: Waiting for grid search task 67b6b912-f22a-406c-ad6e-8b2e9455b23d to complete...
+2025-03-19 08:39:59,339 [INFO] __main__: Waiting for grid search task 67b6b912-f22a-406c-ad6e-8b2e9455b23d to complete...
+2025-03-19 08:40:59,340 [INFO] __main__: Waiting for grid search task 67b6b912-f22a-406c-ad6e-8b2e9455b23d to complete...
+2025-03-19 08:41:59,345 [INFO] __main__: Grid search completed for BFX-ZN
+2025-03-19 08:41:59,345 [INFO] __main__: Results: {'total_tasks': 48, 'task_ids': ['a08a7ebb-0e2b-4822-b49c-573c7eacb485', 'bc2017ec-a9d4-4b12-bb95-c2f246831c31', '50703482-bf5a-403f-a909-95ca5ddcb0fb', '892b8530-ebed-400f-b5fe-29dfb0a488ff', 'efe20d36-3a7f-4eec-9ba8-efac46f0c5e1', '803c24b2-30ac-4922-984b-b6fc09fa6b69', '3a12368b-7317-40cb-9f0f-768f8dd72bc3', '93f083ef-f3c7-4755-9d8b-54ee2928e4d4', '20bb4549-458d-4e3b-8ac2-f7de3d3b0564', 'daf4de67-bdad-41fb-940d-193fd4048493', 'efa985e2-31d5-4dac-9824-43604b4597d6', '1a0c1da5-da88-4d7c-803d-b6a964df8752', 'e526b411-b162-426c-a13a-2fbbe4e35a79', '48c5805f-7180-46d7-8a53-ecb8205e540e', '334db7d5-b421-4472-92b3-f97a4992c69f', 'df3593e9-07a2-45c6-8c1d-9a43028d810a', '032a8571-c3a9-45e3-8308-1c1c231ce42c', 'f9ca458c-8078-4e2d-a1a0-0a4a8cc51f64', 'def1438e-4cab-4ebb-a7ad-01090e9d7be7', '371b5e47-c67f-4c99-87ab-232dfce77387', '843763d0-dffe-4afa-a39c-2ec182327916', '62a5dc0e-326a-42fc-93e0-8805a26e300b', '90f0d062-3ecf-4984-88a6-a5fef82aa0fe', '621c9cbb-cb64-4cfb-913e-98fcd7904e22', 'ffe01d6f-f99d-4f5c-a6cc-86cf9212de62', '816b3d03-c8be-45dd-8683-0144d1787687', '4ad82882-fcb4-47b4-8d5a-a8866ab21c9f', 'f1320060-4286-49f7-90cd-bc07e0497241', '4fda4731-e4f0-4545-ad95-df658dab551a', '2bbce08d-e7d5-4dc1-a170-3dbe2a34cd21', 'c35a30b4-c370-4204-b3b9-c857c9ea245a', '0be338eb-bdd1-4750-860d-dfb92228c300', '246274ab-b8cb-45af-8400-9c56b2d42460', '7ddfc815-3c1e-4b38-b88d-01d621455514', '0f32e5ec-41a7-4bb9-bf9c-49e8cd96737e', '24e61be0-9120-4367-a77d-291b56fee171', '5f853c1f-1611-43d1-ab9d-6c012b0c5027', 'f1a9aff3-7b6a-436d-b4d2-31d2d072bc6b', '4ec65812-d35f-42b6-a0c6-15771b32f4db', 'a9562027-9929-45d6-83cd-a54c41cddae2', 'a64a82a8-f025-429c-b37a-cef879b16bed', '3681175f-dd9f-4fd6-b657-bec754ef3254', 'c32c117b-30d1-4016-8eba-9bacdaf524c4', 'b6175a67-4953-4078-a8da-8cb48a894e51', 'db2f2a95-5c66-463a-8574-a3b228f66341', '74fb2141-b765-4366-9605-4ea1ca575986', 'be1897d5-95e0-4b8e-971e-38347241cc4b', 'f5149549-64e6-4c61-9bdd-a89e46a6d9df']}

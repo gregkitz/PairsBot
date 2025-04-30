@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Backtest Report</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .strategy-description {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .chart-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .metrics-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        
+        .metrics-title {
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .metric-value {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .metric-positive {
+            color: #28a745;
+        }
+        
+        .metric-negative {
+            color: #dc3545;
+        }
+        
+        .metric-neutral {
+            color: #6c757d;
+        }
+        
+        .table-trades {
+            font-size: 0.9em;
+        }
+        
+        .rating-a {
+            background-color: #28a745;
+            color: white;
+        }
+        
+        .rating-b {
+            background-color: #5cb85c;
+            color: white;
+        }
+        
+        .rating-c {
+            background-color: #f0ad4e;
+            color: white;
+        }
+        
+        .rating-d {
+            background-color: #d9534f;
+            color: white;
+        }
+        
+        .rating-f {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        .rating-badge {
+            font-size: 1.5em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .metrics-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>{{ title }}</h1>
+                    <p class="lead">Backtest Report</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <p>Generated: {{ generation_time }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Strategy Description -->
+        <div class="strategy-description">
+            <h2>Strategy Overview</h2>
+            <p>{{ strategy_description }}</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>Backtest Period</h5>
+                    <p>{{ start_date }} to {{ end_date }}</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Strategy Rating</h5>
+                    <span class="rating-badge rating-{{ strategy_rating|lower }}">{{ strategy_rating }}</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary Metrics -->
+        <h3 class="section-title">Performance Summary</h3>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Total Return</h5>
+                    <p class="metric-value {{ 'metric-positive' if total_return > 0 else 'metric-negative' }}">
+                        {{ '{:.2%}'.format(total_return) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Annualized Return</h5>
+                    <p class="metric-value {{ 'metric-positive' if annualized_return > 0 else 'metric-negative' }}">
+                        {{ '{:.2%}'.format(annualized_return) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Sharpe Ratio</h5>
+                    <p class="metric-value {{ 'metric-positive' if sharpe_ratio > 1 else 'metric-neutral' }}">
+                        {{ '{:.2f}'.format(sharpe_ratio) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Max Drawdown</h5>
+                    <p class="metric-value metric-negative">
+                        {{ '{:.2%}'.format(max_drawdown) }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Sortino Ratio</h5>
+                    <p class="metric-value {{ 'metric-positive' if sortino_ratio > 1 else 'metric-neutral' }}">
+                        {{ '{:.2f}'.format(sortino_ratio) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Calmar Ratio</h5>
+                    <p class="metric-value {{ 'metric-positive' if calmar_ratio > 1 else 'metric-neutral' }}">
+                        {{ '{:.2f}'.format(calmar_ratio) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Win Rate</h5>
+                    <p class="metric-value {{ 'metric-positive' if win_rate > 0.5 else 'metric-neutral' }}">
+                        {{ '{:.2%}'.format(win_rate) }}
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="metrics-card">
+                    <h5>Profit Factor</h5>
+                    <p class="metric-value {{ 'metric-positive' if profit_factor > 1 else 'metric-negative' }}">
+                        {{ '{:.2f}'.format(profit_factor) }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Equity Curve Chart -->
+        <h3 class="section-title">Equity Curve</h3>
+        <div class="chart-container">
+            <div id="equity-chart" style="width:100%; height:400px;"></div>
+        </div>
+        
+        <!-- Drawdown Chart -->
+        <h3 class="section-title">Drawdown</h3>
+        <div class="chart-container">
+            <div id="drawdown-chart" style="width:100%; height:300px;"></div>
+        </div>
+        
+        <!-- Benchmark Comparison -->
+        {% if benchmark_comparison %}
+        <h3 class="section-title">Benchmark Comparison</h3>
+        <div class="chart-container">
+            <div id="benchmark-chart" style="width:100%; height:400px;"></div>
+            
+            <div class="row mt-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="metrics-card">
+                        <h5>Alpha</h5>
+                        <p class="metric-value {{ 'metric-positive' if alpha > 0 else 'metric-negative' }}">
+                            {{ '{:.2%}'.format(alpha) }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="metrics-card">
+                        <h5>Beta</h5>
+                        <p class="metric-value {{ 'metric-positive' if beta > 0 and beta < 1 else 'metric-neutral' }}">
+                            {{ '{:.2f}'.format(beta) }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="metrics-card">
+                        <h5>Information Ratio</h5>
+                        <p class="metric-value {{ 'metric-positive' if information_ratio > 0 else 'metric-negative' }}">
+                            {{ '{:.2f}'.format(information_ratio) }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="metrics-card">
+                        <h5>R-Squared</h5>
+                        <p class="metric-value metric-neutral">
+                            {{ '{:.2f}'.format(r_squared) }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        
+        <!-- Monthly Returns -->
+        <h3 class="section-title">Monthly Returns</h3>
+        <div class="chart-container">
+            <div id="monthly-returns-chart" style="width:100%; height:300px;"></div>
+            <div class="table-responsive mt-4">
+                <table class="table table-sm table-striped">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            {% for month in ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'YTD'] %}
+                            <th>{{ month }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ monthly_returns_table|safe }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Trade Analysis -->
+        {% if trade_analysis %}
+        <h3 class="section-title">Trade Analysis</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <h5>Trade Outcomes</h5>
+                    <div id="trade-outcomes-chart" style="width:100%; height:300px;"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <h5>Trade P&L Distribution</h5>
+                    <div id="trade-pnl-chart" style="width:100%; height:300px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="metrics-card">
+                    <h5 class="metrics-title">Trade Statistics</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><strong>Total Trades:</strong> {{ total_trades }}</p>
+                            <p><strong>Win Rate:</strong> {{ '{:.2%}'.format(win_rate) }}</p>
+                            <p><strong>Avg P&L:</strong> {{ '{:.2f}'.format(avg_trade_pnl) }}</p>
+                            <p><strong>Avg Winner:</strong> {{ '{:.2f}'.format(avg_winner_pnl) }}</p>
+                            <p><strong>Avg Loser:</strong> {{ '{:.2f}'.format(avg_loser_pnl) }}</p>
+                        </div>
+                        <div class="col-6">
+                            <p><strong>Profit Factor:</strong> {{ '{:.2f}'.format(profit_factor) }}</p>
+                            <p><strong>Expectancy:</strong> {{ '{:.2f}'.format(expectancy) }}</p>
+                            <p><strong>Avg Duration:</strong> {{ '{:.1f}'.format(avg_trade_duration) }} min</p>
+                            <p><strong>Best Trade:</strong> {{ '{:.2f}'.format(largest_winner) }}</p>
+                            <p><strong>Worst Trade:</strong> {{ '{:.2f}'.format(largest_loser) }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <h5>Cumulative P&L by Side</h5>
+                    <div id="pnl-by-side-chart" style="width:100%; height:250px;"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top 10 Trades -->
+        <div class="chart-container mt-4">
+            <h5 class="metrics-title">Top 10 Trades</h5>
+            <div class="table-responsive">
+                <table class="table table-sm table-striped table-trades">
+                    <thead>
+                        <tr>
+                            <th>Entry Time</th>
+                            <th>Exit Time</th>
+                            <th>Side</th>
+                            <th>Duration</th>
+                            <th>P&L</th>
+                            <th>Symbol</th>
+                            <th>Entry Price</th>
+                            <th>Exit Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ top_trades_table|safe }}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+        
+        <!-- Detailed Metrics -->
+        <h3 class="section-title">Detailed Metrics</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="metrics-card">
+                    <h5 class="metrics-title">Return Metrics</h5>
+                    <p><strong>Total Return:</strong> {{ '{:.2%}'.format(total_return) }}</p>
+                    <p><strong>Annualized Return:</strong> {{ '{:.2%}'.format(annualized_return) }}</p>
+                    <p><strong>Avg Daily Return:</strong> {{ '{:.3%}'.format(avg_daily_return) }}</p>
+                    <p><strong>Volatility (Annualized):</strong> {{ '{:.2%}'.format(volatility) }}</p>
+                    <p><strong>Winning Days:</strong> {{ winning_days }} ({{ '{:.1%}'.format(win_rate_days) }})</p>
+                    <p><strong>Losing Days:</strong> {{ losing_days }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="metrics-card">
+                    <h5 class="metrics-title">Risk Metrics</h5>
+                    <p><strong>Sharpe Ratio:</strong> {{ '{:.2f}'.format(sharpe_ratio) }}</p>
+                    <p><strong>Sortino Ratio:</strong> {{ '{:.2f}'.format(sortino_ratio) }}</p>
+                    <p><strong>Calmar Ratio:</strong> {{ '{:.2f}'.format(calmar_ratio) }}</p>
+                    <p><strong>Max Drawdown:</strong> {{ '{:.2%}'.format(max_drawdown) }}</p>
+                    <p><strong>Max Drawdown Duration:</strong> {{ max_drawdown_duration }} days</p>
+                    <p><strong>Recovery Factor:</strong> {{ '{:.2f}'.format(recovery_factor) }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="metrics-card">
+                    <h5 class="metrics-title">Statistical Metrics</h5>
+                    <p><strong>Skewness:</strong> {{ '{:.2f}'.format(skewness) }}</p>
+                    <p><strong>Kurtosis:</strong> {{ '{:.2f}'.format(kurtosis) }}</p>
+                    <p><strong>Best Day:</strong> {{ '{:.2%}'.format(best_day) }}</p>
+                    <p><strong>Worst Day:</strong> {{ '{:.2%}'.format(worst_day) }}</p>
+                    <p><strong>Positive Days:</strong> {{ '{:.1%}'.format(positive_days) }}</p>
+                    <p><strong>Avg Up Day:</strong> {{ '{:.2%}'.format(avg_up_day) }}</p>
+                    <p><strong>Avg Down Day:</strong> {{ '{:.2%}'.format(avg_down_day) }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Intraday Statistical Arbitrage System</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Report Generated: {{ generation_time }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript for Charts -->
+    <script>
+        // Equity Curve Chart
+        var equityData = {{ equity_data|safe }};
+        Plotly.newPlot('equity-chart', equityData.data, equityData.layout);
+        
+        // Drawdown Chart
+        var drawdownData = {{ drawdown_data|safe }};
+        Plotly.newPlot('drawdown-chart', drawdownData.data, drawdownData.layout);
+        
+        {% if benchmark_comparison %}
+        // Benchmark Comparison Chart
+        var benchmarkData = {{ benchmark_data|safe }};
+        Plotly.newPlot('benchmark-chart', benchmarkData.data, benchmarkData.layout);
+        {% endif %}
+        
+        // Monthly Returns Heatmap
+        var monthlyData = {{ monthly_returns_data|safe }};
+        Plotly.newPlot('monthly-returns-chart', monthlyData.data, monthlyData.layout);
+        
+        {% if trade_analysis %}
+        // Trade Outcomes Pie Chart
+        var tradeOutcomesData = {{ trade_outcomes_data|safe }};
+        Plotly.newPlot('trade-outcomes-chart', tradeOutcomesData.data, tradeOutcomesData.layout);
+        
+        // Trade P&L Histogram
+        var tradePnlData = {{ trade_pnl_data|safe }};
+        Plotly.newPlot('trade-pnl-chart', tradePnlData.data, tradePnlData.layout);
+        
+        // PnL by Side Chart
+        var pnlBySideData = {{ pnl_by_side_data|safe }};
+        Plotly.newPlot('pnl-by-side-chart', pnlBySideData.data, pnlBySideData.layout);
+        {% endif %}
+    </script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

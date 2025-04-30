@@ -1,0 +1,34 @@
+{
+  "id": "time_series_pairs",
+  "name": "Time Series Pairs Trading Strategy",
+  "description": "Advanced pairs trading strategy using time-series models for spread prediction",
+  "type": "time_series",
+  "pairs": [
+    {"leg1": "ES", "leg2": "NQ", "ratio": 1.0},
+    {"leg1": "GC", "leg2": "SI", "ratio": 0.1}
+  ],
+  "entry_threshold": 2.0,
+  "exit_threshold": 0.5,
+  "stop_loss_threshold": 3.0,
+  "max_holding_period_minutes": 180,
+  "entry_time_filter": {
+    "start": "09:30:00",
+    "end": "15:30:00"
+  },
+  "position_sizing": {
+    "method": "volatility",
+    "max_allocation_pct": 15.0,
+    "max_risk_pct": 1.0,
+    "volatility_lookback_days": [10, 20, 30]
+  },
+  "time_series": {
+    "model_type": "combined",
+    "forecast_horizon": 12,
+    "min_history_bars": 100,
+    "confidence_level": 0.95,
+    "arima_order": [2, 1, 2],
+    "garch_order": [1, 1],
+    "var_lags": 5,
+    "model_update_frequency": 60
+  }
+} 

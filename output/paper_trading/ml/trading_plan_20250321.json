@@ -1,0 +1,30 @@
+{
+    "date": "2025-03-21",
+    "current_regime": null,
+    "regime_description": "Unknown",
+    "trading_schedule": {
+        "date": "2025-03-21",
+        "market_open": "09:30",
+        "market_close": "16:00",
+        "first_entry": "09:45",
+        "last_exit": "15:45",
+        "max_holding_minutes": 180,
+        "high_liquidity_windows": [
+            {
+                "start": "09:45",
+                "end": "11:30"
+            },
+            {
+                "start": "13:30",
+                "end": "15:45"
+            }
+        ],
+        "avoid_lunch_hour": true
+    },
+    "trading_parameters": {
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5,
+        "stop_loss": 3.0,
+        "position_size": 0.1
+    }
+}

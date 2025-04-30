@@ -1,0 +1,88 @@
+{
+  "id": "ml_signals_pairs",
+  "name": "ML Signal Generation Pairs Trading Strategy",
+  "description": "Advanced pairs trading strategy using machine learning for signal generation",
+  "type": "ml_signals",
+  "pairs": [
+    {
+      "leg1": "ES", 
+      "leg2": "NQ", 
+      "ratio": 1.0,
+      "config": {
+        "lookback": 50,
+        "hedge_ratio": 1.0,
+        "use_rolling_regression": false,
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5,
+        "stop_loss_threshold": 3.0
+      }
+    },
+    {
+      "leg1": "GC", 
+      "leg2": "SI", 
+      "ratio": 0.1,
+      "config": {
+        "lookback": 50,
+        "hedge_ratio": 0.1,
+        "use_rolling_regression": false,
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5,
+        "stop_loss_threshold": 3.0
+      }
+    }
+  ],
+  "entry_threshold": 2.0,
+  "exit_threshold": 0.5,
+  "stop_loss_threshold": 3.0,
+  "max_holding_period_minutes": 180,
+  "entry_time_filter": {
+    "start": "09:30:00",
+    "end": "15:30:00"
+  },
+  "position_sizing": {
+    "method": "volatility",
+    "max_allocation_pct": 15.0,
+    "max_risk_pct": 1.0,
+    "volatility_lookback_days": [10, 20, 30]
+  },
+  "ml_signals": {
+    "model_type": "random_forest",
+    "prediction_horizon": 5,
+    "min_history_bars": 1000,
+    "training_frequency": 7,
+    "threshold": 0.65,
+    "feature_window": 20,
+    "random_forest_params": {
+      "n_estimators": 200,
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "random_state": 42
+    },
+    "gbm_params": {
+      "n_estimators": 150,
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "random_state": 42
+    },
+    "logistic_params": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "random_state": 42
+    },
+    "svm_params": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "probability": true,
+      "random_state": 42
+    },
+    "nn_params": {
+      "hidden_layer_sizes": [100, 50],
+      "activation": "relu",
+      "solver": "adam",
+      "alpha": 0.0001,
+      "max_iter": 1000,
+      "random_state": 42
+    }
+  }
+} 

@@ -1,0 +1,58 @@
+{
+    "name": "test_optimization_config",
+    "description": "Configuration for quick testing of optimization functionality",
+    "test_mode": true,
+    "test_settings": {
+        "use_minimal_data": true,
+        "reduced_search_space": true,
+        "max_iterations": 10,
+        "early_stopping": true
+    },
+    "optimization_params": {
+        "pair": "CL-HO",
+        "start_date": "2022-01-01",
+        "end_date": "2022-01-31",
+        "optimization_method": "grid",
+        "optimization_metric": "sharpe_ratio",
+        "parameters": {
+            "hedge_ratio": [0.7, 0.8, 0.9],
+            "entry_threshold": [1.5, 2.0],
+            "exit_threshold": [0.3, 0.5],
+            "lookback_period": [10, 20]
+        },
+        "constraints": {
+            "min_trades": 5,
+            "min_win_rate": 0.4,
+            "max_drawdown": 0.1
+        }
+    },
+    "genetic_algorithm_settings": {
+        "population_size": 10,
+        "generations": 5,
+        "crossover_rate": 0.7,
+        "mutation_rate": 0.2,
+        "tournament_size": 3
+    },
+    "bayesian_settings": {
+        "initial_points": 5,
+        "n_iterations": 10,
+        "exploration_weight": 0.1
+    },
+    "logging": {
+        "level": "DEBUG",
+        "console_output": true,
+        "file_output": false
+    },
+    "data_settings": {
+        "use_test_data": true,
+        "timeframe": "1day",
+        "price_field": "close"
+    },
+    "metrics": [
+        "total_pnl",
+        "sharpe_ratio",
+        "max_drawdown",
+        "win_rate",
+        "profit_factor"
+    ]
+} 

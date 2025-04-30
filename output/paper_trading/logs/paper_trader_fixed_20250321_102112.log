@@ -1,0 +1,3 @@
+2025-03-21 10:21:13,000 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 10:21:13,000 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 10:21:13,798 - __main__ - INFO - Successfully patched PaperTrader with additional methods

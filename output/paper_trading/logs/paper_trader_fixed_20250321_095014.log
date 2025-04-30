@@ -1,0 +1,108 @@
+2025-03-21 09:50:14,454 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 09:50:14,454 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 09:50:15,399 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 09:50:16,533 - __main__ - INFO - Successfully enhanced IntradayMLPaperTrader with better logging and dashboard
+2025-03-21 09:50:16,534 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 09:50:16,535 - src.paper_trading.paper_trader - ERROR - Error loading paper trading data: Expecting value: line 10 column 23 (char 215)
+2025-03-21 09:50:16,535 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 09:50:16,535 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 09:50:16,536 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 09:50:16,551 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 09:50:16,564 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 09:50:16,579 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 09:50:16,580 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:50:16,580 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:50:16,580 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 09:50:16,580 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 8)
+2025-03-21 09:50:16,581 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 8...
+2025-03-21 09:50:16,586 - ib_insync.client - INFO - Connected
+2025-03-21 09:50:16,589 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 09:50:16,590 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 09:50:16,590 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 09:50:16,590 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 09:50:16,590 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 09:50:16,591 - ib_insync.client - INFO - API connection ready
+2025-03-21 09:50:16,692 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 09:50:16,692 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 09:50:16,694 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 09:50:16,694 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 09:50:16,695 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 09:50:16,695 - __main__ - INFO - Starting enhanced refresh loop for ML monitoring
+2025-03-21 09:50:16,695 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 09:50:16,696 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 09:50:16,696 - __main__ - INFO - Added example pairs for monitoring: ['ES_NQ', 'GC_SI']
+2025-03-21 09:50:16,696 - __main__ - INFO - Subscribing to market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 09:50:16,696 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-GLOBEX
+2025-03-21 09:50:16,696 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-GLOBEX
+2025-03-21 09:50:16,697 - __main__ - INFO - Subscribed to market data for ES using contract object
+2025-03-21 09:50:16,697 - __main__ - INFO - Subscribed to market data for NQ using contract object
+2025-03-21 09:50:16,697 - __main__ - INFO - Successfully subscribed to continuous futures for pair ES_NQ
+2025-03-21 09:50:16,697 - __main__ - INFO - Subscribing to market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 09:50:16,697 - __main__ - INFO - Created continuous futures contract: GC-CONTFUT-NYMEX
+2025-03-21 09:50:16,697 - __main__ - INFO - Created continuous futures contract: SI-CONTFUT-NYMEX
+2025-03-21 09:50:16,697 - __main__ - INFO - Subscribed to market data for GC using contract object
+2025-03-21 09:50:16,697 - __main__ - INFO - Subscribed to market data for SI using contract object
+2025-03-21 09:50:16,697 - __main__ - INFO - Successfully subscribed to continuous futures for pair GC_SI
+2025-03-21 09:50:16,698 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T09:50:16.697062', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 09:50:16,699 - __main__ - INFO - Created demo signal for ES_NQ
+2025-03-21 09:50:16,700 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T09:50:16.699564', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 09:50:16,700 - __main__ - INFO - Created demo signal for GC_SI
+2025-03-21 09:50:16,701 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 09:50:16,701 - __main__ - INFO - Dashboard available at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 09:50:16,701 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 09:50:46,696 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 09:50:46,696 - __main__ - INFO - Requesting historical data for ES-CONTFUT-GLOBEX (1 D, 5 mins)
+2025-03-21 09:50:46,696 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-GLOBEX
+2025-03-21 09:51:46,700 - ib_insync.ib - WARNING - reqHistoricalData: Timeout for Contract(secType='CONTFUT', symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 09:51:46,700 - __main__ - WARNING - No historical data returned for ES-CONTFUT-GLOBEX
+2025-03-21 09:51:46,700 - __main__ - WARNING - No historical data available for ES-CONTFUT-GLOBEX
+2025-03-21 09:51:46,701 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-GLOBEX (1 D, 5 mins)
+2025-03-21 09:51:46,701 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-GLOBEX
+2025-03-21 09:51:55,046 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 09:51:55,732 - __main__ - INFO - Stopping ML-enhanced paper trader...
+2025-03-21 09:51:55,822 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 09:51:55,822 - ib_insync.ib - INFO - Disconnecting from localhost:7497, 472 B sent in 14 messages, 18.2 kB received in 386 messages, session time 99.3 s.
+2025-03-21 09:51:55,823 - ib_insync.client - INFO - Disconnecting
+2025-03-21 09:51:55,823 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 09:51:55,823 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 09:51:55,823 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 8)
+2025-03-21 09:51:55,823 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 8...
+2025-03-21 09:51:55,823 - ib_insync.client - INFO - Disconnected.
+2025-03-21 09:51:55,826 - ib_insync.client - INFO - Connected
+2025-03-21 09:51:55,830 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 09:51:56,123 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 09:51:56,124 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 09:51:56,124 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 09:51:56,124 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 09:51:56,124 - ib_insync.client - INFO - API connection ready
+2025-03-21 09:51:56,227 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 09:51:56,228 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 09:51:56,228 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 09:51:56,228 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 09:51:56,230 - src.paper_trading.paper_trader - INFO - Paper trader stopped
+2025-03-21 09:51:56,231 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 09:51:56,231 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader stopped
+2025-03-21 09:51:56,231 - __main__ - INFO - ML-enhanced paper trader stopped.
+2025-03-21 09:52:46,705 - ib_insync.ib - WARNING - reqHistoricalData: Timeout for Contract(secType='CONTFUT', symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 09:52:46,705 - __main__ - WARNING - No historical data returned for NQ-CONTFUT-GLOBEX
+2025-03-21 09:52:46,706 - __main__ - WARNING - No historical data available for NQ-CONTFUT-GLOBEX
+2025-03-21 09:52:46,706 - __main__ - INFO - Requesting historical data for GC-CONTFUT-NYMEX (1 D, 5 mins)
+2025-03-21 09:52:46,706 - __main__ - INFO - Created continuous futures contract: GC-CONTFUT-GLOBEX
+2025-03-21 09:53:46,707 - ib_insync.ib - WARNING - reqHistoricalData: Timeout for Contract(secType='CONTFUT', symbol='GC', exchange='GLOBEX', currency='USD')
+2025-03-21 09:53:46,707 - __main__ - WARNING - No historical data returned for GC-CONTFUT-NYMEX
+2025-03-21 09:53:46,707 - __main__ - WARNING - No historical data available for GC-CONTFUT-NYMEX
+2025-03-21 09:53:46,707 - __main__ - INFO - Requesting historical data for SI-CONTFUT-NYMEX (1 D, 5 mins)
+2025-03-21 09:53:46,708 - __main__ - INFO - Created continuous futures contract: SI-CONTFUT-GLOBEX
+2025-03-21 09:54:46,723 - ib_insync.ib - WARNING - reqHistoricalData: Timeout for Contract(secType='CONTFUT', symbol='SI', exchange='GLOBEX', currency='USD')
+2025-03-21 09:54:46,723 - __main__ - WARNING - No historical data returned for SI-CONTFUT-NYMEX
+2025-03-21 09:54:46,723 - __main__ - WARNING - No historical data available for SI-CONTFUT-NYMEX
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-GLOBEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-GLOBEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-NYMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-NYMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 09:54:46,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:54:46 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 09:54:46,731 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T09:54:46.723828', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': None, 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 09:54:46,732 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T09:54:46.731842', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': None, 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 09:54:46,733 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 09:54:46,733 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None

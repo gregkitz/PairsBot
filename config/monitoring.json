@@ -1,0 +1,84 @@
+{
+  "signal_processing": {
+    "use_incremental_updates": true,
+    "use_feature_caching": true,
+    "parallel_processing": false,
+    "max_lookback": 100,
+    "symbols": {
+      "ES_NQ": {
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5
+      },
+      "CL_GC": {
+        "entry_threshold": 2.2,
+        "exit_threshold": 0.6
+      },
+      "ZN_ZB": {
+        "entry_threshold": 1.8,
+        "exit_threshold": 0.4
+      }
+    }
+  },
+  "alerts": {
+    "enabled": true,
+    "channels": ["console", "file", "email"],
+    "email": {
+      "enabled": false,
+      "smtp_server": "smtp.example.com",
+      "port": 587,
+      "sender": "alerts@yourdomain.com",
+      "recipients": ["trader@yourdomain.com"],
+      "username": "alerts@yourdomain.com",
+      "password": "your_password_here"
+    },
+    "sms": {
+      "enabled": false,
+      "provider": "twilio",
+      "account_sid": "your_account_sid",
+      "auth_token": "your_auth_token",
+      "from_number": "+1234567890",
+      "to_numbers": ["+1987654321"]
+    },
+    "alert_levels": {
+      "model_degradation_threshold": 0.20,
+      "data_drift_threshold": 0.15,
+      "execution_latency_threshold": 1.0,
+      "model_confidence_threshold": 0.6,
+      "max_consecutive_errors": 3
+    },
+    "debounce": {
+      "enable_debounce": true,
+      "debounce_period_minutes": 60,
+      "max_alerts_per_day": 20
+    }
+  },
+  "dashboard": {
+    "dashboard_update_seconds": 60,
+    "model_check_minutes": 60,
+    "data_drift_check_minutes": 30,
+    "output_dir": "output/dashboard",
+    "enable_web_server": false,
+    "web_port": 8080
+  },
+  "models_dir": "models/intraday",
+  "data": {
+    "historical_data_dir": "data/historical",
+    "live_data_cache": "data/live"
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_file": "logs/monitoring.log",
+    "max_log_size_mb": 10,
+    "backup_count": 5,
+    "console_output": true
+  },
+  "performance": {
+    "benchmark_iterations": 10,
+    "benchmark_output_dir": "output/benchmarks",
+    "performance_targets": {
+      "signal_generation_ms": 500,
+      "feature_calculation_ms": 200,
+      "total_update_ms": 5000
+    }
+  }
+} 

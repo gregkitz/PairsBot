@@ -1,0 +1,444 @@
+2025-03-18 18:21:31,341 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:31,341 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:31,342 - ib_insync.client - INFO - Connected
+2025-03-18 18:21:31,391 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-18 18:21:31,401 - ib_insync.client - INFO - API connection ready
+2025-03-18 18:21:31,404 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-18 18:21:31,405 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-18 18:21:31,613 - ib_insync.ib - INFO - Synchronization complete
+2025-03-18 18:21:31,613 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-18 18:21:31,613 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: IB.reqAccountUpdates() takes from 1 to 2 positional arguments but 3 were given
+2025-03-18 18:21:31,613 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-18 18:21:36,618 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:36,618 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:36,619 - ib_insync.client - INFO - Disconnected.
+2025-03-18 18:21:36,619 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-18 18:21:36,619 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-18 18:21:36,619 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:36,619 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: This event loop is already running
+2025-03-18 18:21:36,619 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-18 18:21:41,622 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:41,622 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: This event loop is already running
+2025-03-18 18:21:41,622 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-18 18:21:46,627 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:46,628 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: This event loop is already running
+2025-03-18 18:21:46,628 - src.connectors.ib.ib_connector - ERROR - Failed to connect after 3 attempts
+2025-03-18 18:21:46,628 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:46,628 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:46,628 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:46,629 - ib_insync.client - INFO - Disconnecting
+2025-03-18 18:21:46,629 - ib_insync.client - ERROR - API connection failed: CancelledError()
+2025-03-18 18:21:46,629 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: Socket disconnect
+2025-03-18 18:21:46,629 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-18 18:21:51,630 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 1)
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 1...
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Disconnected.
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Connected
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Connected
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Connected
+2025-03-18 18:21:51,631 - ib_insync.client - INFO - Connected
+2025-03-18 19:13:11,933 - src.asset_classes.equities.equity_asset - ERROR - Error getting current price for AAPL: API Error
+2025-03-18 19:13:11,935 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:13:11,935 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:13:11,935 - src.asset_classes.equities.equity_asset - ERROR - Error getting data for AAPL: API Error
+2025-03-18 19:13:11,937 - src.asset_classes.equities.equity_asset - ERROR - Error getting metadata for AAPL: API Error
+2025-03-18 19:13:11,938 - src.asset_classes.equities.equity_asset - ERROR - Error getting trading hours for AAPL: API Error
+2025-03-18 19:13:11,945 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting current price for T: API Error
+2025-03-18 19:13:11,945 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:13:11,946 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:13:11,946 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting data for T: API Error
+2025-03-18 19:13:11,953 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting metadata for T: API Error
+2025-03-18 19:13:11,954 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting trading hours for T: API Error
+2025-03-18 19:13:11,963 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:25:41,184 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:25:41,185 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:25:41,185 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:25:41,185 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:25:41,185 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:25:41,185 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:25:41,185 - src.asset_classes.factory - ERROR - Error creating asset AAPL of class equities: src.asset_classes.equities.equity_asset.EquityAsset() got multiple values for keyword argument 'connector'
+2025-03-18 19:25:41,187 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:25:58,074 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:25:58,074 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:25:58,074 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:25:58,074 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:25:58,074 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:25:58,075 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:25:58,075 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:28:15,299 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:15,302 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:15,303 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:15,310 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:15,310 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:15,312 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:15,315 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:15,315 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:15,315 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:28:15,315 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:28:15,315 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:28:15,316 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:15,316 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:28:15,317 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:15,317 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:15,317 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:15,317 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:15,317 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:15,318 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:15,318 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:28:15,319 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:15,319 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:15,319 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:28:15,324 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:15,324 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:15,325 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:15,325 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:15,325 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:15,325 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:15,325 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:28:42,457 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:42,460 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:42,460 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:42,471 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:42,471 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:42,473 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:42,475 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:28:42,476 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:42,476 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:42,476 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:42,476 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:42,476 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:42,477 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:42,477 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:28:42,478 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:42,478 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:42,478 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:28:42,488 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:28:42,488 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:28:42,488 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:28:42,488 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:28:42,488 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:28:42,489 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:28:42,489 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:30:54,819 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:30:54,823 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:30:54,823 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:30:54,832 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:30:54,832 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:30:54,834 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:30:54,836 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:30:54,836 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:30:54,836 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:30:54,836 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:30:54,836 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:30:54,837 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:30:54,837 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:30:54,838 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:30:54,838 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:30:54,839 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:30:54,839 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:30:54,839 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:30:54,839 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:30:54,840 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:30:54,841 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:30:54,841 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:30:54,841 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:30:54,846 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:30:54,846 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:30:54,846 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:30:54,846 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:30:54,847 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:30:54,847 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:30:54,847 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:32:00,036 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:32:00,037 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,038 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,038 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting data for BTC: API Error
+2025-03-18 19:32:00,040 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting funding rate for BTC: API Error
+2025-03-18 19:32:00,044 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:32:00,048 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting metadata for BTC: API Error
+2025-03-18 19:32:00,051 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting orderbook for BTC: API Error
+2025-03-18 19:32:00,055 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for SOL
+2025-03-18 19:32:00,055 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:00,055 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:00,055 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:00,056 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:32:00,057 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:00,057 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:00,057 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:00,058 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:00,058 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:00,058 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:00,058 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:32:00,065 - src.asset_classes.equities.equity_asset - ERROR - Error getting current price for AAPL: API Error
+2025-03-18 19:32:00,067 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,069 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,069 - src.asset_classes.equities.equity_asset - ERROR - Error getting data for AAPL: API Error
+2025-03-18 19:32:00,071 - src.asset_classes.equities.equity_asset - ERROR - Error getting metadata for AAPL: API Error
+2025-03-18 19:32:00,073 - src.asset_classes.equities.equity_asset - ERROR - Error getting trading hours for AAPL: API Error
+2025-03-18 19:32:00,077 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for GOOG
+2025-03-18 19:32:00,078 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:00,079 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:00,079 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:00,081 - src.asset_classes.equities.equity_asset - ERROR - Error getting all equity assets: API Error
+2025-03-18 19:32:00,083 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:00,083 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:00,083 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:00,085 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:00,085 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:00,085 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:00,087 - src.asset_classes.equities.equity_asset - ERROR - Error getting ETFs: API Error
+2025-03-18 19:32:00,090 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity market holidays for 2023: API Error
+2025-03-18 19:32:00,093 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity sectors: API Error
+2025-03-18 19:32:00,097 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity trading calendar for 2023: API Error
+2025-03-18 19:32:00,100 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting current price for T: API Error
+2025-03-18 19:32:00,101 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,102 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:00,102 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting data for T: API Error
+2025-03-18 19:32:00,107 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting metadata for T: API Error
+2025-03-18 19:32:00,144 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting trading hours for T: API Error
+2025-03-18 19:32:00,154 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:00,154 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:00,154 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:32:00,155 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:32:00,155 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:00,155 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:00,156 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:32:00,158 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:00,161 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:00,161 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:00,169 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:00,169 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:00,169 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:00,171 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:32:00,172 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:00,172 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:00,172 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:00,172 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:00,172 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:00,173 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:00,173 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:32:00,174 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:00,174 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:00,174 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:32:00,180 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:00,180 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:00,180 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:00,180 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:00,180 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:00,181 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:00,181 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:32:40,884 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:32:40,886 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,887 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,887 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting data for BTC: API Error
+2025-03-18 19:32:40,889 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting funding rate for BTC: API Error
+2025-03-18 19:32:40,892 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:32:40,895 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting metadata for BTC: API Error
+2025-03-18 19:32:40,897 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting orderbook for BTC: API Error
+2025-03-18 19:32:40,901 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for SOL
+2025-03-18 19:32:40,902 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:40,902 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:40,902 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:40,902 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:32:40,904 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:32:40,905 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:32:40,911 - src.asset_classes.equities.equity_asset - ERROR - Error getting current price for AAPL: API Error
+2025-03-18 19:32:40,912 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,913 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,913 - src.asset_classes.equities.equity_asset - ERROR - Error getting data for AAPL: API Error
+2025-03-18 19:32:40,918 - src.asset_classes.equities.equity_asset - ERROR - Error getting metadata for AAPL: API Error
+2025-03-18 19:32:40,920 - src.asset_classes.equities.equity_asset - ERROR - Error getting trading hours for AAPL: API Error
+2025-03-18 19:32:40,924 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for GOOG
+2025-03-18 19:32:40,926 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:40,926 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:40,926 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:40,928 - src.asset_classes.equities.equity_asset - ERROR - Error getting all equity assets: API Error
+2025-03-18 19:32:40,930 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:40,930 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:40,930 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:40,932 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:40,932 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:32:40,933 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:32:40,936 - src.asset_classes.equities.equity_asset - ERROR - Error getting ETFs: API Error
+2025-03-18 19:32:40,940 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity market holidays for 2023: API Error
+2025-03-18 19:32:40,943 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity sectors: API Error
+2025-03-18 19:32:40,946 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity trading calendar for 2023: API Error
+2025-03-18 19:32:40,951 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting current price for T: API Error
+2025-03-18 19:32:40,952 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,953 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:32:40,953 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting data for T: API Error
+2025-03-18 19:32:40,958 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting metadata for T: API Error
+2025-03-18 19:32:41,002 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting trading hours for T: API Error
+2025-03-18 19:32:41,008 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for TLT
+2025-03-18 19:32:41,010 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:32:41,010 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:32:41,010 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:32:41,011 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting all fixed income assets: API Error
+2025-03-18 19:32:41,013 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:32:41,013 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:32:41,013 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:32:41,017 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting fixed income market holidays for 2023: API Error
+2025-03-18 19:32:41,022 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting fixed income trading calendar for 2023: API Error
+2025-03-18 19:32:41,024 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:32:41,024 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:32:41,024 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:32:41,027 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting yield curve: API Error
+2025-03-18 19:32:41,033 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:41,034 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:41,035 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:32:41,035 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:32:41,035 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:32:41,035 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:32:41,036 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:32:41,039 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:41,041 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:41,042 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:41,053 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:41,053 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:41,053 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:41,055 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:41,057 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:32:41,058 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:41,058 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:41,059 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:32:41,064 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:33:16,293 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:33:16,294 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,295 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Getting data for BTC from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,295 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting data for BTC: API Error
+2025-03-18 19:33:16,297 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting funding rate for BTC: API Error
+2025-03-18 19:33:16,301 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting current price for BTC: API Error
+2025-03-18 19:33:16,304 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting metadata for BTC: API Error
+2025-03-18 19:33:16,306 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting orderbook for BTC: API Error
+2025-03-18 19:33:16,308 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for SOL
+2025-03-18 19:33:16,309 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:33:16,309 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:33:16,309 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:33:16,309 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:33:16,310 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:33:16,310 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:33:16,310 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:33:16,311 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:33:16,311 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for ETH
+2025-03-18 19:33:16,311 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for USDT
+2025-03-18 19:33:16,311 - src.asset_classes.cryptocurrencies.crypto_asset - ERROR - Error getting all cryptocurrency assets: API Error
+2025-03-18 19:33:16,316 - src.asset_classes.equities.equity_asset - ERROR - Error getting current price for AAPL: API Error
+2025-03-18 19:33:16,318 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,319 - src.asset_classes.equities.equity_asset - INFO - Getting data for AAPL from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,319 - src.asset_classes.equities.equity_asset - ERROR - Error getting data for AAPL: API Error
+2025-03-18 19:33:16,322 - src.asset_classes.equities.equity_asset - ERROR - Error getting metadata for AAPL: API Error
+2025-03-18 19:33:16,324 - src.asset_classes.equities.equity_asset - ERROR - Error getting trading hours for AAPL: API Error
+2025-03-18 19:33:16,327 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for GOOG
+2025-03-18 19:33:16,329 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:33:16,329 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:33:16,329 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:33:16,331 - src.asset_classes.equities.equity_asset - ERROR - Error getting all equity assets: API Error
+2025-03-18 19:33:16,334 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:33:16,334 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:33:16,334 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:33:16,336 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:33:16,336 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for MSFT
+2025-03-18 19:33:16,336 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for SPY
+2025-03-18 19:33:16,338 - src.asset_classes.equities.equity_asset - ERROR - Error getting ETFs: API Error
+2025-03-18 19:33:16,341 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity market holidays for 2023: API Error
+2025-03-18 19:33:16,344 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity sectors: API Error
+2025-03-18 19:33:16,347 - src.asset_classes.equities.equity_asset - ERROR - Error getting equity trading calendar for 2023: API Error
+2025-03-18 19:33:16,350 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting current price for T: API Error
+2025-03-18 19:33:16,351 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,352 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Getting data for T from 2023-01-01 to 2023-01-10
+2025-03-18 19:33:16,352 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting data for T: API Error
+2025-03-18 19:33:16,357 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting metadata for T: API Error
+2025-03-18 19:33:16,358 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting trading hours for T: API Error
+2025-03-18 19:33:16,398 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for TLT
+2025-03-18 19:33:16,400 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:33:16,400 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:33:16,401 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:33:16,403 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting all fixed income assets: API Error
+2025-03-18 19:33:16,405 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:33:16,405 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:33:16,405 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:33:16,408 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting fixed income market holidays for 2023: API Error
+2025-03-18 19:33:16,411 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting fixed income trading calendar for 2023: API Error
+2025-03-18 19:33:16,413 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:33:16,413 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for C
+2025-03-18 19:33:16,413 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for MUB
+2025-03-18 19:33:16,416 - src.asset_classes.fixed_income.fixed_income_asset - ERROR - Error getting yield curve: API Error
+2025-03-18 19:33:16,422 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:33:16,422 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:33:16,422 - src.asset_classes.fixed_income.fixed_income_asset - INFO - Creating fixed income asset for T
+2025-03-18 19:33:16,422 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:33:16,422 - src.asset_classes.cryptocurrencies.crypto_asset - INFO - Creating cryptocurrency asset for BTC
+2025-03-18 19:33:16,422 - src.asset_classes.equities.equity_asset - INFO - Creating equity asset for AAPL
+2025-03-18 19:33:16,423 - src.asset_classes.factory - WARNING - Unknown asset class type: invalid_type
+2025-03-18 19:33:16,425 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:33:16,428 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:33:16,428 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:33:16,437 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:33:16,437 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:33:16,438 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Found 2 tradable pairs
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 2 pairs
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 2 pairs
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:33:16,439 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 1, open 1, adjust 0
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:33:16,441 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0
+2025-03-18 19:33:16,442 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:33:16,442 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:33:16,443 - src.strategies.multi_pair_portfolio - INFO - Selected 0 pairs for the portfolio
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Rebalancing portfolio
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Finding tradable pairs from universe of 10 assets
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Found 5 tradable pairs
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Optimizing portfolio for 5 pairs
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Calculating correlation matrix for 5 pairs
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Selected 1 pairs for the portfolio
+2025-03-18 19:33:16,448 - src.strategies.multi_pair_portfolio - INFO - Rebalance actions: close 0, open 1, adjust 0

@@ -1,0 +1,46 @@
+# Data Flow Automation Configuration
+
+# Symbols and timeframes
+symbols:
+  - GC  # Gold futures
+  - SI  # Silver futures
+  - ZB  # Treasury Bond futures
+  - ZN  # 10-Year Note futures
+  - CL  # Crude Oil futures
+  - NG  # Natural Gas futures
+
+timeframes:
+  - 5min
+  - 1hour
+  - 1day
+
+# Date range (optional, set to specific dates if needed)
+# If not specified, system will use the most recent 1 year of data
+# start_date: "2022-01-01"
+# end_date: "2023-01-01"
+
+# Data collection settings
+data_dir: "data/historical"
+api_key: ""  # Add your data provider API key if needed
+
+# Feature generation settings
+feature_dir: "data/features"
+
+# Signal processing settings
+signal_dir: "data/signals"
+model_dir: "models"
+strategies:
+  - trend
+  - mean_reversion
+  - combined
+use_ml: true  # Set to true to use ML models for signal enhancement
+process_pairs: true  # Set to true to process pair signals
+
+# Execution settings
+parallel: true  # Set to false to process sequentially
+stop_on_failure: true  # Set to false to continue even if a step fails
+
+# Pipeline steps to run (default is all)
+run_data_collection: true
+run_feature_generation: true
+run_signal_processing: true 

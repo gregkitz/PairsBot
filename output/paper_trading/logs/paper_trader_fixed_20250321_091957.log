@@ -1,0 +1,33 @@
+2025-03-21 09:19:57,068 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 09:19:58,908 - __main__ - INFO - Successfully imported IntradayMLPaperTrader
+2025-03-21 09:19:58,908 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 09:19:58,909 - src.paper_trading.paper_trader - ERROR - Error loading paper trading data: Expecting value: line 10 column 23 (char 215)
+2025-03-21 09:19:58,910 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 09:19:58,910 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 09:19:58,911 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 09:19:58,927 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 09:19:58,941 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 09:19:58,955 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 09:19:58,956 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:19:58,956 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:19:58,956 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 09:19:58,956 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 7)
+2025-03-21 09:19:58,956 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 7...
+2025-03-21 09:19:58,962 - ib_insync.client - INFO - Connected
+2025-03-21 09:19:58,965 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 09:19:58,966 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 09:19:58,966 - ib_insync.client - INFO - API connection ready
+2025-03-21 09:19:58,966 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 09:19:58,966 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 09:19:58,967 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 09:19:59,169 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 09:19:59,169 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 09:19:59,170 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 09:19:59,170 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 09:19:59,170 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 09:19:59,171 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 09:19:59,171 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 09:19:59,171 - __main__ - INFO - Created simple dashboard at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 09:19:59,171 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 09:20:59,171 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:20:59,171 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:20:59 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'

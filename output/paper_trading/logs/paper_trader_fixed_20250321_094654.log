@@ -1,0 +1,25 @@
+2025-03-21 09:46:54,103 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 09:46:54,104 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 09:46:54,913 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 09:46:55,989 - __main__ - INFO - Successfully enhanced IntradayMLPaperTrader with better logging and dashboard
+2025-03-21 09:46:55,989 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 09:46:55,990 - src.paper_trading.paper_trader - INFO - Loaded account data: Capital=$100000.00
+2025-03-21 09:46:55,990 - src.paper_trading.paper_trader - INFO - Loaded 0 positions
+2025-03-21 09:46:55,991 - src.paper_trading.paper_trader - INFO - Loaded 0 historical trades
+2025-03-21 09:46:55,992 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 09:46:55,992 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 09:46:55,993 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 09:46:56,010 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 09:46:56,028 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 09:46:56,043 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 09:46:56,043 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:46:56,044 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:46:56,044 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 09:46:56,044 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 7)
+2025-03-21 09:46:56,044 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 7...
+2025-03-21 09:46:56,050 - ib_insync.client - INFO - Connected
+2025-03-21 09:46:56,054 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 09:46:56,556 - ib_insync.client - ERROR - Peer closed connection. clientId 7 already in use?
+2025-03-21 09:46:59,919 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 09:47:01,399 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 09:47:01,562 - __main__ - INFO - Stopping paper trader (received interrupt signal)...

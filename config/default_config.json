@@ -1,0 +1,88 @@
+{
+    "system": {
+        "output_dir": "output",
+        "log_level": "INFO",
+        "log_file": "logs/pairs_trading.log",
+        "show_plots": true,
+        "save_plots": true,
+        "plot_dir": "output/plots"
+    },
+    "data": {
+        "historical_dir": "data/historical",
+        "start_date": "2020-01-01",
+        "end_date": "2023-12-31",
+        "resample_freq": null,
+        "min_data_points": 252,
+        "timeframe": "1day",
+        "time_filter": "none",
+        "custom_time_filter": {
+            "start_time": "09:30",
+            "end_time": "16:00",
+            "timezone": "US/Eastern"
+        }
+    },
+    "cointegration": {
+        "test_method": "johansen",
+        "pvalue_threshold": 0.05,
+        "min_half_life": 1,
+        "max_half_life": 60,
+        "min_correlation": 0.5,
+        "min_mean_rev_strength": 0.1,
+        "train_test_split": 0.7,
+        "rolling_window": 252,
+        "min_cointegration_pct": 0.7
+    },
+    "pairs_selection": {
+        "max_pairs": 10,
+        "ranking_method": "score",
+        "score_weights": {
+            "correlation": 0.25,
+            "cointegration": 0.25,
+            "half_life": 0.25,
+            "hurst": 0.25
+        },
+        "allow_cross_asset": true,
+        "use_log_prices": true,
+        "exclude_pairs": []
+    },
+    "spread": {
+        "hedge_ratio_method": "ols",
+        "window_size": 60,
+        "half_life": 30,
+        "use_log_prices": true,
+        "zscore_method": "rolling",
+        "kalman_settings": {
+            "transition_covariance": 0.01,
+            "observation_covariance": 0.1
+        }
+    },
+    "signals": {
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.0,
+        "stop_loss_threshold": 3.5,
+        "take_profit_threshold": null,
+        "time_stop": 10,
+        "signal_type": "zscore",
+        "signal_smoothing": 0,
+        "use_trailing_stop": false
+    },
+    "risk_management": {
+        "account_size": 100000,
+        "max_risk_per_trade": 0.02,
+        "max_allocation": 0.25,
+        "max_pairs": 5,
+        "volatility_lookback_windows": [20, 60],
+        "position_sizing_method": "volatility",
+        "use_stop_loss": true,
+        "use_max_drawdown_limit": true,
+        "max_drawdown_limit": 0.1,
+        "correlation_threshold": 0.7,
+        "daily_loss_limit": 0.03
+    },
+    "backtest": {
+        "commission": 0.0005,
+        "slippage": 0.0001,
+        "trade_delay": 1,
+        "allow_simultaneous_positions": true
+    }
+} 

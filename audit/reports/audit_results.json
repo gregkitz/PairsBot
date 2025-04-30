@@ -1,0 +1,1860 @@
+{
+  "large_files": [
+    {
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 1332,
+      "excess": 832
+    },
+    {
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 1242,
+      "excess": 742
+    },
+    {
+      "file": "src\\paper_trading\\paper_trader.py",
+      "lines": 1100,
+      "excess": 600
+    },
+    {
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 989,
+      "excess": 489
+    },
+    {
+      "file": "src\\connectors\\ib\\ib_connector.py",
+      "lines": 986,
+      "excess": 486
+    },
+    {
+      "file": "src\\live_trading\\live_trader.py",
+      "lines": 814,
+      "excess": 314
+    },
+    {
+      "file": "src\\live_trading\\monitoring.py",
+      "lines": 804,
+      "excess": 304
+    },
+    {
+      "file": "src\\ml_enhancements\\model_retraining.py",
+      "lines": 741,
+      "excess": 241
+    },
+    {
+      "file": "src\\strategy_variants\\ml_signals\\ml_signal_strategy.py",
+      "lines": 670,
+      "excess": 170
+    },
+    {
+      "file": "src\\diagnostics\\benchmark_real_time.py",
+      "lines": 669,
+      "excess": 169
+    },
+    {
+      "file": "src\\optimization\\walk_forward\\walk_forward.py",
+      "lines": 658,
+      "excess": 158
+    },
+    {
+      "file": "src\\reporting\\report_generator.py",
+      "lines": 652,
+      "excess": 152
+    },
+    {
+      "file": "src\\performance\\data_structures\\compressed_ohlc.py",
+      "lines": 647,
+      "excess": 147
+    },
+    {
+      "file": "src\\monitoring\\alert_system.py",
+      "lines": 643,
+      "excess": 143
+    },
+    {
+      "file": "src\\backtest\\intraday_backtest_engine.py",
+      "lines": 635,
+      "excess": 135
+    },
+    {
+      "file": "src\\pairs_trading_strategy.py",
+      "lines": 629,
+      "excess": 129
+    },
+    {
+      "file": "src\\monitoring\\monitor_dashboard.py",
+      "lines": 619,
+      "excess": 119
+    },
+    {
+      "file": "src\\ml_enhancements\\feature_engineering\\advanced_features.py",
+      "lines": 600,
+      "excess": 100
+    },
+    {
+      "file": "src\\backtest\\backtest_engine.py",
+      "lines": 586,
+      "excess": 86
+    },
+    {
+      "file": "src\\ml_enhancements\\ensemble_models.py",
+      "lines": 582,
+      "excess": 82
+    },
+    {
+      "file": "src\\performance\\data_structures\\sparse_time_series.py",
+      "lines": 579,
+      "excess": 79
+    },
+    {
+      "file": "src\\ml_enhancements\\feature_engineering\\intraday_features.py",
+      "lines": 556,
+      "excess": 56
+    },
+    {
+      "file": "src\\signals\\signal_generator.py",
+      "lines": 550,
+      "excess": 50
+    },
+    {
+      "file": "src\\optimization\\genetic_algorithm\\genetic_algorithm.py",
+      "lines": 541,
+      "excess": 41
+    },
+    {
+      "file": "src\\strategies\\multi_pair_portfolio.py",
+      "lines": 528,
+      "excess": 28
+    },
+    {
+      "file": "src\\spread_analytics\\spread_analyzer.py",
+      "lines": 526,
+      "excess": 26
+    },
+    {
+      "file": "src\\ml_enhancements\\intraday_integration.py",
+      "lines": 523,
+      "excess": 23
+    },
+    {
+      "file": "src\\signal_generation\\pairs_signal_generator.py",
+      "lines": 522,
+      "excess": 22
+    },
+    {
+      "file": "src\\portfolio\\pairs_portfolio.py",
+      "lines": 517,
+      "excess": 17
+    },
+    {
+      "file": "src\\signal_generation\\signal_processor.py",
+      "lines": 514,
+      "excess": 14
+    },
+    {
+      "file": "src\\backtest\\intraday_performance_visualization.py",
+      "lines": 512,
+      "excess": 12
+    },
+    {
+      "file": "src\\reporting\\metrics.py",
+      "lines": 512,
+      "excess": 12
+    },
+    {
+      "file": "src\\ml_enhancements\\regime_detection\\market_regime_classifier.py",
+      "lines": 503,
+      "excess": 3
+    }
+  ],
+  "complex_functions": [
+    {
+      "name": "enhance_signals",
+      "class": "IntradaySignalEnhancer",
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 231,
+      "complexity": 26,
+      "start_line": 948,
+      "params": 5
+    },
+    {
+      "name": "run_backtest",
+      "class": null,
+      "file": "src\\main.py",
+      "lines": 241,
+      "complexity": 25,
+      "start_line": 74,
+      "params": 3
+    },
+    {
+      "name": "apply_intraday_adaptations",
+      "class": "IntradaySignalEnhancer",
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 181,
+      "complexity": 23,
+      "start_line": 1180,
+      "params": 6
+    },
+    {
+      "name": "close_pair_position",
+      "class": "PositionTracker",
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 132,
+      "complexity": 20,
+      "start_line": 536,
+      "params": 8
+    },
+    {
+      "name": "_add_statistical_features",
+      "class": "FeatureGenerator",
+      "file": "src\\ml_enhancements\\feature_engineering\\feature_generator.py",
+      "lines": 102,
+      "complexity": 20,
+      "start_line": 211,
+      "params": 2
+    },
+    {
+      "name": "load_models",
+      "class": "IntradaySignalEnhancer",
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 84,
+      "complexity": 18,
+      "start_line": 599,
+      "params": 1
+    },
+    {
+      "name": "calculate_features",
+      "class": "MarketRegimeClassifier",
+      "file": "src\\ml_enhancements\\regime_detection\\market_regime_classifier.py",
+      "lines": 117,
+      "complexity": 18,
+      "start_line": 65,
+      "params": 3
+    },
+    {
+      "name": "add_data",
+      "class": "CompressedOHLC",
+      "file": "src\\performance\\data_structures\\compressed_ohlc.py",
+      "lines": 89,
+      "complexity": 18,
+      "start_line": 71,
+      "params": 2
+    },
+    {
+      "name": "_create_summary_metrics",
+      "class": null,
+      "file": "src\\reporting\\metrics.py",
+      "lines": 92,
+      "complexity": 18,
+      "start_line": 547,
+      "params": 1
+    },
+    {
+      "name": "process_signals",
+      "class": null,
+      "file": "src\\signal_generation\\signal_processor.py",
+      "lines": 94,
+      "complexity": 18,
+      "start_line": 380,
+      "params": 10
+    },
+    {
+      "name": "optimize_portfolio",
+      "class": "MultiPairPortfolio",
+      "file": "src\\strategies\\multi_pair_portfolio.py",
+      "lines": 103,
+      "complexity": 18,
+      "start_line": 214,
+      "params": 3
+    },
+    {
+      "name": "generate_orders",
+      "class": "MultiPairPortfolio",
+      "file": "src\\strategies\\multi_pair_portfolio.py",
+      "lines": 135,
+      "complexity": 18,
+      "start_line": 496,
+      "params": 2
+    },
+    {
+      "name": "_apply_time_filters",
+      "class": "IntradayBacktestEngine",
+      "file": "src\\backtest\\intraday_backtest_engine.py",
+      "lines": 113,
+      "complexity": 17,
+      "start_line": 293,
+      "params": 2
+    },
+    {
+      "name": "load_intraday_data",
+      "class": "DataProcessor",
+      "file": "src\\data_processing\\data_processor.py",
+      "lines": 84,
+      "complexity": 16,
+      "start_line": 93,
+      "params": 5
+    },
+    {
+      "name": "save_results",
+      "class": null,
+      "file": "src\\utils\\utils.py",
+      "lines": 71,
+      "complexity": 16,
+      "start_line": 22,
+      "params": 3
+    },
+    {
+      "name": "schedule_task",
+      "class": "TaskOrchestrator",
+      "file": "src\\automation\\task_orchestrator.py",
+      "lines": 57,
+      "complexity": 15,
+      "start_line": 234,
+      "params": 3
+    },
+    {
+      "name": "generate_features",
+      "class": null,
+      "file": "src\\data_processor\\feature_calculator.py",
+      "lines": 77,
+      "complexity": 15,
+      "start_line": 233,
+      "params": 7
+    },
+    {
+      "name": "calculate_features",
+      "class": "IntradaySignalEnhancer",
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 145,
+      "complexity": 15,
+      "start_line": 72,
+      "params": 4
+    },
+    {
+      "name": "export_strategy_report",
+      "class": "WalkForwardTester",
+      "file": "src\\optimization\\walk_forward\\walk_forward.py",
+      "lines": 178,
+      "complexity": 15,
+      "start_line": 549,
+      "params": 2
+    },
+    {
+      "name": "apply_holding_period",
+      "class": "SignalGenerator",
+      "file": "src\\signal_generation\\signal_generator.py",
+      "lines": 90,
+      "complexity": 15,
+      "start_line": 160,
+      "params": 4
+    },
+    {
+      "name": "plot_signals_positions",
+      "class": null,
+      "file": "src\\visualization\\plotting.py",
+      "lines": 116,
+      "complexity": 15,
+      "start_line": 134,
+      "params": 6
+    },
+    {
+      "name": "process_file",
+      "class": "FuturesDataProcessor",
+      "file": "src\\data_processor\\futures_processor.py",
+      "lines": 147,
+      "complexity": 14,
+      "start_line": 50,
+      "params": 3
+    },
+    {
+      "name": "run_example",
+      "class": null,
+      "file": "src\\paper_trading\\example.py",
+      "lines": 119,
+      "complexity": 14,
+      "start_line": 76,
+      "params": 0
+    },
+    {
+      "name": "set_pairs",
+      "class": "IntradayMLPaperTrader",
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 57,
+      "complexity": 14,
+      "start_line": 1369,
+      "params": 2
+    },
+    {
+      "name": "place_order",
+      "class": "PaperTrader",
+      "file": "src\\paper_trading\\paper_trader.py",
+      "lines": 165,
+      "complexity": 14,
+      "start_line": 639,
+      "params": 9
+    },
+    {
+      "name": "get_at_timestamp",
+      "class": "CompressedOHLC",
+      "file": "src\\performance\\data_structures\\compressed_ohlc.py",
+      "lines": 68,
+      "complexity": 14,
+      "start_line": 269,
+      "params": 3
+    },
+    {
+      "name": "get_range",
+      "class": "CompressedOHLC",
+      "file": "src\\performance\\data_structures\\compressed_ohlc.py",
+      "lines": 68,
+      "complexity": 14,
+      "start_line": 338,
+      "params": 3
+    },
+    {
+      "name": "generate_signals",
+      "class": "PairsSignalGenerator",
+      "file": "src\\signal_generation\\pairs_signal_generator.py",
+      "lines": 101,
+      "complexity": 14,
+      "start_line": 288,
+      "params": 4
+    },
+    {
+      "name": "backtest_strategy",
+      "class": "PairsTradingStrategy",
+      "file": "src\\pairs_trading_strategy.py",
+      "lines": 186,
+      "complexity": 13,
+      "start_line": 305,
+      "params": 3
+    },
+    {
+      "name": "load_data",
+      "class": "PairsFinder",
+      "file": "src\\cointegration\\pairs_finder.py",
+      "lines": 86,
+      "complexity": 13,
+      "start_line": 53,
+      "params": 2
+    },
+    {
+      "name": "_add_intraday_regime_features",
+      "class": "IntradayFeatureEngineering",
+      "file": "src\\ml_enhancements\\feature_engineering\\intraday_features.py",
+      "lines": 77,
+      "complexity": 13,
+      "start_line": 417,
+      "params": 3
+    },
+    {
+      "name": "_generate_performance_plots",
+      "class": "MonitoringDashboard",
+      "file": "src\\monitoring\\monitor_dashboard.py",
+      "lines": 93,
+      "complexity": 13,
+      "start_line": 447,
+      "params": 1
+    },
+    {
+      "name": "optimize",
+      "class": "GridSearchOptimizer",
+      "file": "src\\optimization\\grid_search\\grid_search.py",
+      "lines": 123,
+      "complexity": 13,
+      "start_line": 76,
+      "params": 10
+    },
+    {
+      "name": "add_data",
+      "class": "SparseTimeSeries",
+      "file": "src\\performance\\data_structures\\sparse_time_series.py",
+      "lines": 46,
+      "complexity": 13,
+      "start_line": 51,
+      "params": 3
+    },
+    {
+      "name": "get_value",
+      "class": "SparseTimeSeries",
+      "file": "src\\performance\\data_structures\\sparse_time_series.py",
+      "lines": 66,
+      "complexity": 13,
+      "start_line": 116,
+      "params": 3
+    },
+    {
+      "name": "_add_trailing_stop_signals",
+      "class": "SignalGenerator",
+      "file": "src\\signals\\signal_generator.py",
+      "lines": 67,
+      "complexity": 13,
+      "start_line": 572,
+      "params": 3
+    },
+    {
+      "name": "load_state",
+      "class": "MLSignalStrategy",
+      "file": "src\\strategy_variants\\ml_signals\\ml_signal_strategy.py",
+      "lines": 61,
+      "complexity": 13,
+      "start_line": 744,
+      "params": 2
+    },
+    {
+      "name": "run_signal_processing",
+      "class": null,
+      "file": "src\\automation\\data_flow_automation.py",
+      "lines": 88,
+      "complexity": 12,
+      "start_line": 173,
+      "params": 1
+    },
+    {
+      "name": "plot_intraday_constraints",
+      "class": null,
+      "file": "src\\backtest\\intraday_performance_visualization.py",
+      "lines": 120,
+      "complexity": 12,
+      "start_line": 407,
+      "params": 3
+    },
+    {
+      "name": "test_cointegration",
+      "class": null,
+      "file": "src\\cointegration\\cointegration_tests.py",
+      "lines": 141,
+      "complexity": 12,
+      "start_line": 50,
+      "params": 6
+    },
+    {
+      "name": "test_cointegration",
+      "class": "PairsFinder",
+      "file": "src\\cointegration\\pairs_finder.py",
+      "lines": 150,
+      "complexity": 12,
+      "start_line": 186,
+      "params": 5
+    },
+    {
+      "name": "find_pairs",
+      "class": "PairFinder",
+      "file": "src\\cointegration\\pair_finder.py",
+      "lines": 102,
+      "complexity": 12,
+      "start_line": 38,
+      "params": 4
+    },
+    {
+      "name": "create_contract",
+      "class": "FixedIBConnector",
+      "file": "src\\connectors\\ib\\fixed_connector.py",
+      "lines": 70,
+      "complexity": 12,
+      "start_line": 164,
+      "params": 8
+    },
+    {
+      "name": "place_order",
+      "class": "IBConnector",
+      "file": "src\\connectors\\ib\\ib_connector.py",
+      "lines": 116,
+      "complexity": 12,
+      "start_line": 568,
+      "params": 12
+    },
+    {
+      "name": "download_historical_data",
+      "class": null,
+      "file": "src\\data_processor\\data_loader.py",
+      "lines": 108,
+      "complexity": 12,
+      "start_line": 307,
+      "params": 11
+    },
+    {
+      "name": "create_benchmark_report",
+      "class": null,
+      "file": "src\\diagnostics\\benchmark_real_time.py",
+      "lines": 305,
+      "complexity": 12,
+      "start_line": 330,
+      "params": 2
+    },
+    {
+      "name": "close_position",
+      "class": "PositionTracker",
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 120,
+      "complexity": 12,
+      "start_line": 294,
+      "params": 6
+    },
+    {
+      "name": "integrate_with_paper_trading",
+      "class": null,
+      "file": "src\\ml_enhancements\\intraday_integration.py",
+      "lines": 77,
+      "complexity": 12,
+      "start_line": 552,
+      "params": 2
+    },
+    {
+      "name": "select_important_features",
+      "class": "FeatureGenerator",
+      "file": "src\\ml_enhancements\\feature_engineering\\feature_generator.py",
+      "lines": 80,
+      "complexity": 12,
+      "start_line": 417,
+      "params": 5
+    },
+    {
+      "name": "generate_intraday_features",
+      "class": "IntradayFeatureEngineering",
+      "file": "src\\ml_enhancements\\feature_engineering\\intraday_features.py",
+      "lines": 96,
+      "complexity": 12,
+      "start_line": 69,
+      "params": 8
+    },
+    {
+      "name": "get_regime_description",
+      "class": "MarketRegimeClassifier",
+      "file": "src\\ml_enhancements\\regime_detection\\market_regime_classifier.py",
+      "lines": 61,
+      "complexity": 12,
+      "start_line": 383,
+      "params": 2
+    },
+    {
+      "name": "_process_alert_channels",
+      "class": "AlertSystem",
+      "file": "src\\monitoring\\alert_system.py",
+      "lines": 42,
+      "complexity": 12,
+      "start_line": 572,
+      "params": 2
+    },
+    {
+      "name": "_generate_trading_signals",
+      "class": "IntradayMLPaperTrader",
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 86,
+      "complexity": 12,
+      "start_line": 544,
+      "params": 2
+    },
+    {
+      "name": "_create_performance_metrics",
+      "class": "IntradayMLPaperTrader",
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 111,
+      "complexity": 12,
+      "start_line": 1121,
+      "params": 3
+    },
+    {
+      "name": "_send_alert",
+      "class": "IntradayMLPaperTrader",
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 72,
+      "complexity": 12,
+      "start_line": 1296,
+      "params": 4
+    },
+    {
+      "name": "_execute_order",
+      "class": "PaperTrader",
+      "file": "src\\paper_trading\\paper_trader.py",
+      "lines": 89,
+      "complexity": 12,
+      "start_line": 1082,
+      "params": 4
+    },
+    {
+      "name": "_load_from_disk",
+      "class": "DataCache",
+      "file": "src\\performance\\caching\\data_cache.py",
+      "lines": 80,
+      "complexity": 12,
+      "start_line": 506,
+      "params": 2
+    },
+    {
+      "name": "_calculate_trade_metrics",
+      "class": null,
+      "file": "src\\reporting\\metrics.py",
+      "lines": 132,
+      "complexity": 12,
+      "start_line": 413,
+      "params": 1
+    },
+    {
+      "name": "generate_signals",
+      "class": "SignalGenerator",
+      "file": "src\\signals\\signal_generator.py",
+      "lines": 64,
+      "complexity": 12,
+      "start_line": 60,
+      "params": 4
+    },
+    {
+      "name": "get_performance_data",
+      "class": null,
+      "file": "src\\web_interface\\utils.py",
+      "lines": 119,
+      "complexity": 12,
+      "start_line": 60,
+      "params": 2
+    },
+    {
+      "name": "_set_default_schedules",
+      "class": "MasterOrchestration",
+      "file": "src\\automation\\master_orchestration.py",
+      "lines": 36,
+      "complexity": 11,
+      "start_line": 273,
+      "params": 1
+    },
+    {
+      "name": "check_system_status",
+      "class": "SystemStartup",
+      "file": "src\\automation\\system_startup.py",
+      "lines": 73,
+      "complexity": 11,
+      "start_line": 109,
+      "params": 1
+    },
+    {
+      "name": "test_pairs_universe",
+      "class": null,
+      "file": "src\\cointegration\\cointegration_tests.py",
+      "lines": 100,
+      "complexity": 11,
+      "start_line": 193,
+      "params": 6
+    },
+    {
+      "name": "balanced_augmentation",
+      "class": "TimeSeriesAugmentation",
+      "file": "src\\ml_enhancements\\data_augmentation.py",
+      "lines": 105,
+      "complexity": 11,
+      "start_line": 451,
+      "params": 5
+    },
+    {
+      "name": "_collect_market_data",
+      "class": "IntradayMLPaperTrader",
+      "file": "src\\paper_trading\\intraday_ml_paper_trader.py",
+      "lines": 68,
+      "complexity": 11,
+      "start_line": 377,
+      "params": 1
+    },
+    {
+      "name": "disk_cache",
+      "class": null,
+      "file": "src\\performance\\caching\\function_cache.py",
+      "lines": 97,
+      "complexity": 11,
+      "start_line": 213,
+      "params": 3
+    },
+    {
+      "name": "decorator",
+      "class": null,
+      "file": "src\\performance\\caching\\function_cache.py",
+      "lines": 65,
+      "complexity": 11,
+      "start_line": 243,
+      "params": 1
+    },
+    {
+      "name": "resample",
+      "class": "SparseTimeSeries",
+      "file": "src\\performance\\data_structures\\sparse_time_series.py",
+      "lines": 55,
+      "complexity": 11,
+      "start_line": 241,
+      "params": 4
+    },
+    {
+      "name": "map",
+      "class": "ParallelExecutor",
+      "file": "src\\performance\\parallel\\parallel_executor.py",
+      "lines": 93,
+      "complexity": 11,
+      "start_line": 62,
+      "params": 3
+    },
+    {
+      "name": "_generate_features_df",
+      "class": "MLSignalStrategy",
+      "file": "src\\strategy_variants\\ml_signals\\ml_signal_strategy.py",
+      "lines": 113,
+      "complexity": 11,
+      "start_line": 359,
+      "params": 5
+    },
+    {
+      "name": "place_bracket_order",
+      "class": "IBConnector",
+      "file": "src\\connectors\\ib\\ib_connector.py",
+      "lines": 105,
+      "complexity": 10,
+      "start_line": 685,
+      "params": 10
+    },
+    {
+      "name": "place_order",
+      "class": "LiveTrader",
+      "file": "src\\live_trading\\live_trader.py",
+      "lines": 105,
+      "complexity": 10,
+      "start_line": 558,
+      "params": 9
+    },
+    {
+      "name": "retrain_model",
+      "class": "ModelRetrainingManager",
+      "file": "src\\ml_enhancements\\model_retraining.py",
+      "lines": 151,
+      "complexity": 10,
+      "start_line": 399,
+      "params": 7
+    },
+    {
+      "name": "optimize",
+      "class": "GeneticOptimizer",
+      "file": "src\\optimization\\genetic_algorithm\\genetic_algorithm.py",
+      "lines": 145,
+      "complexity": 10,
+      "start_line": 215,
+      "params": 8
+    },
+    {
+      "name": "place_bracket_order",
+      "class": "PaperTrader",
+      "file": "src\\paper_trading\\paper_trader.py",
+      "lines": 113,
+      "complexity": 10,
+      "start_line": 899,
+      "params": 9
+    },
+    {
+      "name": "process_new_data",
+      "class": "RealTimeSignalOptimizer",
+      "file": "src\\real_time\\signal_optimizer.py",
+      "lines": 114,
+      "complexity": 10,
+      "start_line": 68,
+      "params": 4
+    },
+    {
+      "name": "main",
+      "class": null,
+      "file": "src\\test_pair_selection.py",
+      "lines": 151,
+      "complexity": 9,
+      "start_line": 16,
+      "params": 0
+    },
+    {
+      "name": "_execute_pair_trade",
+      "class": "BacktestEngine",
+      "file": "src\\backtest\\backtest_engine.py",
+      "lines": 123,
+      "complexity": 9,
+      "start_line": 275,
+      "params": 6
+    },
+    {
+      "name": "plot_regime_performance",
+      "class": null,
+      "file": "src\\backtest\\intraday_performance_visualization.py",
+      "lines": 117,
+      "complexity": 9,
+      "start_line": 289,
+      "params": 4
+    },
+    {
+      "name": "generate_labels",
+      "class": null,
+      "file": "src\\ml_enhancements\\training_utils.py",
+      "lines": 115,
+      "complexity": 9,
+      "start_line": 233,
+      "params": 5
+    },
+    {
+      "name": "optimize_by_regime",
+      "class": "IntradayParameterOptimizer",
+      "file": "src\\optimization\\intraday_parameter_optimizer.py",
+      "lines": 119,
+      "complexity": 9,
+      "start_line": 163,
+      "params": 12
+    },
+    {
+      "name": "_calculate_drawdown_metrics",
+      "class": null,
+      "file": "src\\reporting\\metrics.py",
+      "lines": 141,
+      "complexity": 9,
+      "start_line": 186,
+      "params": 1
+    },
+    {
+      "name": "plot_backtest_summary",
+      "class": null,
+      "file": "src\\visualization\\plotting.py",
+      "lines": 135,
+      "complexity": 9,
+      "start_line": 307,
+      "params": 3
+    },
+    {
+      "name": "main",
+      "class": null,
+      "file": "src\\live_trading\\example_with_position_tracking.py",
+      "lines": 113,
+      "complexity": 8,
+      "start_line": 329,
+      "params": 0
+    },
+    {
+      "name": "create_pair_position",
+      "class": "PositionTracker",
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 120,
+      "complexity": 8,
+      "start_line": 415,
+      "params": 12
+    },
+    {
+      "name": "train",
+      "class": "SpreadPredictor",
+      "file": "src\\ml_enhancements\\spread_prediction\\spread_predictor.py",
+      "lines": 115,
+      "complexity": 8,
+      "start_line": 148,
+      "params": 4
+    },
+    {
+      "name": "run",
+      "class": "WalkForwardTester",
+      "file": "src\\optimization\\walk_forward\\walk_forward.py",
+      "lines": 137,
+      "complexity": 8,
+      "start_line": 185,
+      "params": 8
+    },
+    {
+      "name": "generate_report",
+      "class": "BacktestReportGenerator",
+      "file": "src\\reporting\\report_generator.py",
+      "lines": 144,
+      "complexity": 8,
+      "start_line": 83,
+      "params": 9
+    },
+    {
+      "name": "create_position",
+      "class": "PositionTracker",
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 127,
+      "complexity": 7,
+      "start_line": 91,
+      "params": 9
+    },
+    {
+      "name": "train_model",
+      "class": "IntradayModelTrainer",
+      "file": "src\\ml_enhancements\\intraday_model_trainer.py",
+      "lines": 103,
+      "complexity": 7,
+      "start_line": 104,
+      "params": 10
+    },
+    {
+      "name": "apply_patch",
+      "class": null,
+      "file": "src\\reporting\\metrics_fix.py",
+      "lines": 170,
+      "complexity": 7,
+      "start_line": 21,
+      "params": 0
+    },
+    {
+      "name": "plot_intraday_patterns",
+      "class": null,
+      "file": "src\\backtest\\intraday_performance_visualization.py",
+      "lines": 102,
+      "complexity": 6,
+      "start_line": 80,
+      "params": 3
+    },
+    {
+      "name": "plot_transaction_costs",
+      "class": null,
+      "file": "src\\backtest\\intraday_performance_visualization.py",
+      "lines": 105,
+      "complexity": 6,
+      "start_line": 183,
+      "params": 4
+    },
+    {
+      "name": "analyze_pair_stability",
+      "class": "IntradayPairAnalyzer",
+      "file": "src\\cointegration\\intraday_pair_analyzer.py",
+      "lines": 117,
+      "complexity": 6,
+      "start_line": 118,
+      "params": 6
+    },
+    {
+      "name": "__init__",
+      "class": "TradingMonitor",
+      "file": "src\\live_trading\\monitoring.py",
+      "lines": 132,
+      "complexity": 6,
+      "start_line": 41,
+      "params": 11
+    },
+    {
+      "name": "get_performance_summary",
+      "class": "PositionTracker",
+      "file": "src\\live_trading\\position_tracker.py",
+      "lines": 109,
+      "complexity": 6,
+      "start_line": 820,
+      "params": 3
+    },
+    {
+      "name": "detect_spread_regime",
+      "class": "RegimeDetector",
+      "file": "src\\ml_enhancements\\regime_detection\\regime_detector.py",
+      "lines": 117,
+      "complexity": 6,
+      "start_line": 179,
+      "params": 2
+    },
+    {
+      "name": "calculate_spread",
+      "class": "IntradayDataProcessor",
+      "file": "src\\data_processor\\intraday_processor.py",
+      "lines": 105,
+      "complexity": 5,
+      "start_line": 383,
+      "params": 5
+    },
+    {
+      "name": "train_models",
+      "class": "IntradaySignalProcessor",
+      "file": "src\\ml_enhancements\\intraday_signals.py",
+      "lines": 121,
+      "complexity": 5,
+      "start_line": 1417,
+      "params": 6
+    },
+    {
+      "name": "detect_cointegration_breakdown",
+      "class": "RegimeDetector",
+      "file": "src\\ml_enhancements\\regime_detection\\regime_detector.py",
+      "lines": 105,
+      "complexity": 5,
+      "start_line": 73,
+      "params": 4
+    },
+    {
+      "name": "create_app",
+      "class": null,
+      "file": "src\\web_interface\\app.py",
+      "lines": 105,
+      "complexity": 5,
+      "start_line": 23,
+      "params": 1
+    },
+    {
+      "name": "__init__",
+      "class": "LiveTrader",
+      "file": "src\\live_trading\\live_trader.py",
+      "lines": 129,
+      "complexity": 4,
+      "start_line": 33,
+      "params": 14
+    },
+    {
+      "name": "_generate_html_dashboard",
+      "class": "MonitoringDashboard",
+      "file": "src\\monitoring\\monitor_dashboard.py",
+      "lines": 132,
+      "complexity": 3,
+      "start_line": 541,
+      "params": 1
+    },
+    {
+      "name": "__init__",
+      "class": "PaperTrader",
+      "file": "src\\paper_trading\\paper_trader.py",
+      "lines": 108,
+      "complexity": 3,
+      "start_line": 38,
+      "params": 12
+    },
+    {
+      "name": "_calculate_equity_metrics",
+      "class": null,
+      "file": "src\\reporting\\metrics.py",
+      "lines": 106,
+      "complexity": 2,
+      "start_line": 77,
+      "params": 3
+    },
+    {
+      "name": "__init__",
+      "class": "IntradayBacktestEngine",
+      "file": "src\\backtest\\intraday_backtest_engine.py",
+      "lines": 111,
+      "complexity": 1,
+      "start_line": 30,
+      "params": 12
+    },
+    {
+      "name": "_load_default_config",
+      "class": "ConfigurationManager",
+      "file": "src\\config\\configuration.py",
+      "lines": 110,
+      "complexity": 1,
+      "start_line": 45,
+      "params": 1
+    }
+  ],
+  "similar_functions": [
+    {
+      "func1": "FixedIBConnector.is_connected",
+      "func2": "IBConnector.is_connected",
+      "file1": "src\\connectors\\ib\\fixed_connector.py",
+      "file2": "src\\connectors\\ib\\ib_connector.py",
+      "similarity": 1.0,
+      "lines1": 10,
+      "lines2": 10
+    },
+    {
+      "func1": "LiveTrader._setup_auto_shutdown",
+      "func2": "PaperTrader._setup_auto_shutdown",
+      "file1": "src\\live_trading\\live_trader.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 1.0,
+      "lines1": 29,
+      "lines2": 29
+    },
+    {
+      "func1": "IBConnector._notify_callbacks",
+      "func2": "PaperTrader._notify_callbacks",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 1.0,
+      "lines1": 19,
+      "lines2": 19
+    },
+    {
+      "func1": "GeneticOptimizer._evaluate_params",
+      "func2": "GridSearchOptimizer._evaluate_params",
+      "file1": "src\\optimization\\genetic_algorithm\\genetic_algorithm.py",
+      "file2": "src\\optimization\\grid_search\\grid_search.py",
+      "similarity": 0.9615384615384616,
+      "lines1": 63,
+      "lines2": 63
+    },
+    {
+      "func1": "get_running_processes",
+      "func2": "get_running_processes",
+      "file1": "src\\web_interface\\blueprints\\api\\routes.py",
+      "file2": "src\\web_interface\\blueprints\\strategy\\routes.py",
+      "similarity": 0.9583333333333334,
+      "lines1": 30,
+      "lines2": 28
+    },
+    {
+      "func1": "IBConnector.remove_callback",
+      "func2": "PaperTrader.remove_callback",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.9,
+      "lines1": 25,
+      "lines2": 25
+    },
+    {
+      "func1": "IBConnector.add_callback",
+      "func2": "PaperTrader.add_callback",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.8947368421052632,
+      "lines1": 22,
+      "lines2": 22
+    },
+    {
+      "func1": "CryptoAsset.get_data",
+      "func2": "EquityAsset.get_data",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\equities\\equity_asset.py",
+      "similarity": 0.8571428571428571,
+      "lines1": 29,
+      "lines2": 29
+    },
+    {
+      "func1": "CryptoAsset.get_data",
+      "func2": "FixedIncomeAsset.get_data",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.8571428571428571,
+      "lines1": 29,
+      "lines2": 29
+    },
+    {
+      "func1": "EquityAsset.get_data",
+      "func2": "FixedIncomeAsset.get_data",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.8571428571428571,
+      "lines1": 29,
+      "lines2": 29
+    },
+    {
+      "func1": "GeneticOptimizer._default_objective",
+      "func2": "GridSearchOptimizer._default_objective",
+      "file1": "src\\optimization\\genetic_algorithm\\genetic_algorithm.py",
+      "file2": "src\\optimization\\grid_search\\grid_search.py",
+      "similarity": 0.8235294117647058,
+      "lines1": 19,
+      "lines2": 20
+    },
+    {
+      "func1": "CryptoAsset.get_data",
+      "func2": "FuturesAsset.get_data",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.8214285714285714,
+      "lines1": 29,
+      "lines2": 28
+    },
+    {
+      "func1": "EquityAsset.get_data",
+      "func2": "FuturesAsset.get_data",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.8214285714285714,
+      "lines1": 29,
+      "lines2": 28
+    },
+    {
+      "func1": "FixedIncomeAsset.get_data",
+      "func2": "FuturesAsset.get_data",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.8214285714285714,
+      "lines1": 29,
+      "lines2": 28
+    },
+    {
+      "func1": "CryptoAsset.get_current_price",
+      "func2": "EquityAsset.get_current_price",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\equities\\equity_asset.py",
+      "similarity": 0.7777777777777778,
+      "lines1": 18,
+      "lines2": 18
+    },
+    {
+      "func1": "LiveTrader.is_running",
+      "func2": "TradingMonitor.is_running",
+      "file1": "src\\live_trading\\live_trader.py",
+      "file2": "src\\live_trading\\monitoring.py",
+      "similarity": 0.7777777777777778,
+      "lines1": 10,
+      "lines2": 10
+    },
+    {
+      "func1": "LiveTrader.is_running",
+      "func2": "PaperTrader.is_running",
+      "file1": "src\\live_trading\\live_trader.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.7777777777777778,
+      "lines1": 10,
+      "lines2": 10
+    },
+    {
+      "func1": "TradingMonitor.is_running",
+      "func2": "PaperTrader.is_running",
+      "file1": "src\\live_trading\\monitoring.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.7777777777777778,
+      "lines1": 10,
+      "lines2": 10
+    },
+    {
+      "func1": "PairsFinder.calculate_half_life",
+      "func2": "PairsSignalGenerator.calculate_half_life",
+      "file1": "src\\cointegration\\pairs_finder.py",
+      "file2": "src\\signal_generation\\pairs_signal_generator.py",
+      "similarity": 0.7692307692307693,
+      "lines1": 45,
+      "lines2": 44
+    },
+    {
+      "func1": "EquityAssetClass.get_trading_calendar",
+      "func2": "FixedIncomeAssetClass.get_trading_calendar",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.7272727272727273,
+      "lines1": 22,
+      "lines2": 22
+    },
+    {
+      "func1": "EquityAssetClass.get_market_holidays",
+      "func2": "FixedIncomeAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.7272727272727273,
+      "lines1": 22,
+      "lines2": 22
+    },
+    {
+      "func1": "CryptoAsset.get_current_price",
+      "func2": "FuturesAsset.get_current_price",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.7222222222222222,
+      "lines1": 18,
+      "lines2": 17
+    },
+    {
+      "func1": "EquityAsset.get_current_price",
+      "func2": "FuturesAsset.get_current_price",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.7222222222222222,
+      "lines1": 18,
+      "lines2": 17
+    },
+    {
+      "func1": "IntradaySignalEnhancer.predict_optimal_entry",
+      "func2": "IntradaySignalEnhancer.predict_optimal_exit",
+      "file1": "src\\ml_enhancements\\intraday_signals.py",
+      "file2": "src\\ml_enhancements\\intraday_signals.py",
+      "similarity": 0.6956521739130435,
+      "lines1": 50,
+      "lines2": 50
+    },
+    {
+      "func1": "CryptoAssetClass.__init__",
+      "func2": "EquityAssetClass.__init__",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\equities\\equity_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "CryptoAssetClass.__init__",
+      "func2": "FixedIncomeAssetClass.__init__",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "CryptoAssetClass.__init__",
+      "func2": "FuturesAssetClass.__init__",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "EquityAssetClass.__init__",
+      "func2": "FixedIncomeAssetClass.__init__",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "EquityAssetClass.__init__",
+      "func2": "FuturesAssetClass.__init__",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "FixedIncomeAssetClass.__init__",
+      "func2": "FuturesAssetClass.__init__",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.6923076923076923,
+      "lines1": 13,
+      "lines2": 13
+    },
+    {
+      "func1": "SystemShutdown.__init__",
+      "func2": "SystemStartup.__init__",
+      "file1": "src\\automation\\system_shutdown.py",
+      "file2": "src\\automation\\system_startup.py",
+      "similarity": 0.6875,
+      "lines1": 34,
+      "lines2": 34
+    },
+    {
+      "func1": "CryptoAsset.get_current_price",
+      "func2": "FixedIncomeAsset.get_current_price",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.6842105263157895,
+      "lines1": 18,
+      "lines2": 18
+    },
+    {
+      "func1": "EquityAsset.get_current_price",
+      "func2": "FixedIncomeAsset.get_current_price",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.6842105263157895,
+      "lines1": 18,
+      "lines2": 18
+    },
+    {
+      "func1": "IBConnector.add_callback",
+      "func2": "IBConnector.remove_callback",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\connectors\\ib\\ib_connector.py",
+      "similarity": 0.6818181818181818,
+      "lines1": 22,
+      "lines2": 25
+    },
+    {
+      "func1": "PaperTrader.add_callback",
+      "func2": "PaperTrader.remove_callback",
+      "file1": "src\\paper_trading\\paper_trader.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.6818181818181818,
+      "lines1": 22,
+      "lines2": 25
+    },
+    {
+      "func1": "RollingWindow.add_multiple",
+      "func2": "ExponentialRollingWindow.add_multiple",
+      "file1": "src\\performance\\data_structures\\rolling_window.py",
+      "file2": "src\\performance\\data_structures\\rolling_window.py",
+      "similarity": 0.6363636363636364,
+      "lines1": 11,
+      "lines2": 11
+    },
+    {
+      "func1": "FixedIncomeAsset.get_current_price",
+      "func2": "FuturesAsset.get_current_price",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.631578947368421,
+      "lines1": 18,
+      "lines2": 17
+    },
+    {
+      "func1": "LiveTrader._event_loop",
+      "func2": "PaperTrader._event_loop",
+      "file1": "src\\live_trading\\live_trader.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.625,
+      "lines1": 23,
+      "lines2": 25
+    },
+    {
+      "func1": "IntradaySignalEnhancer.predict_volume_pattern",
+      "func2": "IntradaySignalEnhancer.predict_correlation_change",
+      "file1": "src\\ml_enhancements\\intraday_signals.py",
+      "file2": "src\\ml_enhancements\\intraday_signals.py",
+      "similarity": 0.625,
+      "lines1": 50,
+      "lines2": 50
+    },
+    {
+      "func1": "IBConnector.add_callback",
+      "func2": "PaperTrader.remove_callback",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.6086956521739131,
+      "lines1": 22,
+      "lines2": 25
+    },
+    {
+      "func1": "IBConnector.remove_callback",
+      "func2": "PaperTrader.add_callback",
+      "file1": "src\\connectors\\ib\\ib_connector.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.6086956521739131,
+      "lines1": 25,
+      "lines2": 22
+    },
+    {
+      "func1": "GeneticOptimizer._evaluate_params",
+      "func2": "WalkForwardTester._test_parameters",
+      "file1": "src\\optimization\\genetic_algorithm\\genetic_algorithm.py",
+      "file2": "src\\optimization\\walk_forward\\walk_forward.py",
+      "similarity": 0.6,
+      "lines1": 63,
+      "lines2": 63
+    },
+    {
+      "func1": "GridSearchOptimizer._evaluate_params",
+      "func2": "WalkForwardTester._test_parameters",
+      "file1": "src\\optimization\\grid_search\\grid_search.py",
+      "file2": "src\\optimization\\walk_forward\\walk_forward.py",
+      "similarity": 0.6,
+      "lines1": 63,
+      "lines2": 63
+    },
+    {
+      "func1": "EquityAssetClass.get_trading_calendar",
+      "func2": "FuturesAssetClass.get_trading_calendar",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5909090909090909,
+      "lines1": 22,
+      "lines2": 19
+    },
+    {
+      "func1": "EquityAssetClass.get_market_holidays",
+      "func2": "FuturesAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5909090909090909,
+      "lines1": 22,
+      "lines2": 19
+    },
+    {
+      "func1": "FixedIncomeAssetClass.get_trading_calendar",
+      "func2": "FuturesAssetClass.get_trading_calendar",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5909090909090909,
+      "lines1": 22,
+      "lines2": 19
+    },
+    {
+      "func1": "FixedIncomeAssetClass.get_market_holidays",
+      "func2": "FuturesAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5909090909090909,
+      "lines1": 22,
+      "lines2": 19
+    },
+    {
+      "func1": "IntradaySignalEnhancer.predict_signal_quality",
+      "func2": "IntradaySignalEnhancer.predict_optimal_entry",
+      "file1": "src\\ml_enhancements\\intraday_signals.py",
+      "file2": "src\\ml_enhancements\\intraday_signals.py",
+      "similarity": 0.5740740740740741,
+      "lines1": 59,
+      "lines2": 50
+    },
+    {
+      "func1": "IntradaySignalEnhancer.predict_signal_quality",
+      "func2": "IntradaySignalEnhancer.predict_optimal_exit",
+      "file1": "src\\ml_enhancements\\intraday_signals.py",
+      "file2": "src\\ml_enhancements\\intraday_signals.py",
+      "similarity": 0.5740740740740741,
+      "lines1": 59,
+      "lines2": 50
+    },
+    {
+      "func1": "AdvancedFeatureEngineering.__init__",
+      "func2": "IntradayFeatureEngineering.__init__",
+      "file1": "src\\ml_enhancements\\feature_engineering\\advanced_features.py",
+      "file2": "src\\ml_enhancements\\feature_engineering\\intraday_features.py",
+      "similarity": 0.5641025641025641,
+      "lines1": 39,
+      "lines2": 35
+    },
+    {
+      "func1": "run_data_collection",
+      "func2": "run_feature_generation",
+      "file1": "src\\automation\\data_flow_automation.py",
+      "file2": "src\\automation\\data_flow_automation.py",
+      "similarity": 0.5636363636363636,
+      "lines1": 54,
+      "lines2": 54
+    },
+    {
+      "func1": "AssetClass.get_market_holidays",
+      "func2": "CryptoAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\base.py",
+      "file2": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "similarity": 0.5625,
+      "lines1": 15,
+      "lines2": 16
+    },
+    {
+      "func1": "IntradayMLSystem._load_config",
+      "func2": "AdaptiveParameterManager._load_config",
+      "file1": "src\\ml_enhancements\\intraday_integration.py",
+      "file2": "src\\optimization\\adaptive_parameter_manager.py",
+      "similarity": 0.56,
+      "lines1": 22,
+      "lines2": 25
+    },
+    {
+      "func1": "EquityAsset.get_trading_hours",
+      "func2": "FixedIncomeAsset.get_trading_hours",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "similarity": 0.5555555555555556,
+      "lines1": 23,
+      "lines2": 23
+    },
+    {
+      "func1": "AssetClass.get_trading_calendar",
+      "func2": "FuturesAssetClass.get_trading_calendar",
+      "file1": "src\\asset_classes\\base.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5555555555555556,
+      "lines1": 15,
+      "lines2": 19
+    },
+    {
+      "func1": "AssetClass.get_market_holidays",
+      "func2": "FuturesAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\base.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5555555555555556,
+      "lines1": 15,
+      "lines2": 19
+    },
+    {
+      "func1": "target",
+      "func2": "target",
+      "file1": "src\\connectors\\ib\\contract_utils.py",
+      "file2": "src\\connectors\\ib\\contract_utils.py",
+      "similarity": 0.5555555555555556,
+      "lines1": 8,
+      "lines2": 8
+    },
+    {
+      "func1": "LiveTrader.stop",
+      "func2": "PaperTrader.stop",
+      "file1": "src\\live_trading\\live_trader.py",
+      "file2": "src\\paper_trading\\paper_trader.py",
+      "similarity": 0.5526315789473685,
+      "lines1": 47,
+      "lines2": 34
+    },
+    {
+      "func1": "MonitoredLiveTrader._register_callbacks",
+      "func2": "TrackedLiveTrader._register_callbacks",
+      "file1": "src\\live_trading\\example_with_monitoring.py",
+      "file2": "src\\live_trading\\example_with_position_tracking.py",
+      "similarity": 0.5454545454545454,
+      "lines1": 10,
+      "lines2": 7
+    },
+    {
+      "func1": "FixedIBConnector.disconnect",
+      "func2": "IBConnector.disconnect",
+      "file1": "src\\connectors\\ib\\fixed_connector.py",
+      "file2": "src\\connectors\\ib\\ib_connector.py",
+      "similarity": 0.5294117647058824,
+      "lines1": 11,
+      "lines2": 21
+    },
+    {
+      "func1": "CryptoAssetClass.get_market_holidays",
+      "func2": "FuturesAssetClass.get_market_holidays",
+      "file1": "src\\asset_classes\\cryptocurrencies\\crypto_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5263157894736842,
+      "lines1": 16,
+      "lines2": 19
+    },
+    {
+      "func1": "EquityAsset.get_trading_hours",
+      "func2": "FuturesAsset.get_trading_hours",
+      "file1": "src\\asset_classes\\equities\\equity_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5185185185185185,
+      "lines1": 23,
+      "lines2": 22
+    },
+    {
+      "func1": "FixedIncomeAsset.get_trading_hours",
+      "func2": "FuturesAsset.get_trading_hours",
+      "file1": "src\\asset_classes\\fixed_income\\fixed_income_asset.py",
+      "file2": "src\\asset_classes\\futures\\futures_asset.py",
+      "similarity": 0.5185185185185185,
+      "lines1": 23,
+      "lines2": 22
+    }
+  ],
+  "import_analysis": {
+    "total_modules": 149,
+    "connected_components": 149,
+    "isolated_modules": [
+      "src.main",
+      "src.pairs_trading_strategy",
+      "src.test_pair_selection",
+      "src.__init__",
+      "src.asset_classes.base",
+      "src.asset_classes.factory",
+      "src.asset_classes.__init__",
+      "src.asset_classes.cryptocurrencies.crypto_asset",
+      "src.asset_classes.cryptocurrencies.__init__",
+      "src.asset_classes.equities.equity_asset",
+      "src.asset_classes.equities.__init__",
+      "src.asset_classes.fixed_income.fixed_income_asset",
+      "src.asset_classes.fixed_income.__init__",
+      "src.asset_classes.futures.futures_asset",
+      "src.asset_classes.futures.__init__",
+      "src.automation.automation_monitor",
+      "src.automation.data_flow_automation",
+      "src.automation.master_orchestration",
+      "src.automation.system_shutdown",
+      "src.automation.system_startup",
+      "src.automation.task_orchestrator",
+      "src.automation.windows_scheduler_setup",
+      "src.backtest.backtest_engine",
+      "src.backtest.intraday_backtest_engine",
+      "src.backtest.intraday_performance_visualization",
+      "src.backtest.__init__",
+      "src.cointegration.cointegration_tests",
+      "src.cointegration.intraday_pair_analyzer",
+      "src.cointegration.pairs_finder",
+      "src.cointegration.pair_finder",
+      "src.cointegration.__init__",
+      "src.config.configuration",
+      "src.config.__init__",
+      "src.connectors.ib.contract_utils",
+      "src.connectors.ib.fixed_connector",
+      "src.connectors.ib.ib_connector",
+      "src.connectors.ib.ib_utils",
+      "src.connectors.ib.__init__",
+      "src.data_processing.data_processor",
+      "src.data_processor.data_loader",
+      "src.data_processor.data_processor",
+      "src.data_processor.feature_calculator",
+      "src.data_processor.futures_processor",
+      "src.data_processor.intraday_processor",
+      "src.data_processor.__init__",
+      "src.diagnostics.benchmark_real_time",
+      "src.live_trading.example",
+      "src.live_trading.example_with_monitoring",
+      "src.live_trading.example_with_position_tracking",
+      "src.live_trading.live_trader",
+      "src.live_trading.monitoring",
+      "src.live_trading.position_tracker",
+      "src.live_trading.__init__",
+      "src.ml_enhancements.data_augmentation",
+      "src.ml_enhancements.ensemble_models",
+      "src.ml_enhancements.intraday_integration",
+      "src.ml_enhancements.intraday_model_trainer",
+      "src.ml_enhancements.intraday_signals",
+      "src.ml_enhancements.model_retraining",
+      "src.ml_enhancements.training_utils",
+      "src.ml_enhancements.__init__",
+      "src.ml_enhancements.feature_engineering.advanced_features",
+      "src.ml_enhancements.feature_engineering.feature_generator",
+      "src.ml_enhancements.feature_engineering.intraday_features",
+      "src.ml_enhancements.feature_engineering.__init__",
+      "src.ml_enhancements.regime_detection.market_regime_classifier",
+      "src.ml_enhancements.regime_detection.regime_detector",
+      "src.ml_enhancements.regime_detection.__init__",
+      "src.ml_enhancements.spread_prediction.model_factory",
+      "src.ml_enhancements.spread_prediction.spread_predictor",
+      "src.ml_enhancements.spread_prediction.__init__",
+      "src.monitoring.alert_system",
+      "src.monitoring.monitor_dashboard",
+      "src.optimization.adaptive_parameter_manager",
+      "src.optimization.intraday_parameter_optimizer",
+      "src.optimization.parameter_space",
+      "src.optimization.__init__",
+      "src.optimization.genetic_algorithm.genetic_algorithm",
+      "src.optimization.genetic_algorithm.__init__",
+      "src.optimization.grid_search.grid_search",
+      "src.optimization.grid_search.__init__",
+      "src.optimization.walk_forward.walk_forward",
+      "src.optimization.walk_forward.__init__",
+      "src.pair_trading.pair_finder",
+      "src.pair_trading.__init__",
+      "src.paper_trading.example",
+      "src.paper_trading.intraday_ml_paper_trader",
+      "src.paper_trading.paper_trader",
+      "src.paper_trading.__init__",
+      "src.performance.__init__",
+      "src.performance.caching.data_cache",
+      "src.performance.caching.function_cache",
+      "src.performance.caching.__init__",
+      "src.performance.data_structures.compressed_ohlc",
+      "src.performance.data_structures.rolling_window",
+      "src.performance.data_structures.sparse_time_series",
+      "src.performance.data_structures.__init__",
+      "src.performance.parallel.parallel_executor",
+      "src.performance.parallel.task_pool",
+      "src.performance.parallel.__init__",
+      "src.portfolio.pairs_portfolio",
+      "src.real_time.signal_optimizer",
+      "src.reporting.example",
+      "src.reporting.metrics",
+      "src.reporting.metrics_fix",
+      "src.reporting.report_generator",
+      "src.reporting.__init__",
+      "src.risk_management.position_sizer",
+      "src.risk_management.risk_manager",
+      "src.risk_management.__init__",
+      "src.signals.signal_generator",
+      "src.signals.__init__",
+      "src.signal_generation.pairs_signal_generator",
+      "src.signal_generation.signal_generator",
+      "src.signal_generation.signal_processor",
+      "src.signal_generation.spread_calculator",
+      "src.signal_generation.__init__",
+      "src.spread_analytics.spread_analyzer",
+      "src.spread_analytics.__init__",
+      "src.strategies.base",
+      "src.strategies.multi_pair_portfolio",
+      "src.strategies.__init__",
+      "src.strategy_variants.factory",
+      "src.strategy_variants.__init__",
+      "src.strategy_variants.ml_signals.ml_signal_strategy",
+      "src.strategy_variants.ml_signals.__init__",
+      "src.strategy_variants.time_series.time_series_strategy",
+      "src.strategy_variants.time_series.__init__",
+      "src.utils.error_handling",
+      "src.utils.json_utils",
+      "src.utils.technical_indicators",
+      "src.utils.utils",
+      "src.utils.__init__",
+      "src.visualization.plotting",
+      "src.visualization.__init__",
+      "src.web_interface.app",
+      "src.web_interface.models",
+      "src.web_interface.utils",
+      "src.web_interface.__init__",
+      "src.web_interface.blueprints.api.routes",
+      "src.web_interface.blueprints.api.__init__",
+      "src.web_interface.blueprints.auth.routes",
+      "src.web_interface.blueprints.auth.__init__",
+      "src.web_interface.blueprints.configuration.routes",
+      "src.web_interface.blueprints.configuration.__init__",
+      "src.web_interface.blueprints.dashboard.routes",
+      "src.web_interface.blueprints.dashboard.__init__",
+      "src.web_interface.blueprints.strategy.routes",
+      "src.web_interface.blueprints.strategy.__init__"
+    ],
+    "largest_component_size": 1,
+    "graph_density": 0
+  }
+}

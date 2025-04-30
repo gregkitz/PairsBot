@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quality Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .dashboard-header {
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .metric-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .chart-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            height: 300px;
+        }
+        .table-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        .good {
+            color: #28a745;
+        }
+        .warning {
+            color: #ffc107;
+        }
+        .danger {
+            color: #dc3545;
+        }
+        .badge {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="dashboard-header">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Code Quality Dashboard</h1>
+                    <p>Project: <strong>Trading System</strong></p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Generated on: <strong>2025-03-22 20:05:07</strong></p>
+                    <p>Files analyzed: <strong>169</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="metric-card text-center">
+                    <h5>Total Lines of Code</h5>
+                    <div class="metric-value">67158</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card text-center">
+                    <h5>Docstring Coverage</h5>
+                    <div class="metric-value good">94.0%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card text-center">
+                    <h5>Type Hint Coverage</h5>
+                    <div class="metric-value danger">7.4%</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="metric-card text-center">
+                    <h5>Duplicate Blocks</h5>
+                    <div class="metric-value danger">4014</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="complexityChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="chart-container">
+                    <canvas id="lineTypesChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-container">
+                    <h4>Files with Highest Complexity</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>File</th>
+                                    <th>Lines</th>
+                                    <th>Max Complexity</th>
+                                    <th>Avg Complexity</th>
+                                    <th>Docstring</th>
+                                    <th>Type Hints</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+        <tr>
+            <td>statistical_methods.py</td>
+            <td>2170</td>
+            <td>
+                <span class="danger">
+                    45.0
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    17.8
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>cointegration_plots.py</td>
+            <td>1842</td>
+            <td>
+                <span class="danger">
+                    40.0
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    15.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    91.7%
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    90.9%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>intraday_signals.py</td>
+            <td>1538</td>
+            <td>
+                <span class="danger">
+                    31.0
+                </span>
+            </td>
+            <td>
+                <span class="warning">
+                    9.3
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>main.py</td>
+            <td>388</td>
+            <td>
+                <span class="danger">
+                    29.0
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    11.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>multi_pair_portfolio.py</td>
+            <td>630</td>
+            <td>
+                <span class="danger">
+                    26.0
+                </span>
+            </td>
+            <td>
+                <span class="warning">
+                    8.4
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>report_generator.py</td>
+            <td>788</td>
+            <td>
+                <span class="danger">
+                    24.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    4.5
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>feature_generator.py</td>
+            <td>568</td>
+            <td>
+                <span class="danger">
+                    22.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    7.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>compressed_ohlc.py</td>
+            <td>777</td>
+            <td>
+                <span class="danger">
+                    22.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    5.4
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    90.5%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>signal_generator.py</td>
+            <td>1365</td>
+            <td>
+                <span class="danger">
+                    22.0
+                </span>
+            </td>
+            <td>
+                <span class="warning">
+                    8.5
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    96.3%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>position_tracker.py</td>
+            <td>1165</td>
+            <td>
+                <span class="danger">
+                    21.0
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    5.2
+                </span>
+            </td>
+            <td>
+                <span class="good">
+                    100.0%
+                </span>
+            </td>
+            <td>
+                <span class="danger">
+                    0.0%
+                </span>
+            </td>
+        </tr>
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-container">
+                    <h4>Duplicate Code Blocks</h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Lines</th>
+                                    <th>Tokens</th>
+                                    <th>Occurrences</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+        <tr>
+            <td>5</td>
+            <td>41</td>
+            <td><ul class='list-unstyled'><li>main.py:6</li><li>position_tracker.py:7</li><li>ml_signal_strategy.py:6</li><li>... and 8 more</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>66</td>
+            <td><ul class='list-unstyled'><li>main.py:7</li><li>main.py:8</li><li>app.py:7</li><li>... and 1 more</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>174</td>
+            <td><ul class='list-unstyled'><li>main.py:20</li><li>main.py:21</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>160</td>
+            <td><ul class='list-unstyled'><li>main.py:25</li><li>main.py:26</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>157</td>
+            <td><ul class='list-unstyled'><li>main.py:73</li><li>main.py:74</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>148</td>
+            <td><ul class='list-unstyled'><li>main.py:92</li><li>main.py:93</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>220</td>
+            <td><ul class='list-unstyled'><li>main.py:99</li><li>main.py:135</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>269</td>
+            <td><ul class='list-unstyled'><li>main.py:100</li><li>main.py:136</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>191</td>
+            <td><ul class='list-unstyled'><li>main.py:101</li><li>main.py:137</li></ul></td>
+        </tr>
+        
+
+        <tr>
+            <td>5</td>
+            <td>158</td>
+            <td><ul class='list-unstyled'><li>main.py:128</li><li>main.py:129</li></ul></td>
+        </tr>
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Complexity distribution chart
+        const complexityCtx = document.getElementById('complexityChart').getContext('2d');
+        const complexityChart = new Chart(complexityCtx, {
+            type: 'bar',
+            data: {
+                labels: ['1-5', '6-10', '11-15', '16-20', '21+'],
+                datasets: [{
+                    label: 'Number of Files',
+                    data: [63, 32, 36, 26, 12],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(255, 99, 132, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Cyclomatic Complexity Distribution'
+                    },
+                    legend: {
+                        display: false
+                    },
+                    datalabels: {
+                        color: '#fff',
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Number of Files'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Complexity Range'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Line types chart
+        const lineTypesCtx = document.getElementById('lineTypesChart').getContext('2d');
+        const lineTypesChart = new Chart(lineTypesCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Code', 'Comments', 'Docstrings', 'Blank'],
+                datasets: [{
+                    data: [32603, 6483, 18707, 9365],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(201, 203, 207, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(201, 203, 207, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Line Type Distribution'
+                    },
+                    datalabels: {
+                        formatter: (value, ctx) => {
+                            let sum = 0;
+                            let dataArr = ctx.chart.data.datasets[0].data;
+                            dataArr.map(data => {
+                                sum += data;
+                            });
+                            let percentage = (value*100 / sum).toFixed(1)+"%";
+                            return percentage;
+                        },
+                        color: '#fff',
+                        font: {
+                            weight: 'bold'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

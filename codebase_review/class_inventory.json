@@ -1,0 +1,889 @@
+{
+  "tests": [
+    {
+      "name": "TestIntradayBacktestEngine",
+      "path": "tests/test_intraday_backtest_engine.py",
+      "docstring": "Test cases for the IntradayBacktestEngine class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 11
+    },
+    {
+      "name": "OrderType",
+      "path": "tests/mocks/mock_exchange.py",
+      "docstring": "Order types supported by the mock exchange.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "OrderStatus",
+      "path": "tests/mocks/mock_exchange.py",
+      "docstring": "Order statuses supported by the mock exchange.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "OrderSide",
+      "path": "tests/mocks/mock_exchange.py",
+      "docstring": "Order sides supported by the mock exchange.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "MockExchange",
+      "path": "tests/mocks/mock_exchange.py",
+      "docstring": "Mock implementation of an exchange for testing purposes.\n    \n    This class simulates an exchange that can accept and execute orders,\n    maintain a simple order book, and provide market data for testing.",
+      "base_classes": [],
+      "methods": 18
+    },
+    {
+      "name": "MockMarketDataProvider",
+      "path": "tests/mocks/mock_market_data.py",
+      "docstring": "Mock implementation of a market data provider for testing purposes.\n    \n    This class simulates a market data provider that can generate synthetic\n    price data or load test data from files.",
+      "base_classes": [],
+      "methods": 7
+    },
+    {
+      "name": "MockIBConnector",
+      "path": "tests/mocks/mock_ib_connector.py",
+      "docstring": "Mock implementation of IBConnector for testing purposes.\n    \n    This class mimics the behavior of the IBConnector class but uses\n    simulated data rather than connecting to the Interactive Brokers API.",
+      "base_classes": [],
+      "methods": 14
+    },
+    {
+      "name": "TestAssetFactory",
+      "path": "tests/unit/asset_classes/test_factory.py",
+      "docstring": "Test cases for asset factory functions.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 12
+    },
+    {
+      "name": "ConcreteAsset",
+      "path": "tests/unit/asset_classes/test_base.py",
+      "docstring": "Concrete implementation of Asset for testing.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 4
+    },
+    {
+      "name": "ConcreteAssetClass",
+      "path": "tests/unit/asset_classes/test_base.py",
+      "docstring": "Concrete implementation of AssetClass for testing.",
+      "base_classes": [
+        "AssetClass"
+      ],
+      "methods": 4
+    },
+    {
+      "name": "TestAsset",
+      "path": "tests/unit/asset_classes/test_base.py",
+      "docstring": "Test case for the Asset base class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 3
+    },
+    {
+      "name": "TestAssetClass",
+      "path": "tests/unit/asset_classes/test_base.py",
+      "docstring": "Test case for the AssetClass base class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 6
+    },
+    {
+      "name": "TestFuturesAsset",
+      "path": "tests/unit/asset_classes/futures/test_futures_asset.py",
+      "docstring": "Test class for FuturesAsset.",
+      "base_classes": [],
+      "methods": 8
+    },
+    {
+      "name": "TestCryptoAsset",
+      "path": "tests/unit/asset_classes/cryptocurrencies/test_crypto_asset.py",
+      "docstring": "Test cases for the CryptoAsset class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 17
+    },
+    {
+      "name": "TestCryptoAssetClass",
+      "path": "tests/unit/asset_classes/cryptocurrencies/test_crypto_asset.py",
+      "docstring": "Test cases for the CryptoAssetClass class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 10
+    },
+    {
+      "name": "TestFixedIncomeAsset",
+      "path": "tests/unit/asset_classes/fixed_income/test_fixed_income_asset.py",
+      "docstring": "Test cases for the FixedIncomeAsset class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 16
+    },
+    {
+      "name": "TestFixedIncomeAssetClass",
+      "path": "tests/unit/asset_classes/fixed_income/test_fixed_income_asset.py",
+      "docstring": "Test cases for the FixedIncomeAssetClass class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 14
+    },
+    {
+      "name": "TestEquityAsset",
+      "path": "tests/unit/asset_classes/equities/test_equity_asset.py",
+      "docstring": "Test cases for the EquityAsset class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 10
+    },
+    {
+      "name": "TestEquityAssetClass",
+      "path": "tests/unit/asset_classes/equities/test_equity_asset.py",
+      "docstring": "Test cases for the EquityAssetClass class.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 14
+    },
+    {
+      "name": "MockAsset",
+      "path": "tests/unit/strategy_variants/test_multi_pair_portfolio.py",
+      "docstring": "Mock asset implementation for testing.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 4
+    },
+    {
+      "name": "TestMultiPairPortfolio",
+      "path": "tests/unit/strategy_variants/test_multi_pair_portfolio.py",
+      "docstring": "Test cases for MultiPairPortfolio strategy.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 8
+    },
+    {
+      "name": "TestSignalGenerator",
+      "path": "tests/unit/signal_generation/test_signal_generator.py",
+      "docstring": "Test class for SignalGenerator.",
+      "base_classes": [],
+      "methods": 8
+    },
+    {
+      "name": "TestCointegrationTests",
+      "path": "tests/unit/cointegration/test_cointegration_tests.py",
+      "docstring": "Test class for cointegration testing functions.",
+      "base_classes": [],
+      "methods": 5
+    },
+    {
+      "name": "TestRiskManager",
+      "path": "tests/unit/risk_management/test_risk_manager.py",
+      "docstring": "Test class for RiskManager.",
+      "base_classes": [],
+      "methods": 11
+    },
+    {
+      "name": "TestPaperTrader",
+      "path": "tests/unit/paper_trading/test_paper_trader.py",
+      "docstring": "Test class for PaperTrader.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "TestDataProcessor",
+      "path": "tests/unit/data_processor/test_data_processor.py",
+      "docstring": "Test class for DataProcessor.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "TestSpreadAnalyzer",
+      "path": "tests/unit/spread_analytics/test_spread_analyzer.py",
+      "docstring": "Test class for SpreadAnalyzer.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "TestMultiAssetIntegration",
+      "path": "tests/integration/test_multi_asset_integration.py",
+      "docstring": "Integration tests for multi-asset support.",
+      "base_classes": [],
+      "methods": 4
+    },
+    {
+      "name": "TestStrategyExecution",
+      "path": "tests/integration/test_strategy_execution.py",
+      "docstring": "Integration tests for the strategy execution flow.",
+      "base_classes": [],
+      "methods": 2
+    },
+    {
+      "name": "TestIBIntegration",
+      "path": "tests/integration/test_ib_integration.py",
+      "docstring": "Integration tests with Interactive Brokers TWS.",
+      "base_classes": [
+        "unittest.TestCase"
+      ],
+      "methods": 9
+    },
+    {
+      "name": "TestDataFlow",
+      "path": "tests/integration/test_data_flow.py",
+      "docstring": "Integration tests for the data flow between components.",
+      "base_classes": [],
+      "methods": 5
+    }
+  ],
+  "codebase_review": [
+    {
+      "name": "CodebaseAnalyzer",
+      "path": "codebase_review/codebase_analyzer.py",
+      "docstring": "Analyzes the codebase and generates reports.",
+      "base_classes": [],
+      "methods": 11
+    }
+  ],
+  "src": [
+    {
+      "name": "PairsTradingStrategy",
+      "path": "src/pairs_trading_strategy.py",
+      "docstring": "Main class for the pairs trading strategy. Integrates all components:\n    - Pair selection and cointegration testing\n    - Spread calculation with dynamic hedge ratio\n    - Signal generation\n    - Position sizing and risk management",
+      "base_classes": [],
+      "methods": 10
+    }
+  ],
+  "connectors": [
+    {
+      "name": "FixedIBConnector",
+      "path": "src/connectors/ib/fixed_connector.py",
+      "docstring": "Fixed version of the IBConnector for testing integration with TWS.\n    \n    This class simplifies the IBConnector and fixes issues with the API calls.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "IBConnector",
+      "path": "src/connectors/ib/ib_connector.py",
+      "docstring": "Interactive Brokers (IB) Connector for the Intraday Statistical Arbitrage System.\n    \n    This class provides a high-level interface to Interactive Brokers for\n    market data retrieval, order execution, and account management.",
+      "base_classes": [],
+      "methods": 32
+    }
+  ],
+  "asset_classes": [
+    {
+      "name": "Asset",
+      "path": "src/asset_classes/base.py",
+      "docstring": "Base class for all asset types.\n    \n    This abstract base class defines the interface that all assets must implement.",
+      "base_classes": [
+        "abc.ABC"
+      ],
+      "methods": 7
+    },
+    {
+      "name": "AssetClass",
+      "path": "src/asset_classes/base.py",
+      "docstring": "Base class for all asset classes.\n    \n    This abstract base class defines the interface that all asset classes must implement.",
+      "base_classes": [
+        "abc.ABC"
+      ],
+      "methods": 9
+    },
+    {
+      "name": "FuturesAsset",
+      "path": "src/asset_classes/futures/futures_asset.py",
+      "docstring": "Futures asset implementation for trading futures contracts.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 8
+    },
+    {
+      "name": "FuturesAssetClass",
+      "path": "src/asset_classes/futures/futures_asset.py",
+      "docstring": "Futures asset class implementation.",
+      "base_classes": [
+        "AssetClass"
+      ],
+      "methods": 7
+    },
+    {
+      "name": "CryptoAsset",
+      "path": "src/asset_classes/cryptocurrencies/crypto_asset.py",
+      "docstring": "Cryptocurrency asset implementation for trading digital currencies.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 8
+    },
+    {
+      "name": "CryptoAssetClass",
+      "path": "src/asset_classes/cryptocurrencies/crypto_asset.py",
+      "docstring": "Cryptocurrency asset class implementation.",
+      "base_classes": [
+        "AssetClass"
+      ],
+      "methods": 7
+    },
+    {
+      "name": "FixedIncomeAsset",
+      "path": "src/asset_classes/fixed_income/fixed_income_asset.py",
+      "docstring": "Fixed Income asset implementation for trading bonds and other debt instruments.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 7
+    },
+    {
+      "name": "FixedIncomeAssetClass",
+      "path": "src/asset_classes/fixed_income/fixed_income_asset.py",
+      "docstring": "Fixed Income asset class implementation.",
+      "base_classes": [
+        "AssetClass"
+      ],
+      "methods": 8
+    },
+    {
+      "name": "EquityAsset",
+      "path": "src/asset_classes/equities/equity_asset.py",
+      "docstring": "Equity asset implementation for trading stocks and ETFs.",
+      "base_classes": [
+        "Asset"
+      ],
+      "methods": 8
+    },
+    {
+      "name": "EquityAssetClass",
+      "path": "src/asset_classes/equities/equity_asset.py",
+      "docstring": "Equity asset class implementation.",
+      "base_classes": [
+        "AssetClass"
+      ],
+      "methods": 8
+    }
+  ],
+  "reporting": [
+    {
+      "name": "BacktestReportGenerator",
+      "path": "src/reporting/report_generator.py",
+      "docstring": "Backtest Report Generator for the Intraday Statistical Arbitrage System.\n    \n    This class creates comprehensive HTML reports from backtest results with\n    interactive visualizations and metrics, making it easy to analyze and\n    share backtest results.",
+      "base_classes": [],
+      "methods": 12
+    }
+  ],
+  "config": [
+    {
+      "name": "TimeFilter",
+      "path": "src/config/configuration.py",
+      "docstring": "Enum for time-based filtering",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "ConfigurationManager",
+      "path": "src/config/configuration.py",
+      "docstring": "Manages configuration settings for the pairs trading system.\n    \n    This class provides functionality to load, save, and access \n    configuration settings from various sources (JSON, YAML, etc.).",
+      "base_classes": [],
+      "methods": 9
+    }
+  ],
+  "live_trading": [
+    {
+      "name": "TrackedLiveTrader",
+      "path": "src/live_trading/example_with_position_tracking.py",
+      "docstring": "LiveTrader extended with PositionTracker for comprehensive position management.",
+      "base_classes": [],
+      "methods": 15
+    },
+    {
+      "name": "MonitoredLiveTrader",
+      "path": "src/live_trading/example_with_monitoring.py",
+      "docstring": "Combined LiveTrader and TradingMonitor for a full monitored live trading setup.",
+      "base_classes": [],
+      "methods": 15
+    },
+    {
+      "name": "TradingMonitor",
+      "path": "src/live_trading/monitoring.py",
+      "docstring": "Trading monitoring system that provides:\n    - Performance tracking\n    - Email/SMS notifications\n    - Error detection and reporting\n    - System health monitoring\n    - Performance dashboard data",
+      "base_classes": [],
+      "methods": 21
+    },
+    {
+      "name": "LiveTrader",
+      "path": "src/live_trading/live_trader.py",
+      "docstring": "Live Trading implementation for the Intraday Statistical Arbitrage System.\n    \n    This class provides a live trading environment that connects to Interactive Brokers\n    for real market data and order execution, allowing for actual trading of strategies.",
+      "base_classes": [],
+      "methods": 30
+    },
+    {
+      "name": "PositionTracker",
+      "path": "src/live_trading/position_tracker.py",
+      "docstring": "Position tracking system that provides:\n    - Position lifecycle management\n    - P&L calculation and tracking\n    - Trade history recording\n    - Position status reporting",
+      "base_classes": [],
+      "methods": 24
+    }
+  ],
+  "strategies": [
+    {
+      "name": "MultiPairPortfolio",
+      "path": "src/strategies/multi_pair_portfolio.py",
+      "docstring": "Multi-pair portfolio strategy that manages multiple pairs simultaneously.\n    This strategy balances risk across pairs and optimizes overall portfolio performance.",
+      "base_classes": [
+        "Strategy"
+      ],
+      "methods": 9
+    },
+    {
+      "name": "Strategy",
+      "path": "src/strategies/base.py",
+      "docstring": "Base class for all trading strategies.\n    \n    This abstract base class defines the interface that all strategies must implement.",
+      "base_classes": [
+        "abc.ABC"
+      ],
+      "methods": 5
+    }
+  ],
+  "optimization": [
+    {
+      "name": "AdaptiveParameterManager",
+      "path": "src/optimization/adaptive_parameter_manager.py",
+      "docstring": "Manages and applies regime-specific parameters for intraday trading.\n    \n    This class loads a configuration file with regime-specific parameters,\n    detects the current market regime, and provides the appropriate parameters\n    for the current market conditions.",
+      "base_classes": [],
+      "methods": 12
+    },
+    {
+      "name": "IntradayParameterOptimizer",
+      "path": "src/optimization/intraday_parameter_optimizer.py",
+      "docstring": "Intraday Parameter Optimizer with regime-specific parameter optimization.\n    \n    This class extends GridSearchOptimizer to create regime-specific parameter\n    sets for intraday trading strategies.",
+      "base_classes": [],
+      "methods": 8
+    },
+    {
+      "name": "ParameterSpace",
+      "path": "src/optimization/parameter_space.py",
+      "docstring": "Defines the parameter space for optimization.\n    \n    This class provides methods for defining the search space for parameters\n    and for sampling from this space.",
+      "base_classes": [],
+      "methods": 6
+    },
+    {
+      "name": "GeneticOptimizer",
+      "path": "src/optimization/genetic_algorithm/genetic_algorithm.py",
+      "docstring": "Genetic Algorithm Optimizer for Pairs Trading Strategy.\n    \n    This class implements a genetic algorithm approach to find optimal parameters\n    for the pairs trading strategy by evolving generations of parameter settings.",
+      "base_classes": [],
+      "methods": 11
+    },
+    {
+      "name": "GridSearchOptimizer",
+      "path": "src/optimization/grid_search/grid_search.py",
+      "docstring": "Grid Search Optimizer for Pairs Trading Strategy.\n    \n    This class implements a grid search approach to find optimal parameters\n    for the pairs trading strategy.",
+      "base_classes": [],
+      "methods": 6
+    },
+    {
+      "name": "WalkForwardTester",
+      "path": "src/optimization/walk_forward/walk_forward.py",
+      "docstring": "Walk-Forward Testing Framework for Pairs Trading Strategy.\n    \n    This class implements a walk-forward testing approach that:\n    1. Divides data into multiple training and testing windows\n    2. Optimizes parameters on each training window\n    3. Tests the optimal parameters on the subsequent out-of-sample testing window\n    4. Aggregates results across all testing periods\n    \n    This approach provides a more realistic assessment of strategy performance\n    and helps prevent overfitting to historical data.",
+      "base_classes": [],
+      "methods": 9
+    }
+  ],
+  "signal_generation": [
+    {
+      "name": "PairsSignalGenerator",
+      "path": "src/signal_generation/pairs_signal_generator.py",
+      "docstring": "Generate trading signals for pairs trading strategies.",
+      "base_classes": [],
+      "methods": 10
+    },
+    {
+      "name": "SpreadCalculator",
+      "path": "src/signal_generation/spread_calculator.py",
+      "docstring": "Class for calculating and normalizing spreads between two assets.\n    Includes methods for static and dynamic (Kalman filter) hedge ratio calculations.",
+      "base_classes": [],
+      "methods": 9
+    }
+  ],
+  "signals": [
+    {
+      "name": "SignalGenerator",
+      "path": "src/signals/signal_generator.py",
+      "docstring": "Generates trading signals based on spread analysis.\n    \n    This class provides methods for generating entry and exit signals\n    for pairs trading using various statistical approaches.",
+      "base_classes": [],
+      "methods": 11
+    },
+    {
+      "name": "SignalType",
+      "path": "src/signals/signal_generator.py",
+      "docstring": "Enum for signal types.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    }
+  ],
+  "pair_trading": [
+    {
+      "name": "PairFinder",
+      "path": "src/pair_trading/pair_finder.py",
+      "docstring": "Pair finder class for identifying cointegrated pairs of assets.",
+      "base_classes": [],
+      "methods": 2
+    }
+  ],
+  "cointegration": [
+    {
+      "name": "PairsFinder",
+      "path": "src/cointegration/pairs_finder.py",
+      "docstring": "Identify cointegrated pairs of financial instruments.",
+      "base_classes": [],
+      "methods": 6
+    },
+    {
+      "name": "IntradayPairAnalyzer",
+      "path": "src/cointegration/intraday_pair_analyzer.py",
+      "docstring": "Analyze cointegration relationships at intraday timeframes.",
+      "base_classes": [],
+      "methods": 8
+    }
+  ],
+  "strategy_variants": [
+    {
+      "name": "MLSignalStrategy",
+      "path": "src/strategy_variants/ml_signals/ml_signal_strategy.py",
+      "docstring": "Machine Learning Signal Strategy for pairs trading that extends the base\n    pairs trading strategy with advanced ML-based signal generation.\n    \n    This strategy uses machine learning models to predict the direction of\n    the spread and generate trading signals.",
+      "base_classes": [
+        "PairsTradingStrategy"
+      ],
+      "methods": 14
+    },
+    {
+      "name": "TimeSeriesStrategy",
+      "path": "src/strategy_variants/time_series/time_series_strategy.py",
+      "docstring": "Time Series Strategy for pairs trading that extends the base\n    pairs trading strategy with advanced time-series modeling.\n    \n    This strategy uses ARIMA, GARCH, VAR and other time-series models\n    to forecast spreads and generate more robust trading signals.",
+      "base_classes": [
+        "PairsTradingStrategy"
+      ],
+      "methods": 11
+    }
+  ],
+  "data_processor": [
+    {
+      "name": "DataProcessor",
+      "path": "src/data_processor/data_processor.py",
+      "docstring": "Processes and manages data for the pairs trading system.\n    \n    This class provides functionality to load and preprocess data\n    from various sources.",
+      "base_classes": [],
+      "methods": 12
+    },
+    {
+      "name": "FuturesDataProcessor",
+      "path": "src/data_processor/futures_processor.py",
+      "docstring": "Process futures data files into a standardized format for analysis.",
+      "base_classes": [],
+      "methods": 5
+    },
+    {
+      "name": "IntradayDataProcessor",
+      "path": "src/data_processor/intraday_processor.py",
+      "docstring": "Specialized processor for intraday data with optimizations for pairs trading.",
+      "base_classes": [],
+      "methods": 8
+    }
+  ],
+  "risk_management": [
+    {
+      "name": "PositionSizer",
+      "path": "src/risk_management/position_sizer.py",
+      "docstring": "Position sizer class for calculating appropriate position sizes.",
+      "base_classes": [],
+      "methods": 5
+    },
+    {
+      "name": "RiskManager",
+      "path": "src/risk_management/risk_manager.py",
+      "docstring": "Risk manager class for controlling risk in trading strategies.",
+      "base_classes": [],
+      "methods": 2
+    }
+  ],
+  "web_interface": [
+    {
+      "name": "User",
+      "path": "src/web_interface/models.py",
+      "docstring": "User model for authentication.",
+      "base_classes": [
+        "UserMixin"
+      ],
+      "methods": 7
+    }
+  ],
+  "backtest": [
+    {
+      "name": "BacktestEngine",
+      "path": "src/backtest/backtest_engine.py",
+      "docstring": "Backtesting engine for pairs trading strategies.\n    \n    This class provides functionality to simulate pairs trading strategies\n    using historical data and calculate performance metrics.",
+      "base_classes": [],
+      "methods": 15
+    },
+    {
+      "name": "IntradayBacktestEngine",
+      "path": "src/backtest/intraday_backtest_engine.py",
+      "docstring": "Specialized backtesting engine for intraday trading strategies.\n    \n    This class extends the base BacktestEngine with additional functionality\n    specific to intraday trading, including:\n    - Realistic time-of-day constraints\n    - Sophisticated transaction cost modeling\n    - Volume-based execution modeling\n    - Liquidity-aware position sizing",
+      "base_classes": [
+        "BacktestEngine"
+      ],
+      "methods": 12
+    }
+  ],
+  "paper_trading": [
+    {
+      "name": "PaperTrader",
+      "path": "src/paper_trading/paper_trader.py",
+      "docstring": "Paper Trading implementation for the Intraday Statistical Arbitrage System.\n    \n    This class provides a paper trading environment that mimics real trading\n    but with simulated order execution, allowing for strategy testing without\n    risking real capital.",
+      "base_classes": [],
+      "methods": 28
+    },
+    {
+      "name": "IntradayMLPaperTrader",
+      "path": "src/paper_trading/intraday_ml_paper_trader.py",
+      "docstring": "Paper trading implementation with ML enhancements for intraday trading.\n    \n    This class integrates the base PaperTrader with ML models for signal enhancement,\n    regime detection, parameter adaptation, and real-time performance monitoring.",
+      "base_classes": [],
+      "methods": 30
+    }
+  ],
+  "ml_enhancements": [
+    {
+      "name": "EnsembleModelFactory",
+      "path": "src/ml_enhancements/ensemble_models.py",
+      "docstring": "Factory class for creating and managing ensemble models.\n    \n    This class provides methods to create various types of ensemble models\n    for classification and regression tasks in intraday trading.",
+      "base_classes": [],
+      "methods": 13
+    },
+    {
+      "name": "ModelRetrainingManager",
+      "path": "src/ml_enhancements/model_retraining.py",
+      "docstring": "Manages automated retraining of machine learning models for intraday trading.\n    \n    This class monitors model performance, detects when retraining is needed,\n    and orchestrates the retraining process.",
+      "base_classes": [],
+      "methods": 13
+    },
+    {
+      "name": "IntradayModelTrainer",
+      "path": "src/ml_enhancements/intraday_model_trainer.py",
+      "docstring": "Trainer for machine learning models focused on intraday trading signals.\n    \n    This class supports training various model types with appropriate validation\n    for time series financial data.",
+      "base_classes": [],
+      "methods": 8
+    },
+    {
+      "name": "IntradayMLSystem",
+      "path": "src/ml_enhancements/intraday_integration.py",
+      "docstring": "Integrated ML system for intraday trading.\n    \n    This class connects ML model components with signal generation, regime detection,\n    and the backtesting engine for a complete ML-enhanced intraday trading system.",
+      "base_classes": [],
+      "methods": 10
+    },
+    {
+      "name": "WalkForwardValidator",
+      "path": "src/ml_enhancements/training_utils.py",
+      "docstring": "Implements walk-forward validation for time series data.\n    \n    Walk-forward validation is a technique where the model is trained on a rolling window \n    of data and then tested on subsequent data points, simulating real-life trading.",
+      "base_classes": [],
+      "methods": 4
+    },
+    {
+      "name": "IntradaySignalEnhancer",
+      "path": "src/ml_enhancements/intraday_signals.py",
+      "docstring": "Enhances statistical arbitrage signals with machine learning for intraday trading.",
+      "base_classes": [],
+      "methods": 15
+    },
+    {
+      "name": "IntradaySignalProcessor",
+      "path": "src/ml_enhancements/intraday_signals.py",
+      "docstring": "Process and apply intraday signal enhancements to a pairs trading strategy.",
+      "base_classes": [],
+      "methods": 3
+    },
+    {
+      "name": "TimeSeriesAugmentation",
+      "path": "src/ml_enhancements/data_augmentation.py",
+      "docstring": "Time series data augmentation techniques for financial data.",
+      "base_classes": [],
+      "methods": 10
+    },
+    {
+      "name": "SpreadPredictor",
+      "path": "src/ml_enhancements/spread_prediction/spread_predictor.py",
+      "docstring": "Spread Predictor for Pairs Trading.\n    \n    This class provides methods for training machine learning models to predict\n    future spread movements and generating trading signals based on those predictions.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "RegimeDetector",
+      "path": "src/ml_enhancements/regime_detection/regime_detector.py",
+      "docstring": "Regime Detector for Pairs Trading.\n    \n    This class provides methods to detect breakdowns in cointegration relationships\n    and regime shifts in spread behavior to avoid trading during unfavorable conditions.",
+      "base_classes": [],
+      "methods": 8
+    },
+    {
+      "name": "MarketRegimeClassifier",
+      "path": "src/ml_enhancements/regime_detection/market_regime_classifier.py",
+      "docstring": "Detect market regimes to adapt trading parameters.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "IntradayFeatureEngineering",
+      "path": "src/ml_enhancements/feature_engineering/intraday_features.py",
+      "docstring": "Generate and analyze features specifically for intraday trading strategies.",
+      "base_classes": [],
+      "methods": 10
+    },
+    {
+      "name": "AdvancedFeatureEngineering",
+      "path": "src/ml_enhancements/feature_engineering/advanced_features.py",
+      "docstring": "Advanced feature engineering for intraday trading.\n    \n    This class extends the base IntradayFeatureEngineering class with more sophisticated\n    features for improved model performance.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "FeatureGenerator",
+      "path": "src/ml_enhancements/feature_engineering/feature_generator.py",
+      "docstring": "Feature Generator for Pairs Trading.\n    \n    This class provides methods to create advanced features for improving signal\n    generation in pairs trading strategies.",
+      "base_classes": [],
+      "methods": 10
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "PairsPortfolio",
+      "path": "src/portfolio/pairs_portfolio.py",
+      "docstring": "Manage a portfolio of pairs trades.",
+      "base_classes": [],
+      "methods": 11
+    }
+  ],
+  "spread_analytics": [
+    {
+      "name": "SpreadAnalyzer",
+      "path": "src/spread_analytics/spread_analyzer.py",
+      "docstring": "Spread analyzer class for analyzing spreads between assets.",
+      "base_classes": [],
+      "methods": 14
+    }
+  ],
+  "performance": [
+    {
+      "name": "SparseTimeSeries",
+      "path": "src/performance/data_structures/sparse_time_series.py",
+      "docstring": "Memory-efficient sparse time series optimized for financial data.\n    \n    This class provides a sparse representation of time series data that:\n    1. Uses significantly less memory for series with missing values\n    2. Maintains time ordering for efficient lookup and operations\n    3. Supports common time series operations and interpolation methods",
+      "base_classes": [],
+      "methods": 19
+    },
+    {
+      "name": "SparseTimeSeriesRolling",
+      "path": "src/performance/data_structures/sparse_time_series.py",
+      "docstring": "Helper class for rolling window operations on SparseTimeSeries.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "SparseTimeSeriesEWM",
+      "path": "src/performance/data_structures/sparse_time_series.py",
+      "docstring": "Helper class for exponentially weighted operations on SparseTimeSeries.",
+      "base_classes": [],
+      "methods": 5
+    },
+    {
+      "name": "CompressedOHLC",
+      "path": "src/performance/data_structures/compressed_ohlc.py",
+      "docstring": "Memory-efficient compressed OHLC (Open, High, Low, Close) data structure.\n    \n    This class provides a memory-efficient representation of OHLC data by:\n    1. Using compact numpy arrays for data storage\n    2. Supporting efficient lookups and operations\n    3. Allowing conversion to pandas DataFrames when needed",
+      "base_classes": [],
+      "methods": 19
+    },
+    {
+      "name": "RollingWindow",
+      "path": "src/performance/data_structures/rolling_window.py",
+      "docstring": "Efficient Rolling Window for time series data.\n    \n    This class provides an efficient implementation of a rolling window\n    for time series data, with support for various statistics and custom functions.\n    \n    It uses an efficient algorithm that updates statistics incrementally\n    as new values are added, avoiding redundant calculations.",
+      "base_classes": [],
+      "methods": 19
+    },
+    {
+      "name": "ExponentialRollingWindow",
+      "path": "src/performance/data_structures/rolling_window.py",
+      "docstring": "Exponential Rolling Window for time series data.\n    \n    This class provides an implementation of an exponential moving window\n    that weighs recent observations more heavily, with exponentially\n    decreasing weights for older observations.",
+      "base_classes": [],
+      "methods": 9
+    },
+    {
+      "name": "TaskStatus",
+      "path": "src/performance/parallel/task_pool.py",
+      "docstring": "Status of a task in the task pool.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "TaskPriority",
+      "path": "src/performance/parallel/task_pool.py",
+      "docstring": "Priority levels for tasks.",
+      "base_classes": [
+        "Enum"
+      ],
+      "methods": 0
+    },
+    {
+      "name": "Task",
+      "path": "src/performance/parallel/task_pool.py",
+      "docstring": "Task metadata for the task pool.",
+      "base_classes": [],
+      "methods": 0
+    },
+    {
+      "name": "TaskPool",
+      "path": "src/performance/parallel/task_pool.py",
+      "docstring": "Task Pool for managing long-running parallel tasks.\n    \n    This class provides methods for submitting, managing, and monitoring tasks\n    with support for prioritization, cancellation, and automatic resource management.",
+      "base_classes": [],
+      "methods": 10
+    },
+    {
+      "name": "ParallelExecutor",
+      "path": "src/performance/parallel/parallel_executor.py",
+      "docstring": "Parallel Executor for running tasks in parallel.\n    \n    This class provides methods for executing tasks in parallel using either\n    process-based or thread-based parallelism, with support for progress tracking\n    and error handling.",
+      "base_classes": [],
+      "methods": 3
+    },
+    {
+      "name": "_TimedCache",
+      "path": "src/performance/caching/function_cache.py",
+      "docstring": "Internal class for implementing timed caching.",
+      "base_classes": [],
+      "methods": 4
+    },
+    {
+      "name": "DataCache",
+      "path": "src/performance/caching/data_cache.py",
+      "docstring": "Data Cache for storing and retrieving frequently used data.\n    \n    This class provides methods for caching data in memory or on disk,\n    with support for expiration, automatic eviction, and memory management.",
+      "base_classes": [],
+      "methods": 17
+    }
+  ]
+}

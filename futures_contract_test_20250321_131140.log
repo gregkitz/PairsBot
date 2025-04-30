@@ -1,0 +1,21 @@
+2025-03-21 13:11:40,335 - __main__ - INFO - Successfully imported ib_insync
+2025-03-21 13:11:40,339 - __main__ - INFO - Connecting to IB at 127.0.0.1:7496 (client ID: 54321)
+2025-03-21 13:11:40,339 - ib_insync.client - INFO - Connecting to 127.0.0.1:7496 with clientId 54321...
+2025-03-21 13:11:40,340 - ib_insync.client - INFO - Connected
+2025-03-21 13:11:40,341 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 13:11:40,342 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 13:11:40,343 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2025-03-21 13:11:40,343 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 13:11:40,343 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:apachmds
+2025-03-21 13:11:40,343 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 13:11:40,343 - ib_insync.client - INFO - API connection ready
+2025-03-21 13:11:40,343 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 13:11:40,746 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 13:11:40,746 - __main__ - INFO - Connected: True
+2025-03-21 13:11:40,746 - __main__ - INFO - Running tests for ES
+2025-03-21 13:11:40,747 - __main__ - INFO - Testing empty Future for ES (no exchange specified)
+2025-03-21 13:11:40,940 - __main__ - INFO - Success! Found 44 contracts for ES
+2025-03-21 13:11:40,941 - __main__ - INFO - First contract: Contract(secType='FUT', conId=620731015, symbol='ES', lastTradeDateOrContractMonth='20250620', multiplier='50', exchange='CME', currency='USD', localSymbol='ESM5', tradingClass='ES')
+2025-03-21 13:11:43,835 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7496, 293 B sent in 11 messages, 49.2 kB received in 436 messages, session time 3.50 s.
+2025-03-21 13:11:43,835 - ib_insync.client - INFO - Disconnecting
+2025-03-21 13:11:43,835 - __main__ - INFO - Disconnected from IB

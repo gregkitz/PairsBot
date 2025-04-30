@@ -1,0 +1,94 @@
+/* Main Styles for Intraday Statistical Arbitrage System */
+
+/* Dashboard Stat Cards */
+.stat-card {
+    border-left: 4px solid;
+    transition: transform 0.2s;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+.stat-card.primary {
+    border-left-color: #4e73df;
+}
+.stat-card.success {
+    border-left-color: #1cc88a;
+}
+.stat-card.info {
+    border-left-color: #36b9cc;
+}
+.stat-card.warning {
+    border-left-color: #f6c23e;
+}
+
+/* Position Cards */
+.position-card {
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.position-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* System Status */
+.progress-sm {
+    height: 8px;
+}
+.system-status {
+    font-size: 0.85rem;
+}
+.system-status .badge {
+    width: 80px;
+}
+
+/* Login */
+.login-header {
+    background-color: #4e73df;
+    color: white;
+}
+
+/* General Layout */
+.content-wrapper {
+    min-height: calc(100vh - 56px - 80px); /* 100vh - navbar height - footer height */
+}
+
+/* Strategy management */
+.strategy-actions {
+    min-width: 200px;
+}
+
+/* Configuration editor */
+.config-editor {
+    font-family: monospace;
+    min-height: 400px;
+}
+
+/* Performance charts */
+.performance-chart {
+    height: 300px;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #4e73df;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .system-status .badge {
+        width: 70px;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+} 

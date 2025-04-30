@@ -1,0 +1,7 @@
+{
+  "analysis_date": "2025-03-22",
+  "min_correlation": 0.7,
+  "min_half_life": 1,
+  "max_half_life": 20,
+  "pairs": []
+}

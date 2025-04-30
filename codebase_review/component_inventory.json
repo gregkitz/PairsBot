@@ -1,0 +1,1643 @@
+{
+  "tests": [
+    {
+      "name": "test_intraday_backtest_engine",
+      "path": "tests/test_intraday_backtest_engine.py",
+      "docstring": "Tests for the IntradayBacktestEngine class.\n\nThis module tests the functionality of the IntradayBacktestEngine including\ntime-of-day constraints, transaction cost modeling, and other intraday-specific features.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/__init__.py",
+      "docstring": "Tests for the Intraday Statistical Arbitrage System.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "mock_exchange",
+      "path": "tests/mocks/mock_exchange.py",
+      "docstring": "Mock Exchange for testing purposes.\n\nThis module provides a mock implementation of an exchange\nfor unit and integration testing without connecting to a real exchange.",
+      "classes": 4,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "mock_market_data",
+      "path": "tests/mocks/mock_market_data.py",
+      "docstring": "Mock Market Data Provider for testing purposes.\n\nThis module provides a mock implementation of a market data provider\nfor unit and integration testing without requiring real market data.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "mock_ib_connector",
+      "path": "tests/mocks/mock_ib_connector.py",
+      "docstring": "Mock IB Connector for testing purposes.\n\nThis module provides a mock implementation of the Interactive Brokers connector\nfor unit and integration testing without requiring an actual IB connection.",
+      "classes": 1,
+      "functions": 2,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/__init__.py",
+      "docstring": "Unit tests for the Intraday Statistical Arbitrage System.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_factory",
+      "path": "tests/unit/asset_classes/test_factory.py",
+      "docstring": "Unit tests for the asset factory implementation.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.equities.equity_asset.EquityAssetClass",
+        "src.asset_classes.futures.futures_asset.FuturesAssetClass",
+        "src.asset_classes.futures.futures_asset.FuturesAsset",
+        "src.asset_classes.factory.get_asset_class",
+        "src.asset_classes.equities.equity_asset.EquityAsset",
+        "src.asset_classes.base.AssetClass",
+        "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAsset",
+        "src.asset_classes.factory.create_asset",
+        "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAssetClass",
+        "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAssetClass",
+        "src.asset_classes.base.Asset",
+        "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAsset"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/asset_classes/__init__.py",
+      "docstring": "Unit tests for the asset classes module.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_base",
+      "path": "tests/unit/asset_classes/test_base.py",
+      "docstring": "Unit tests for the base asset and asset class implementations.",
+      "classes": 4,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.base.Asset",
+        "src.asset_classes.base.AssetClass"
+      ]
+    },
+    {
+      "name": "test_futures_asset",
+      "path": "tests/unit/asset_classes/futures/test_futures_asset.py",
+      "docstring": "Unit tests for the FuturesAsset class.\n\nThis module contains tests for the FuturesAsset class functionality.",
+      "classes": 1,
+      "functions": 2,
+      "dependencies": [
+        "tests.mocks.mock_ib_connector.MockIBConnector",
+        "src.asset_classes.futures.futures_asset.FuturesAsset"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/asset_classes/cryptocurrencies/__init__.py",
+      "docstring": "Unit tests for the cryptocurrency asset classes.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_crypto_asset",
+      "path": "tests/unit/asset_classes/cryptocurrencies/test_crypto_asset.py",
+      "docstring": "Unit tests for the cryptocurrency asset and asset class implementations.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAsset",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAssetClass"
+      ]
+    },
+    {
+      "name": "test_fixed_income_asset",
+      "path": "tests/unit/asset_classes/fixed_income/test_fixed_income_asset.py",
+      "docstring": "Unit tests for the fixed income asset and asset class implementations.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAssetClass",
+        "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAsset"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/asset_classes/fixed_income/__init__.py",
+      "docstring": "Unit tests for the fixed income asset classes.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_equity_asset",
+      "path": "tests/unit/asset_classes/equities/test_equity_asset.py",
+      "docstring": "Unit tests for the equity asset and asset class implementations.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.equities.equity_asset.EquityAssetClass",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.equities.equity_asset.EquityAsset"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/asset_classes/equities/__init__.py",
+      "docstring": "Unit tests for the equity asset classes.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_multi_pair_portfolio",
+      "path": "tests/unit/strategies/test_multi_pair_portfolio.py",
+      "docstring": "Unit tests for the multi-pair portfolio strategy implementation.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.pair_trading.pair_finder.PairFinder",
+        "src.risk_management.risk_manager.RiskManager",
+        "src.risk_management.position_sizer.PositionSizer",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.strategies.multi_pair_portfolio.MultiPairPortfolio",
+        "src.asset_classes.base.Asset",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "tests/unit/strategies/__init__.py",
+      "docstring": "Unit tests for the strategies module.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "test_signal_generator",
+      "path": "tests/unit/signal_generation/test_signal_generator.py",
+      "docstring": "Unit tests for the SignalGenerator class.\n\nThis module contains tests for the signal generation functionality.",
+      "classes": 1,
+      "functions": 4,
+      "dependencies": [
+        "src.signal_generation.signal_generator.SignalGenerator"
+      ]
+    },
+    {
+      "name": "test_cointegration_tests",
+      "path": "tests/unit/cointegration/test_cointegration_tests.py",
+      "docstring": "Unit tests for the cointegration_tests module.\n\nThis module contains tests for the cointegration testing functions.",
+      "classes": 1,
+      "functions": 2,
+      "dependencies": [
+        "src.cointegration.cointegration_tests.test_pairs_universe",
+        "src.cointegration.cointegration_tests.calculate_half_life",
+        "src.cointegration.cointegration_tests.test_cointegration",
+        "src.cointegration.cointegration_tests.engle_granger_test",
+        "src.cointegration.cointegration_tests.johansen_test"
+      ]
+    },
+    {
+      "name": "test_multi_pair_portfolio",
+      "path": "tests/unit/strategy_variants/test_multi_pair_portfolio.py",
+      "docstring": "Unit tests for the multi-pair portfolio strategy.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.pair_trading.pair_finder.PairFinder",
+        "src.risk_management.risk_manager.RiskManager",
+        "src.risk_management.position_sizer.PositionSizer",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.strategies.multi_pair_portfolio.MultiPairPortfolio",
+        "src.asset_classes.base.Asset",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "test_risk_manager",
+      "path": "tests/unit/risk_management/test_risk_manager.py",
+      "docstring": "Unit tests for the RiskManager class.\n\nThis module contains tests for the risk management functionality.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": [
+        "src.risk_management.risk_manager.RiskManager"
+      ]
+    },
+    {
+      "name": "test_paper_trader",
+      "path": "tests/unit/paper_trading/test_paper_trader.py",
+      "docstring": "Unit tests for the PaperTrader class.\n\nThis module contains tests for the PaperTrader class functionality.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": [
+        "src.paper_trading.paper_trader.PaperTrader",
+        "tests.mocks.mock_ib_connector.MockIBConnector"
+      ]
+    },
+    {
+      "name": "test_data_processor",
+      "path": "tests/unit/data_processor/test_data_processor.py",
+      "docstring": "Unit tests for the DataProcessor class.\n\nThis module contains tests for the data processing functionality including\nloading, cleaning, and preparing data for analysis.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": [
+        "src.data_processor.data_processor.DataProcessor",
+        "tests.mocks.mock_ib_connector.MockIBConnector"
+      ]
+    },
+    {
+      "name": "test_spread_analyzer",
+      "path": "tests/unit/spread_analytics/test_spread_analyzer.py",
+      "docstring": "Unit tests for the SpreadAnalyzer class.\n\nThis module contains tests for the spread calculation and analysis functionality.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": [
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "test_intraday_ml_system_integration",
+      "path": "tests/integration/test_intraday_ml_system_integration.py",
+      "docstring": "Integration tests for the Intraday ML System focused on pipeline integrity,\nperformance, stability, and edge case handling.\n\nThese tests verify that the complete intraday ML system pipeline works correctly\nunder various conditions and scenarios, including stress testing and edge cases.",
+      "classes": 0,
+      "functions": 7,
+      "dependencies": [
+        "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+        "src.paper_trading.intraday_ml_paper_trader.IntradayMLPaperTrader",
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+        "src.optimization.adaptive_parameter_manager.AdaptiveParameterManager",
+        "src.ml_enhancements.model_retraining.ModelRetrainingManager"
+      ]
+    },
+    {
+      "name": "test_multi_asset_integration",
+      "path": "tests/integration/test_multi_asset_integration.py",
+      "docstring": "Integration tests for multi-asset class support.\n\nThis module contains tests that verify the system can handle multiple asset classes\nand properly integrate them with the core strategy components.",
+      "classes": 1,
+      "functions": 4,
+      "dependencies": [
+        "src.asset_classes.futures.futures_asset.FuturesAssetClass",
+        "src.asset_classes.futures.futures_asset.FuturesAsset",
+        "src.data_processor.data_processor.DataProcessor",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.asset_classes.base.AssetClass",
+        "src.asset_classes.factory.AssetFactory",
+        "tests.mocks.mock_ib_connector.MockIBConnector",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.asset_classes.base.Asset",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "test_strategy_execution",
+      "path": "tests/integration/test_strategy_execution.py",
+      "docstring": "Integration tests for the strategy execution flow.\n\nThis module contains tests for the integration between data processing,\nspread analysis, signal generation, and strategy components.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": [
+        "src.data_processor.data_processor.DataProcessor",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "tests.mocks.mock_ib_connector.MockIBConnector",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "test_ib_integration",
+      "path": "tests/integration/test_ib_integration.py",
+      "docstring": "Integration tests for Interactive Brokers TWS connectivity.\n\nThis module contains integration tests for the IBConnector class and \nvarious asset classes interacting with a real TWS instance.\n\nNOTE: These tests require a running TWS instance on localhost:7497",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.connectors.ib.ib_connector.IBConnector",
+        "src.asset_classes.factory.create_asset"
+      ]
+    },
+    {
+      "name": "test_intraday_ml_integration",
+      "path": "tests/integration/test_intraday_ml_integration.py",
+      "docstring": "Integration test for the intraday ML system.\n\nThis test verifies that all components of the intraday ML system work together correctly,\nfrom data loading to signal generation with ML enhancements and regime-aware parameters.",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": [
+        "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+        "src.ml_enhancements.feature_engineering.advanced_features.AdvancedFeatureEngineering",
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+        "src.optimization.adaptive_parameter_manager.AdaptiveParameterManager"
+      ]
+    },
+    {
+      "name": "test_data_flow",
+      "path": "tests/integration/test_data_flow.py",
+      "docstring": "Integration tests for the data flow between components.\n\nThis module contains tests for the data flow between data processor,\npair finder, spread analyzer, and signal generator components.",
+      "classes": 1,
+      "functions": 8,
+      "dependencies": [
+        "src.data_processor.data_processor.DataProcessor",
+        "tests.mocks.mock_ib_connector.MockIBConnector",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.cointegration.pair_finder.PairFinder",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    }
+  ],
+  "codebase_review": [
+    {
+      "name": "codebase_analyzer",
+      "path": "codebase_review/codebase_analyzer.py",
+      "docstring": "Codebase Analyzer\n\nThis script analyzes the quant-trader codebase and generates reports about\nits structure, components, and relationships.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": []
+    }
+  ],
+  "examples": [
+    {
+      "name": "run_ml_integrated_intraday",
+      "path": "examples/run_ml_integrated_intraday.py",
+      "docstring": "Example script demonstrating the integrated ML system for intraday trading.\n\nThis script shows how to:\n1. Set up the integrated ML system\n2. Connect ML models to signal generation\n3. Integrate regime detection with parameter adaptation\n4. Run ML-enhanced backtests\n5. Generate intraday trading plans",
+      "classes": 0,
+      "functions": 6,
+      "dependencies": [
+        "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+        "src.ml_enhancements.intraday_signals.IntradaySignalProcessor",
+        "src.ml_enhancements.intraday_integration.integrate_with_paper_trading",
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+      ]
+    },
+    {
+      "name": "run_enhanced_intraday_backtest",
+      "path": "examples/run_enhanced_intraday_backtest.py",
+      "docstring": "Example script demonstrating how to use the IntradayBacktestEngine with performance visualization.\n\nThis script shows how to:\n1. Set up an intraday backtest with realistic constraints\n2. Run the backtest with transaction cost modeling\n3. Visualize the results with detailed performance analysis\n4. Incorporate market regime information into the analysis",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": [
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+        "src.backtest.intraday_performance_visualization.save_performance_dashboard",
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+        "src.backtest.intraday_performance_visualization.create_intraday_performance_dashboard"
+      ]
+    },
+    {
+      "name": "use_strategy_variants",
+      "path": "examples/use_strategy_variants.py",
+      "docstring": "Example script demonstrating how to use the different strategy variants.\n\nThis script shows how to initialize and use the various strategy variants,\nincluding the base pairs trading strategy, time-series based strategy,\nand machine learning signal generation strategy.",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": [
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.visualization.plot_equity_curve",
+        "src.backtest_engine.BacktestEngine",
+        "src.strategy_variants.TimeSeriesStrategy",
+        "src.strategy_variants.MLSignalStrategy",
+        "src.visualization.plot_trades",
+        "src.strategy_variants.create_strategy",
+        "src.data_processor.DataProcessor",
+        "src.visualization.plot_spread"
+      ]
+    }
+  ],
+  "scripts": [
+    {
+      "name": "generate_test_data",
+      "path": "scripts/generate_test_data.py",
+      "docstring": "Test data generation script for the Intraday Statistical Arbitrage System.\n\nThis script generates synthetic data for testing purposes, creating cointegrated\npairs with controlled properties to help users test the system without real data.",
+      "classes": 0,
+      "functions": 4,
+      "dependencies": [
+        "src.utils.create_directory"
+      ]
+    }
+  ],
+  "src": [
+    {
+      "name": "__init__",
+      "path": "src/__init__.py",
+      "docstring": "Quant Trader package initialization.\n\nThis initializes the main package for the quant trading system.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "pairs_trading_strategy",
+      "path": "src/pairs_trading_strategy.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.risk_management.risk_manager.RiskManager",
+        "src.risk_management.position_sizer.PositionSizer",
+        "src.data_processing.data_processor.DataProcessor",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.signal_generation.spread_calculator.SpreadCalculator",
+        "src.cointegration.pair_finder.PairFinder"
+      ]
+    },
+    {
+      "name": "test_pair_selection",
+      "path": "src/test_pair_selection.py",
+      "docstring": "",
+      "classes": 0,
+      "functions": 1,
+      "dependencies": [
+        "src.data_processing.data_processor.DataProcessor",
+        "src.cointegration.cointegration_tests.rolling_cointegration",
+        "src.cointegration.cointegration_tests.test_cointegration",
+        "src.cointegration.pair_finder.PairFinder"
+      ]
+    },
+    {
+      "name": "main",
+      "path": "src/main.py",
+      "docstring": "Main module for the Intraday Statistical Arbitrage System.\n\nThis module serves as the central controller for the system, coordinating between\ndifferent components based on the configuration settings.",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": [
+        "src.cointegration.PairFinder",
+        "src.backtest.BacktestEngine",
+        "src.signals.SignalGenerator",
+        "src.signals.SignalType",
+        "src.utils.create_directory",
+        "src.risk_management.RiskManager",
+        "src.spread_analytics.SpreadAnalyzer",
+        "src.data_processor.DataProcessor",
+        "src.risk_management.PositionSizer"
+      ]
+    }
+  ],
+  "visualization": [
+    {
+      "name": "plotting",
+      "path": "src/visualization/plotting.py",
+      "docstring": "",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/visualization/__init__.py",
+      "docstring": "Visualization module for generating plots and charts.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "connectors": [
+    {
+      "name": "fixed_connector",
+      "path": "src/connectors/ib/fixed_connector.py",
+      "docstring": "Fixed version of the Interactive Brokers (IB) Connector for testing.\n\nThis module provides a high-level connector to Interactive Brokers for\nmarket data retrieval and testing integration, with a fix for the API call\nthat was causing issues.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "ib_connector",
+      "path": "src/connectors/ib/ib_connector.py",
+      "docstring": "Interactive Brokers (IB) Connector for the Intraday Statistical Arbitrage System.\n\nThis module provides a high-level connector to Interactive Brokers for\nmarket data retrieval, order execution, and account management using the\nib_insync library.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/connectors/ib/__init__.py",
+      "docstring": "Interactive Brokers (IB) Connector Module for the Intraday Statistical Arbitrage System.\n\nThis module provides connectivity to Interactive Brokers for market data retrieval,\norder execution, and account management using the ib_insync library.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "ib_utils",
+      "path": "src/connectors/ib/ib_utils.py",
+      "docstring": "Utility functions for working with Interactive Brokers (IB) contracts.\n\nThis module provides helper functions for converting between IB contract\nobjects and symbol strings, and other utility functions for working with\nthe IB API.",
+      "classes": 0,
+      "functions": 4,
+      "dependencies": []
+    }
+  ],
+  "asset_classes": [
+    {
+      "name": "__init__",
+      "path": "src/asset_classes/__init__.py",
+      "docstring": "Asset Classes Module for the Intraday Statistical Arbitrage System.\n\nThis module provides various asset classes for different types of financial instruments.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "factory",
+      "path": "src/asset_classes/factory.py",
+      "docstring": "Factory Module for Asset Classes.\n\nThis module provides factory functions for creating assets and getting\nasset classes based on their type.",
+      "classes": 0,
+      "functions": 3,
+      "dependencies": []
+    },
+    {
+      "name": "base",
+      "path": "src/asset_classes/base.py",
+      "docstring": "Base Asset Classes for the Intraday Statistical Arbitrage System.\n\nThis module defines the base Asset and AssetClass interfaces for all\nasset classes supported by the system.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "futures_asset",
+      "path": "src/asset_classes/futures/futures_asset.py",
+      "docstring": "Futures Asset Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements the futures asset and asset class for trading\nfutures contracts.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.base.Asset",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.base.AssetClass"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/asset_classes/futures/__init__.py",
+      "docstring": "Futures Asset Class for the Intraday Statistical Arbitrage System.\n\nThis module implements the futures asset class, which is the original\nfocus of the system.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/asset_classes/cryptocurrencies/__init__.py",
+      "docstring": "Cryptocurrency Asset Classes Module for the Intraday Statistical Arbitrage System.\n\nThis module provides support for trading cryptocurrency assets.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "crypto_asset",
+      "path": "src/asset_classes/cryptocurrencies/crypto_asset.py",
+      "docstring": "Cryptocurrency Asset Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements the cryptocurrency asset and asset class for trading\ndigital currencies.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.base.Asset",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.base.AssetClass"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/asset_classes/fixed_income/__init__.py",
+      "docstring": "Fixed Income Asset Classes Module for the Intraday Statistical Arbitrage System.\n\nThis module provides support for trading fixed income securities.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "fixed_income_asset",
+      "path": "src/asset_classes/fixed_income/fixed_income_asset.py",
+      "docstring": "Fixed Income Asset Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements the fixed income asset and asset class for trading\nbonds and other fixed income securities.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.base.Asset",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.base.AssetClass"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/asset_classes/equities/__init__.py",
+      "docstring": "Equity Asset Classes Module for the Intraday Statistical Arbitrage System.\n\nThis module provides support for trading equity securities.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "equity_asset",
+      "path": "src/asset_classes/equities/equity_asset.py",
+      "docstring": "Equity Asset Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements the equity asset and asset class for trading\nequity securities.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": [
+        "src.asset_classes.base.Asset",
+        "src.connectors.ib.IBConnector",
+        "src.asset_classes.base.AssetClass"
+      ]
+    }
+  ],
+  "reporting": [
+    {
+      "name": "metrics",
+      "path": "src/reporting/metrics.py",
+      "docstring": "Performance Metrics for the Intraday Statistical Arbitrage System.\n\nThis module provides functions for calculating performance metrics\nfrom backtest results, including returns, drawdowns, risk-adjusted metrics,\nand trade statistics.",
+      "classes": 0,
+      "functions": 6,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/reporting/__init__.py",
+      "docstring": "Reporting Module for the Intraday Statistical Arbitrage System.\n\nThis module provides tools for generating comprehensive HTML reports\nof backtest results with visualizations and performance metrics.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "example",
+      "path": "src/reporting/example.py",
+      "docstring": "Example usage of the reporting module for generating backtest reports.\n\nThis script demonstrates how to use the reporting module to generate\ncomprehensive HTML reports from backtest results.",
+      "classes": 0,
+      "functions": 2,
+      "dependencies": [
+        "src.reporting.BacktestReportGenerator",
+        "src.reporting.calculate_performance_metrics"
+      ]
+    },
+    {
+      "name": "report_generator",
+      "path": "src/reporting/report_generator.py",
+      "docstring": "Backtest Report Generator for the Intraday Statistical Arbitrage System.\n\nThis module provides a BacktestReportGenerator class that creates comprehensive\nHTML reports from backtest results with interactive visualizations and metrics.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "config": [
+    {
+      "name": "configuration",
+      "path": "src/config/configuration.py",
+      "docstring": "",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/config/__init__.py",
+      "docstring": "Configuration management module.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "live_trading": [
+    {
+      "name": "example_with_position_tracking",
+      "path": "src/live_trading/example_with_position_tracking.py",
+      "docstring": "Example script for using the LiveTrader with PositionTracker.\n\nThis script demonstrates how to configure and use the LiveTrader class\nwith the PositionTracker for position management, P&L calculation, and\ntrade tracking.\n\nIMPORTANT: This script will connect to your Interactive Brokers account\nand could potentially place real orders that involve real money. Use with caution\nand only after thorough testing in a paper trading environment.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.connectors.ib.contract_to_symbol",
+        "src.live_trading.PositionTracker",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.connectors.ib.symbol_to_contract",
+        "src.live_trading.LiveTrader"
+      ]
+    },
+    {
+      "name": "example_with_monitoring",
+      "path": "src/live_trading/example_with_monitoring.py",
+      "docstring": "Example script for using the LiveTrader with TradingMonitor.\n\nThis script demonstrates how to configure and use the LiveTrader class\nwith the TradingMonitor for monitoring, alerts, and performance tracking.\n\nIMPORTANT: This script will connect to your Interactive Brokers account\nand could potentially place real orders that involve real money. Use with caution\nand only after thorough testing in a paper trading environment.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.connectors.ib.contract_to_symbol",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.connectors.ib.symbol_to_contract",
+        "src.live_trading.monitoring.TradingMonitor",
+        "src.live_trading.LiveTrader"
+      ]
+    },
+    {
+      "name": "monitoring",
+      "path": "src/live_trading/monitoring.py",
+      "docstring": "Monitoring module for the Intraday Statistical Arbitrage System.\n\nThis module provides monitoring, alerting, and health tracking functionality\nfor the live trading environment.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/live_trading/__init__.py",
+      "docstring": "Live Trading Module for the Intraday Statistical Arbitrage System.\n\nThis module provides live trading capabilities for executing strategies\nwith real market data and actual order execution through Interactive Brokers.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "example",
+      "path": "src/live_trading/example.py",
+      "docstring": "Example script for using the LiveTrader with Interactive Brokers.\n\nThis script demonstrates how to configure and use the LiveTrader class\nfor executing trades with real money through the Interactive Brokers API.\n\nIMPORTANT: This script will connect to your Interactive Brokers account\nand could potentially place real orders that involve real money. Use with caution\nand only after thorough testing in a paper trading environment.",
+      "classes": 0,
+      "functions": 8,
+      "dependencies": [
+        "src.connectors.ib.symbol_to_contract",
+        "src.connectors.ib.contract_to_symbol",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.live_trading.LiveTrader"
+      ]
+    },
+    {
+      "name": "live_trader",
+      "path": "src/live_trading/live_trader.py",
+      "docstring": "Live Trader for the Intraday Statistical Arbitrage System.\n\nThis module provides a live trading environment that connects to Interactive Brokers\nfor real market data and actual order execution.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "position_tracker",
+      "path": "src/live_trading/position_tracker.py",
+      "docstring": "Position Tracking module for the Intraday Statistical Arbitrage System.\n\nThis module provides functionality for tracking and managing positions\nin the live trading environment, including P&L calculation, position\nlifecycle management, and reporting.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "strategies": [
+    {
+      "name": "__init__",
+      "path": "src/strategies/__init__.py",
+      "docstring": "Strategies module for the Intraday Statistical Arbitrage System.\n\nThis module provides various trading strategies for the system.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "multi_pair_portfolio",
+      "path": "src/strategies/multi_pair_portfolio.py",
+      "docstring": "Multi-Pair Portfolio Strategy Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements a portfolio approach for managing multiple pairs simultaneously\nwith advanced risk management and allocation techniques.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.pair_trading.pair_finder.PairFinder",
+        "src.strategies.base.Strategy",
+        "src.risk_management.risk_manager.RiskManager",
+        "src.risk_management.position_sizer.PositionSizer",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.asset_classes.base.Asset",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "base",
+      "path": "src/strategies/base.py",
+      "docstring": "Base Strategy class for the Intraday Statistical Arbitrage System.\n\nThis module defines the base Strategy interface that all strategies must implement.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "optimization": [
+    {
+      "name": "adaptive_parameter_manager",
+      "path": "src/optimization/adaptive_parameter_manager.py",
+      "docstring": "Adaptive Parameter Manager Module\n\nThis module provides functionality to manage and apply regime-specific parameters\nfor intraday trading based on detected market regimes.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/optimization/__init__.py",
+      "docstring": "Parameter Optimization Framework for the Intraday Statistical Arbitrage System.\n\nThis module provides tools for optimizing the parameters of the pairs trading strategy:\n- Grid Search: Exhaustive search over specified parameter values\n- Genetic Algorithm: Evolutionary approach for parameter optimization\n- Walk-Forward Testing: Testing strategy using rolling windows\n- Intraday Parameter Optimization: Regime-specific parameter optimization for intraday trading\n- Adaptive Parameter Management: Dynamic parameter adjustment based on market regimes",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_parameter_optimizer",
+      "path": "src/optimization/intraday_parameter_optimizer.py",
+      "docstring": "Intraday Parameter Optimizer Module\n\nThis module extends the grid search optimizer to create regime-specific \nparameter sets for intraday trading strategies.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.optimization.parameter_space.create_default_parameter_space",
+        "src.optimization.parameter_space.ParameterSpace",
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+        "src.optimization.grid_search.grid_search.GridSearchOptimizer",
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+      ]
+    },
+    {
+      "name": "parameter_space",
+      "path": "src/optimization/parameter_space.py",
+      "docstring": "Parameter Space definitions for optimization.\n\nThis module defines the parameter spaces for various optimization techniques.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/optimization/genetic_algorithm/__init__.py",
+      "docstring": "Genetic Algorithm optimization for pairs trading strategy parameters.\n\nThis module provides tools for evolutionary optimization of parameters.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "genetic_algorithm",
+      "path": "src/optimization/genetic_algorithm/genetic_algorithm.py",
+      "docstring": "Genetic Algorithm Optimization for Pairs Trading Strategy.\n\nThis module implements a genetic algorithm optimizer for finding optimal parameters\nfor the pairs trading strategy through evolutionary methods.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.optimization.parameter_space.create_default_parameter_space",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.optimization.parameter_space.ParameterSpace"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/optimization/grid_search/__init__.py",
+      "docstring": "Grid Search optimization for pairs trading strategy parameters.\n\nThis module provides tools for exhaustive search over specified parameter values.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "grid_search",
+      "path": "src/optimization/grid_search/grid_search.py",
+      "docstring": "Grid Search Optimization for Pairs Trading Strategy.\n\nThis module implements a grid search optimizer for finding optimal parameters\nfor the pairs trading strategy.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.optimization.parameter_space.create_default_parameter_space",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.optimization.parameter_space.ParameterSpace"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/optimization/walk_forward/__init__.py",
+      "docstring": "Walk-Forward Testing framework for pairs trading strategy.\n\nThis module provides tools for testing strategies using rolling windows to simulate \nreal-world trading where parameters are periodically re-optimized.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "walk_forward",
+      "path": "src/optimization/walk_forward/walk_forward.py",
+      "docstring": "Walk-Forward Testing Framework for Pairs Trading Strategy.\n\nThis module implements a walk-forward testing framework that trains on historical\nwindows and tests on out-of-sample periods to validate strategy robustness.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.optimization.parameter_space.create_default_parameter_space",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.optimization.genetic_algorithm.genetic_algorithm.GeneticOptimizer",
+        "src.optimization.parameter_space.ParameterSpace",
+        "src.optimization.grid_search.grid_search.GridSearchOptimizer"
+      ]
+    }
+  ],
+  "signal_generation": [
+    {
+      "name": "pairs_signal_generator",
+      "path": "src/signal_generation/pairs_signal_generator.py",
+      "docstring": "Pairs Trading Signal Generator Module\n\nThis module provides signal generation for pairs trading strategies.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "signal_generator",
+      "path": "src/signal_generation/signal_generator.py",
+      "docstring": "Signal generator module for the Intraday Statistical Arbitrage System.\n\nThis module implements signal generation functionality.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/signal_generation/__init__.py",
+      "docstring": "Signal Generation module for the Intraday Statistical Arbitrage System.\n\nThis module provides functionality for generating trading signals.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "spread_calculator",
+      "path": "src/signal_generation/spread_calculator.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "signals": [
+    {
+      "name": "signal_generator",
+      "path": "src/signals/signal_generator.py",
+      "docstring": "",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/signals/__init__.py",
+      "docstring": "Signal generation module for generating trading signals.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "cointegration": [
+    {
+      "name": "__init__",
+      "path": "src/cointegration/__init__.py",
+      "docstring": "Cointegration testing and pair selection module.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "pair_finder",
+      "path": "src/cointegration/pair_finder.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "pairs_finder",
+      "path": "src/cointegration/pairs_finder.py",
+      "docstring": "Cointegration Pairs Finder Module\n\nThis module provides functionality to identify cointegrated pairs of financial instruments\nusing various statistical tests and methods.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "cointegration_tests",
+      "path": "src/cointegration/cointegration_tests.py",
+      "docstring": "",
+      "classes": 0,
+      "functions": 4,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_pair_analyzer",
+      "path": "src/cointegration/intraday_pair_analyzer.py",
+      "docstring": "Intraday Pair Analyzer Module\n\nThis module provides specialized functionality for analyzing cointegration relationships\nat intraday timeframes, with specific adaptations for high-frequency data.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.data_processor.intraday_processor.IntradayDataProcessor",
+        "src.cointegration.cointegration_tests.test_cointegration",
+        "src.cointegration.cointegration_tests.calculate_half_life"
+      ]
+    }
+  ],
+  "strategy_variants": [
+    {
+      "name": "__init__",
+      "path": "src/strategy_variants/__init__.py",
+      "docstring": "Strategy Variants Module for the Intraday Statistical Arbitrage System.\n\nThis module provides alternative strategy implementations beyond\nthe core pairs trading strategy, including time-series models,\nalternative signal generation methods, and multi-pair approaches.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "factory",
+      "path": "src/strategy_variants/factory.py",
+      "docstring": "Strategy Factory Module for the Intraday Statistical Arbitrage System.\n\nThis module provides a factory function for creating strategy instances\nbased on configuration parameters.",
+      "classes": 0,
+      "functions": 1,
+      "dependencies": [
+        "src.pairs_trading_strategy.PairsTradingStrategy"
+      ]
+    },
+    {
+      "name": "ml_signal_strategy",
+      "path": "src/strategy_variants/ml_signals/ml_signal_strategy.py",
+      "docstring": "Machine Learning Signal Generation Strategy for the Intraday Statistical Arbitrage System.\n\nThis module implements machine learning-based approaches to signal generation\nfor pairs trading, including feature engineering, model training, and prediction.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.data_processor.data_processor.DataProcessor",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.risk_management.risk_manager.RiskManager",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/strategy_variants/ml_signals/__init__.py",
+      "docstring": "Machine Learning Signal Generation Module for the Intraday Statistical Arbitrage System.\n\nThis module implements machine learning-based approaches to signal generation\nfor pairs trading, including supervised learning, reinforcement learning,\nensemble methods, and feature-based approaches.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "time_series_strategy",
+      "path": "src/strategy_variants/time_series/time_series_strategy.py",
+      "docstring": "Time Series Strategy Implementation for the Intraday Statistical Arbitrage System.\n\nThis module implements a time-series based approach to pairs trading,\nusing advanced time-series models like ARIMA, GARCH, VAR to predict\nspreads and generate signals.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.data_processor.data_processor.DataProcessor",
+        "src.pairs_trading_strategy.PairsTradingStrategy",
+        "src.risk_management.risk_manager.RiskManager",
+        "src.signal_generation.signal_generator.SignalGenerator",
+        "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/strategy_variants/time_series/__init__.py",
+      "docstring": "Time Series Strategy Module for the Intraday Statistical Arbitrage System.\n\nThis module implements time-series based approaches to pairs trading,\nincluding ARIMA, GARCH, VAR, and other advanced time-series models.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "data_processing": [
+    {
+      "name": "data_processor",
+      "path": "src/data_processing/data_processor.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "data.data_loader.load_data"
+      ]
+    }
+  ],
+  "utils": [
+    {
+      "name": "__init__",
+      "path": "src/utils/__init__.py",
+      "docstring": "Utility functions for common operations.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "utils",
+      "path": "src/utils/utils.py",
+      "docstring": "",
+      "classes": 0,
+      "functions": 7,
+      "dependencies": []
+    }
+  ],
+  "risk_management": [
+    {
+      "name": "__init__",
+      "path": "src/risk_management/__init__.py",
+      "docstring": "Risk Management module for the Intraday Statistical Arbitrage System.\n\nThis module provides functionality for position sizing and risk control.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "position_sizer",
+      "path": "src/risk_management/position_sizer.py",
+      "docstring": "Position sizer module for the Intraday Statistical Arbitrage System.\n\nThis module implements position sizing functionality.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "risk_manager",
+      "path": "src/risk_management/risk_manager.py",
+      "docstring": "Risk manager module for the Intraday Statistical Arbitrage System.\n\nThis module implements risk management functionality.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "web_interface": [
+    {
+      "name": "models",
+      "path": "src/web_interface/models.py",
+      "docstring": "Models for the web interface.\n\nThis module defines the data models used by the web interface,\nincluding the User model for authentication.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/__init__.py",
+      "docstring": "Web Interface Module for the Intraday Statistical Arbitrage System.\n\nThis module provides a web-based interface for monitoring strategy performance,\nconfiguring the system, and controlling strategy execution.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "utils",
+      "path": "src/web_interface/utils.py",
+      "docstring": "Utility functions for the web interface.\n\nThis module provides utility functions for getting system status,\nperformance data, and other common tasks.",
+      "classes": 0,
+      "functions": 6,
+      "dependencies": []
+    },
+    {
+      "name": "app",
+      "path": "src/web_interface/app.py",
+      "docstring": "Flask application module for the web interface.\n\nThis module initializes the Flask application, configures routes,\nand handles requests for the web interface.",
+      "classes": 0,
+      "functions": 1,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/blueprints/configuration/__init__.py",
+      "docstring": "Configuration blueprint for the web interface.\n\nThis module provides routes for system configuration management.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "routes",
+      "path": "src/web_interface/blueprints/configuration/routes.py",
+      "docstring": "Routes for the configuration blueprint.\n\nThis module defines the routes for system configuration management.",
+      "classes": 0,
+      "functions": 5,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/blueprints/auth/__init__.py",
+      "docstring": "Authentication blueprint for the web interface.\n\nThis module handles user authentication, including login, logout,\nand user management.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "routes",
+      "path": "src/web_interface/blueprints/auth/routes.py",
+      "docstring": "Routes for the authentication blueprint.\n\nThis module defines the routes for user authentication, including\nlogin, logout, and user management.",
+      "classes": 0,
+      "functions": 7,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/blueprints/dashboard/__init__.py",
+      "docstring": "Dashboard blueprint for the web interface.\n\nThis module provides the main dashboard for monitoring strategy performance\nand system status.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "routes",
+      "path": "src/web_interface/blueprints/dashboard/routes.py",
+      "docstring": "Routes for the dashboard blueprint.\n\nThis module defines the routes for the dashboard, including\nthe main dashboard, strategy performance, and system status.",
+      "classes": 0,
+      "functions": 6,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/blueprints/api/__init__.py",
+      "docstring": "API blueprint for the web interface.\n\nThis module provides API endpoints for external systems to interact\nwith the trading platform.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "routes",
+      "path": "src/web_interface/blueprints/api/routes.py",
+      "docstring": "Routes for the API blueprint.\n\nThis module defines API endpoints for external systems to interact\nwith the trading platform.",
+      "classes": 0,
+      "functions": 10,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/web_interface/blueprints/strategy/__init__.py",
+      "docstring": "Strategy blueprint for the web interface.\n\nThis module provides routes for managing trading strategies,\nincluding starting, stopping, and configuring strategies.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "routes",
+      "path": "src/web_interface/blueprints/strategy/routes.py",
+      "docstring": "Routes for the strategy blueprint.\n\nThis module defines the routes for managing trading strategies,\nincluding starting, stopping, and configuring strategies.",
+      "classes": 0,
+      "functions": 9,
+      "dependencies": []
+    }
+  ],
+  "backtest": [
+    {
+      "name": "intraday_performance_visualization",
+      "path": "src/backtest/intraday_performance_visualization.py",
+      "docstring": "Visualization module for intraday backtest performance analysis.\n\nThis module provides functions for visualizing intraday backtest results\nwith a focus on time-of-day patterns, transaction costs, and regime-aware\nperformance attribution.",
+      "classes": 0,
+      "functions": 7,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/backtest/__init__.py",
+      "docstring": "Backtesting module for simulating and evaluating trading strategies.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "backtest_engine",
+      "path": "src/backtest/backtest_engine.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_backtest_engine",
+      "path": "src/backtest/intraday_backtest_engine.py",
+      "docstring": "Intraday backtesting engine with realistic constraints and transaction cost modeling.\n\nThis module extends the base BacktestEngine with intraday-specific functionality\nincluding time-of-day constraints, realistic transaction costs, and execution modeling.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.backtest.backtest_engine.BacktestEngine"
+      ]
+    }
+  ],
+  "paper_trading": [
+    {
+      "name": "__init__",
+      "path": "src/paper_trading/__init__.py",
+      "docstring": "Paper Trading Module for the Intraday Statistical Arbitrage System.\n\nThis module provides paper trading capabilities for testing strategies\nusing real-time market data but simulated executions.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "paper_trader",
+      "path": "src/paper_trading/paper_trader.py",
+      "docstring": "Paper Trader for the Intraday Statistical Arbitrage System.\n\nThis module provides a paper trading environment that uses real market data\nfrom Interactive Brokers but simulates order execution and position management.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "example",
+      "path": "src/paper_trading/example.py",
+      "docstring": "Example script for using the PaperTrader with Interactive Brokers.\n\nThis script demonstrates how to:\n1. Connect to IB for market data\n2. Set up a paper trading environment\n3. Place orders and track positions\n4. Print account and position updates",
+      "classes": 0,
+      "functions": 7,
+      "dependencies": [
+        "src.paper_trading.PaperTrader"
+      ]
+    },
+    {
+      "name": "intraday_ml_paper_trader",
+      "path": "src/paper_trading/intraday_ml_paper_trader.py",
+      "docstring": "Intraday ML-Enhanced Paper Trader\n\nThis module extends the base PaperTrader with ML capabilities, real-time\nmonitoring, and regime-change alerting for intraday trading.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": []
+    }
+  ],
+  "data_processor": [
+    {
+      "name": "data_processor",
+      "path": "src/data_processor/data_processor.py",
+      "docstring": "",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "futures_processor",
+      "path": "src/data_processor/futures_processor.py",
+      "docstring": "Futures Data Processor Module\n\nThis module provides functionality to process raw futures data files into a standardized format\nfor analysis and cointegration testing.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/data_processor/__init__.py",
+      "docstring": "Data processing module for loading and managing market data.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_processor",
+      "path": "src/data_processor/intraday_processor.py",
+      "docstring": "Intraday Data Processor Module\n\nThis module provides specialized functionality for processing intraday data for pairs trading,\nwith optimizations for efficient loading and preprocessing of high-frequency data.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "pair_trading": [
+    {
+      "name": "__init__",
+      "path": "src/pair_trading/__init__.py",
+      "docstring": "Pair Trading module for the Intraday Statistical Arbitrage System.\n\nThis module provides functionality for finding and analyzing trading pairs.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "pair_finder",
+      "path": "src/pair_trading/pair_finder.py",
+      "docstring": "Pair finder module for the Intraday Statistical Arbitrage System.\n\nThis module implements pair finding functionality to identify cointegrated pairs.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "ml_enhancements": [
+    {
+      "name": "ensemble_models",
+      "path": "src/ml_enhancements/ensemble_models.py",
+      "docstring": "Ensemble Models Module\n\nThis module provides ensemble learning techniques to improve model performance\nthrough combining multiple models using stacking, boosting, and bagging methods.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.ml_enhancements.training_utils.WalkForwardValidator"
+      ]
+    },
+    {
+      "name": "model_retraining",
+      "path": "src/ml_enhancements/model_retraining.py",
+      "docstring": "Automated Model Retraining Module\n\nThis module provides functionality for automated retraining of machine learning models\nfor intraday trading when new data becomes available or model performance degrades.",
+      "classes": 1,
+      "functions": 2,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_model_trainer",
+      "path": "src/ml_enhancements/intraday_model_trainer.py",
+      "docstring": "Intraday Model Trainer Module\n\nThis module provides functionality for training and managing machine learning models\nspecifically for intraday trading signals.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": [
+        "src.ml_enhancements.training_utils.WalkForwardValidator"
+      ]
+    },
+    {
+      "name": "__init__",
+      "path": "src/ml_enhancements/__init__.py",
+      "docstring": "Machine Learning Enhancements for the Intraday Statistical Arbitrage System.\n\nThis module provides machine learning-based tools to enhance the pairs trading strategy:\n- Spread Prediction: ML models to predict future spread movements\n- Regime Detection: Detect breakdowns in cointegration relationships\n- Feature Engineering: Create advanced features for improved signal generation",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_integration",
+      "path": "src/ml_enhancements/intraday_integration.py",
+      "docstring": "Intraday ML Integration Module\n\nThis module integrates various ML components for intraday trading:\n1. Connects ML models to signal generation\n2. Integrates regime detection with parameter adaptation\n3. Links the backtesting system with ML enhancements",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.backtest.intraday_performance_visualization.save_performance_dashboard",
+        "src.ml_enhancements.intraday_signals.IntradaySignalEnhancer",
+        "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+        "src.backtest.intraday_performance_visualization.create_intraday_performance_dashboard",
+        "src.ml_enhancements.intraday_signals.IntradaySignalProcessor",
+        "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+      ]
+    },
+    {
+      "name": "training_utils",
+      "path": "src/ml_enhancements/training_utils.py",
+      "docstring": "ML Training Utilities Module\n\nThis module provides utilities for training machine learning models for intraday trading,\nincluding walk-forward validation and label generation functions.",
+      "classes": 1,
+      "functions": 3,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_signals",
+      "path": "src/ml_enhancements/intraday_signals.py",
+      "docstring": "Intraday Signal Enhancement Module\n\nThis module provides ML-based signal enhancements for intraday pairs trading,\nfocusing on improving entry/exit timing, filtering false signals, and adapting\nto changing market conditions within the trading session.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "data_augmentation",
+      "path": "src/ml_enhancements/data_augmentation.py",
+      "docstring": "Time Series Data Augmentation Module\n\nThis module provides data augmentation techniques for time series financial data\nto improve model generalization and robustness.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/ml_enhancements/spread_prediction/__init__.py",
+      "docstring": "Spread Prediction Models for Pairs Trading.\n\nThis module provides machine learning models to predict future spread movements.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "spread_predictor",
+      "path": "src/ml_enhancements/spread_prediction/spread_predictor.py",
+      "docstring": "Spread Predictor for Pairs Trading.\n\nThis module provides a SpreadPredictor class for predicting future spread movements\nusing various machine learning models.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "model_factory",
+      "path": "src/ml_enhancements/spread_prediction/model_factory.py",
+      "docstring": "Model Factory for Spread Prediction.\n\nThis module provides functions to create various types of machine learning models\nfor predicting spread movements.",
+      "classes": 0,
+      "functions": 2,
+      "dependencies": []
+    },
+    {
+      "name": "regime_detector",
+      "path": "src/ml_enhancements/regime_detection/regime_detector.py",
+      "docstring": "Regime Detector for Pairs Trading.\n\nThis module provides tools to detect breakdowns in spread relationships\nand regime shifts in the spread behavior.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/ml_enhancements/regime_detection/__init__.py",
+      "docstring": "Regime Detection for Pairs Trading.\n\nThis module provides tools to detect breakdowns in cointegration relationships\nand regime shifts in the spread behavior.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "market_regime_classifier",
+      "path": "src/ml_enhancements/regime_detection/market_regime_classifier.py",
+      "docstring": "Market Regime Classifier Module\n\nThis module provides functionality to detect market regimes using various\nstatistical and machine learning methods to adapt trading parameters dynamically.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "intraday_features",
+      "path": "src/ml_enhancements/feature_engineering/intraday_features.py",
+      "docstring": "Intraday Feature Engineering Module\n\nThis module provides specialized feature engineering for intraday trading,\nfocusing on time-of-day patterns, volatility profiles, and liquidity metrics.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.ml_enhancements.feature_engineering.feature_generator.FeatureGenerator"
+      ]
+    },
+    {
+      "name": "advanced_features",
+      "path": "src/ml_enhancements/feature_engineering/advanced_features.py",
+      "docstring": "Advanced Feature Engineering Module\n\nThis module extends the base intraday feature engineering with more sophisticated \nfeatures including:\n- Advanced technical indicators\n- Cross-asset interaction features\n- Nonlinear transformations\n- Temporal pattern detection",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": [
+        "src.ml_enhancements.feature_engineering.intraday_features.IntradayFeatureEngineering"
+      ]
+    },
+    {
+      "name": "feature_generator",
+      "path": "src/ml_enhancements/feature_engineering/feature_generator.py",
+      "docstring": "Feature Generator for Pairs Trading.\n\nThis module provides tools to create advanced features for pairs trading strategies.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/ml_enhancements/feature_engineering/__init__.py",
+      "docstring": "Feature Engineering Module for ML-based pairs trading.\n\nThis module provides tools to create and select features for machine learning models.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "pairs_portfolio",
+      "path": "src/portfolio/pairs_portfolio.py",
+      "docstring": "Pairs Trading Portfolio Module\n\nThis module provides functionality for managing a portfolio of pairs trades.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "spread_analytics": [
+    {
+      "name": "__init__",
+      "path": "src/spread_analytics/__init__.py",
+      "docstring": "Spread Analytics module for the Intraday Statistical Arbitrage System.\n\nThis module provides functionality for analyzing spreads between assets.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "spread_analyzer",
+      "path": "src/spread_analytics/spread_analyzer.py",
+      "docstring": "Spread analyzer module for the Intraday Statistical Arbitrage System.\n\nThis module implements spread analysis functionality.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ],
+  "performance": [
+    {
+      "name": "__init__",
+      "path": "src/performance/__init__.py",
+      "docstring": "Performance Enhancement Module for the Intraday Statistical Arbitrage System.\n\nThis module provides tools to improve the performance of the system:\n- Parallel processing: Execute tasks in parallel for faster computation\n- Caching: Cache frequently used data to avoid redundant calculations\n- Efficient data structures: Optimize memory usage and processing speed",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "sparse_time_series",
+      "path": "src/performance/data_structures/sparse_time_series.py",
+      "docstring": "Sparse Time Series Data Structure for the Intraday Statistical Arbitrage System.\n\nThis module provides a memory-efficient sparse time series implementation,\noptimized for financial time series with missing values or irregular intervals.",
+      "classes": 3,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "compressed_ohlc",
+      "path": "src/performance/data_structures/compressed_ohlc.py",
+      "docstring": "Compressed OHLC Data Structure for the Intraday Statistical Arbitrage System.\n\nThis module provides a memory-efficient compressed OHLC (Open, High, Low, Close)\ndata structure for storing and processing financial time series data.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/performance/data_structures/__init__.py",
+      "docstring": "Efficient Data Structures for the Intraday Statistical Arbitrage System.\n\nThis module provides optimized data structures for efficient storage and processing,\nreducing memory usage and improving computational performance.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "rolling_window",
+      "path": "src/performance/data_structures/rolling_window.py",
+      "docstring": "Rolling Window Data Structures for the Intraday Statistical Arbitrage System.\n\nThis module provides efficient rolling window implementations for time series analysis,\noptimized for performance and memory usage.",
+      "classes": 2,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "task_pool",
+      "path": "src/performance/parallel/task_pool.py",
+      "docstring": "Task Pool for the Intraday Statistical Arbitrage System.\n\nThis module provides a task pool for managing long-running parallel tasks\nwith automatic resource management and task prioritization.",
+      "classes": 4,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/performance/parallel/__init__.py",
+      "docstring": "Parallel Processing Module for the Intraday Statistical Arbitrage System.\n\nThis module provides tools for executing tasks in parallel to speed up computation.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "parallel_executor",
+      "path": "src/performance/parallel/parallel_executor.py",
+      "docstring": "Parallel Executor for the Intraday Statistical Arbitrage System.\n\nThis module provides classes and functions for executing tasks in parallel\nusing process-based or thread-based parallelism.",
+      "classes": 1,
+      "functions": 1,
+      "dependencies": []
+    },
+    {
+      "name": "function_cache",
+      "path": "src/performance/caching/function_cache.py",
+      "docstring": "Function Caching for the Intraday Statistical Arbitrage System.\n\nThis module provides decorators for caching function results to improve performance.",
+      "classes": 1,
+      "functions": 4,
+      "dependencies": []
+    },
+    {
+      "name": "__init__",
+      "path": "src/performance/caching/__init__.py",
+      "docstring": "Caching Module for the Intraday Statistical Arbitrage System.\n\nThis module provides caching mechanisms to avoid redundant calculations\nand improve performance by reusing frequently accessed data.",
+      "classes": 0,
+      "functions": 0,
+      "dependencies": []
+    },
+    {
+      "name": "data_cache",
+      "path": "src/performance/caching/data_cache.py",
+      "docstring": "Data Cache for the Intraday Statistical Arbitrage System.\n\nThis module provides a data cache for storing and retrieving frequently used data,\nwith support for expiration, persistence, and memory management.",
+      "classes": 1,
+      "functions": 0,
+      "dependencies": []
+    }
+  ]
+}

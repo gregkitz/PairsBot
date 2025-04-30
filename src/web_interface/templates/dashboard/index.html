@@ -1,0 +1,285 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard - Intraday Statistical Arbitrage System{% endblock %}
+
+{% block extra_css %}
+<style>
+    .stat-card {
+        border-left: 4px solid;
+        transition: transform 0.2s;
+    }
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
+    .stat-card.primary {
+        border-left-color: #4e73df;
+    }
+    .stat-card.success {
+        border-left-color: #1cc88a;
+    }
+    .stat-card.info {
+        border-left-color: #36b9cc;
+    }
+    .stat-card.warning {
+        border-left-color: #f6c23e;
+    }
+    .position-card {
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+    .position-card:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .progress-sm {
+        height: 8px;
+    }
+    .system-status {
+        font-size: 0.85rem;
+    }
+    .system-status .badge {
+        width: 80px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3">Dashboard</h1>
+        <div>
+            <span class="badge {% if system_status.trader_running %}bg-success{% else %}bg-danger{% endif %} me-2">
+                {% if system_status.trader_running %}
+                    <i class="fas fa-check-circle me-1"></i>Trader Running
+                {% else %}
+                    <i class="fas fa-times-circle me-1"></i>Trader Stopped
+                {% endif %}
+            </span>
+            <span class="badge {% if system_status.connections.ib_connected %}bg-success{% else %}bg-danger{% endif %}">
+                {% if system_status.connections.ib_connected %}
+                    <i class="fas fa-plug me-1"></i>IB Connected
+                {% else %}
+                    <i class="fas fa-plug-circle-xmark me-1"></i>IB Disconnected
+                {% endif %}
+            </span>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow h-100 py-2 stat-card primary">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col me-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Today's P&L
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                ${{ "%.2f"|format(performance.get('daily_pnl', 0)) }}
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow h-100 py-2 stat-card success">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col me-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Active Positions
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{ performance.get('active_positions', 0) }}
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-chart-line fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow h-100 py-2 stat-card info">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col me-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                Win Rate
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{ "%.1f"|format(performance.get('win_rate', 0)) }}%
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-trophy fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow h-100 py-2 stat-card warning">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col me-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                Total Trades
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                {{ performance.get('total_trades', 0) }}
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-exchange-alt fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Active Positions -->
+        <div class="col-lg-8">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                    <h6 class="m-0 font-weight-bold text-primary">Active Positions</h6>
+                    <a href="{{ url_for('dashboard.performance') }}" class="btn btn-sm btn-primary">
+                        <i class="fas fa-chart-bar me-1"></i>Full Performance
+                    </a>
+                </div>
+                <div class="card-body">
+                    {% if positions %}
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Pair</th>
+                                        <th>Entry Time</th>
+                                        <th>Unrealized P&L</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for position in positions %}
+                                    <tr>
+                                        <td>
+                                            <strong>{{ position.leg1_symbol }}/{{ position.leg2_symbol }}</strong>
+                                        </td>
+                                        <td>{{ position.entry_time.split('T')[0] }} {{ position.entry_time.split('T')[1][:8] }}</td>
+                                        <td class="{% if position.unrealized_pnl > 0 %}text-success{% elif position.unrealized_pnl < 0 %}text-danger{% endif %}">
+                                            ${{ "%.2f"|format(position.unrealized_pnl) }}
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-primary">Active</span>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-search fa-3x text-gray-300 mb-3"></i>
+                            <p class="text-muted">No active positions</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- System Status -->
+        <div class="col-lg-4">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">System Status</h6>
+                </div>
+                <div class="card-body system-status">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>CPU Usage</div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">{{ system_status.cpu_percent }}%</div>
+                            <div class="progress flex-grow-1 progress-sm" style="width: 100px;">
+                                <div class="progress-bar {% if system_status.cpu_percent < 50 %}bg-success{% elif system_status.cpu_percent < 80 %}bg-warning{% else %}bg-danger{% endif %}"
+                                    role="progressbar" style="width: {{ system_status.cpu_percent }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>Memory Usage</div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">{{ system_status.memory_percent }}%</div>
+                            <div class="progress flex-grow-1 progress-sm" style="width: 100px;">
+                                <div class="progress-bar {% if system_status.memory_percent < 50 %}bg-success{% elif system_status.memory_percent < 80 %}bg-warning{% else %}bg-danger{% endif %}"
+                                    role="progressbar" style="width: {{ system_status.memory_percent }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>Disk Usage</div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">{{ system_status.disk_percent }}%</div>
+                            <div class="progress flex-grow-1 progress-sm" style="width: 100px;">
+                                <div class="progress-bar {% if system_status.disk_percent < 50 %}bg-success{% elif system_status.disk_percent < 80 %}bg-warning{% else %}bg-danger{% endif %}"
+                                    role="progressbar" style="width: {{ system_status.disk_percent }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>System Uptime</div>
+                        <div class="badge bg-info">{{ system_status.uptime }}</div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>Trader Status</div>
+                        <div class="badge {% if system_status.trader_running %}bg-success{% else %}bg-danger{% endif %}">
+                            {% if system_status.trader_running %}Running{% else %}Stopped{% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>IB Connection</div>
+                        <div class="badge {% if system_status.connections.ib_connected %}bg-success{% else %}bg-danger{% endif %}">
+                            {% if system_status.connections.ib_connected %}Connected{% else %}Disconnected{% endif %}
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Last Update</div>
+                        <div class="text-muted small">{{ system_status.timestamp.split('T')[0] }} {{ system_status.timestamp.split('T')[1][:8] }}</div>
+                    </div>
+                    
+                    <div class="text-center mt-3">
+                        <a href="{{ url_for('dashboard.status') }}" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-server me-1"></i>Detailed Status
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Auto-refresh dashboard every 30 seconds
+    setTimeout(function() {
+        location.reload();
+    }, 30000);
+</script>
+{% endblock %} 

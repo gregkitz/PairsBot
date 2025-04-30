@@ -1,0 +1,143 @@
+2025-03-21 09:17:59,553 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 09:18:01,533 - __main__ - INFO - Successfully imported IntradayMLPaperTrader
+2025-03-21 09:18:01,533 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 09:18:01,534 - src.paper_trading.paper_trader - ERROR - Error loading paper trading data: Expecting value: line 10 column 23 (char 215)
+2025-03-21 09:18:01,535 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 09:18:01,535 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 09:18:01,536 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 09:18:01,553 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 09:18:01,568 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 09:18:01,584 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 09:18:01,584 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:18:01,585 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 09:18:01,585 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 09:18:01,585 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 5)
+2025-03-21 09:18:01,585 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 5...
+2025-03-21 09:18:01,590 - ib_insync.client - INFO - Connected
+2025-03-21 09:18:01,593 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 09:18:01,596 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 09:18:01,596 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 09:18:01,596 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 09:18:01,596 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 09:18:01,596 - ib_insync.client - INFO - API connection ready
+2025-03-21 09:18:01,699 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 09:18:01,700 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 09:18:01,701 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 09:18:01,701 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 09:18:01,701 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 09:18:01,701 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 09:18:01,702 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 09:18:01,702 - __main__ - INFO - Created simple dashboard at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 09:18:01,702 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 09:19:01,702 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:19:01,702 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:19:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:20:01,703 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:20:01,703 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:20:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:21:01,704 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:21:01,704 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:21:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:22:01,705 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:22:01,705 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:22:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:23:01,610 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:23:01,706 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:23:01,706 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:23:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:24:01,710 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:24:01,711 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:24:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:25:01,712 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:25:01,712 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:25:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:26:01,713 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:26:01,713 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:26:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:27:01,714 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:27:01,714 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:27:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:28:01,649 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:28:01,715 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:28:01,715 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:28:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:29:01,717 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:29:01,717 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:29:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:30:01,717 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:30:01,717 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:30:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:31:01,718 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:31:01,718 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:31:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:32:01,719 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:32:01,719 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:32:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:33:01,698 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:33:01,720 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:33:01,720 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:33:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:34:01,721 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:34:01,721 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:34:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:35:01,722 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:35:01,722 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:35:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:36:01,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:36:01,723 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:36:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:37:01,724 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:37:01,724 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:37:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:38:01,725 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:38:01,725 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:38:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:38:01,735 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:39:01,726 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:39:01,726 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:39:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:40:01,726 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:40:01,726 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:40:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:41:01,727 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:41:01,727 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:41:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:42:01,729 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:42:01,729 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:42:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:43:01,730 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:43:01,730 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:43:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:43:01,738 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:44:01,731 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:44:01,732 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:44:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:45:01,732 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:45:01,732 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:45:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:46:01,733 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:46:01,733 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:46:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:47:01,734 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:47:01,734 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:47:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:48:01,734 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:48:01,734 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:48:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:48:01,816 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:49:01,736 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:49:01,736 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:49:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:50:01,737 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:50:01,737 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:50:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:51:01,737 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:51:01,738 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:51:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:52:01,738 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:52:01,738 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:52:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:53:01,739 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:53:01,739 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:53:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:53:01,864 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:54:01,740 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:54:01,741 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:54:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:55:01,741 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:55:01,741 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:55:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:56:01,742 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:56:01,742 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:56:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:57:01,743 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:57:01,743 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:57:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:58:01,743 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:58:01,743 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:58:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:58:01,951 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 09:59:01,744 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 09:59:01,744 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 09:59:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:00:01,746 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:00:01,746 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:00:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:01:01,747 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:01:01,747 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:01:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:02:01,748 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:02:01,748 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:02:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:03:01,749 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:03:01,749 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:03:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:03:02,009 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 10:04:01,749 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:04:01,750 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:04:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:05:01,750 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:05:01,751 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:05:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:06:01,751 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:06:01,751 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:06:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:07:01,752 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:07:01,752 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:07:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:08:01,753 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:08:01,753 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:08:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:08:02,088 - src.paper_trading.paper_trader - ERROR - Error saving paper trading data: Object of type datetime is not JSON serializable
+2025-03-21 10:09:01,754 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'
+2025-03-21 10:09:01,754 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:09:01 - Refresh Loop Error: Error in refresh loop: 'PaperTrader' object has no attribute 'get_subscribed_symbols'

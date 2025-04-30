@@ -1,0 +1,11 @@
+{
+  "cash": 100000.0,
+  "equity": 100000.0,
+  "margin_used": 0.0,
+  "pnl_day": 0.0,
+  "pnl_total": 0.0,
+  "unrealized_pnl": 0.0,
+  "initial_capital": 100000.0,
+  "starting_date": "2025-03-21",
+  "last_update_time": "2025-03-21T15:59:59.934866"
+}

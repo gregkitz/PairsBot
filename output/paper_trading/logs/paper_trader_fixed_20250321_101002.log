@@ -1,0 +1,265 @@
+2025-03-21 10:10:02,723 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 10:10:02,724 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 10:10:03,516 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 10:10:04,639 - __main__ - INFO - Successfully enhanced IntradayMLPaperTrader with better logging and dashboard
+2025-03-21 10:10:04,640 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 10:10:04,641 - src.paper_trading.paper_trader - INFO - Loaded account data: Capital=$100000.00
+2025-03-21 10:10:04,641 - src.paper_trading.paper_trader - INFO - Loaded 0 positions
+2025-03-21 10:10:04,641 - src.paper_trading.paper_trader - INFO - Loaded 0 historical trades
+2025-03-21 10:10:04,642 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 10:10:04,642 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 10:10:04,643 - src.paper_trading.intraday_ml_paper_trader - INFO - Loading market regime classifier from models/intraday\market_regime_classifier.joblib
+2025-03-21 10:10:04,646 - src.paper_trading.intraday_ml_paper_trader - INFO - Successfully loaded market regime classifier model
+2025-03-21 10:10:04,646 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded current regime: Low Volatility / Weak Trend
+2025-03-21 10:10:04,646 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 10:10:04,661 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 10:10:04,674 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 10:10:04,688 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 10:10:04,688 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 10:10:04,689 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 10:10:04,689 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 10:10:04,689 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7497 (client ID: 8)
+2025-03-21 10:10:04,689 - ib_insync.client - INFO - Connecting to localhost:7497 with clientId 8...
+2025-03-21 10:10:04,694 - ib_insync.client - INFO - Connected
+2025-03-21 10:10:04,697 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 10:10:04,698 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 10:10:04,699 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 10:10:04,699 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 10:10:04,699 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 10:10:04,699 - ib_insync.client - INFO - API connection ready
+2025-03-21 10:10:04,801 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 10:10:04,801 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 10:10:04,802 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 10:10:04,802 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 10:10:04,803 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 10:10:04,803 - __main__ - INFO - Starting enhanced refresh loop for ML monitoring
+2025-03-21 10:10:04,803 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 10:10:04,803 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 10:10:04,804 - __main__ - INFO - Added example pairs for monitoring: ['ES_NQ', 'GC_SI']
+2025-03-21 10:10:04,804 - __main__ - INFO - Subscribing to market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 10:10:04,804 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:10:04,804 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:10:04,804 - __main__ - INFO - Subscribed to market data for ES using contract object
+2025-03-21 10:10:04,805 - __main__ - INFO - Subscribed to market data for NQ using contract object
+2025-03-21 10:10:04,805 - __main__ - INFO - Successfully subscribed to continuous futures for pair ES_NQ
+2025-03-21 10:10:04,805 - __main__ - INFO - Subscribing to market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 10:10:04,805 - __main__ - INFO - Created continuous futures contract: GC-CONTFUT-COMEX
+2025-03-21 10:10:04,805 - __main__ - INFO - Created continuous futures contract: SI-CONTFUT-COMEX
+2025-03-21 10:10:04,805 - __main__ - INFO - Subscribed to market data for GC using contract object
+2025-03-21 10:10:04,805 - __main__ - INFO - Subscribed to market data for SI using contract object
+2025-03-21 10:10:04,805 - __main__ - INFO - Successfully subscribed to continuous futures for pair GC_SI
+2025-03-21 10:10:04,807 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:10:04.805763', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 10:10:04,808 - __main__ - INFO - Created demo signal for ES_NQ
+2025-03-21 10:10:04,810 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:10:04.808761', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 10:10:04,810 - __main__ - INFO - Created demo signal for GC_SI
+2025-03-21 10:10:04,811 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:10:04,811 - __main__ - INFO - Dashboard available at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 10:10:04,811 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 10:10:34,804 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:10:34,804 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:10:34,804 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:10:34,805 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:10:34,805 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:10:34,805 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:10:34,805 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:10:34,806 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:10:34,806 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:10:34,806 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:10:34,807 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:10:34,807 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:10:34,807 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:10:34,807 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:10:34,807 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:10:34,808 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:10:34,808 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:10:34 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:10:34,810 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:10:34.808960', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:10:34,812 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:10:34.810961', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:10:34,813 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:10:34,813 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:11:04,815 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:11:04,815 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:11:04,815 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:11:04,815 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:04,815 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:11:04,815 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:04,815 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:11:04,816 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:11:04,816 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:11:04,817 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:11:04,817 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:04,817 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:11:04,817 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:04,817 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:11:04,818 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:11:04,818 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:11:04,818 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:11:04 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:11:04,820 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:11:04.818601', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:11:04,822 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:11:04.820601', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:11:04,823 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:11:04,823 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:11:34,824 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:11:34,824 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:11:34,824 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:11:34,824 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:34,824 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:11:34,824 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:34,824 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:11:34,825 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:11:34,825 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:11:34,825 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:11:34,826 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:34,826 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:11:34,826 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:11:34,826 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:11:34,826 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:11:34,826 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:11:34,827 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:11:34 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:11:34,829 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:11:34.827651', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:11:34,831 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:11:34.829660', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:11:34,832 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:11:34,832 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:12:04,833 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:12:04,833 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:12:04,833 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:12:04,833 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:04,833 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:12:04,833 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:04,834 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:12:04,834 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:12:04,834 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:12:04,834 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:12:04,835 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:04,835 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:12:04,835 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:04,835 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:12:04,835 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:12:04,835 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:12:04,836 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:12:04 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:12:04,838 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:12:04.836926', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:12:04,840 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:12:04.838918', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:12:04,841 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:12:04,841 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:12:34,843 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:12:34,843 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:12:34,843 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:12:34,843 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:34,843 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:12:34,843 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:34,844 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:12:34,845 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:12:34,845 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:12:34,845 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:12:34,845 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:34,845 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:12:34,845 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:12:34,845 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:12:34,846 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:12:34,846 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:12:34,846 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:34,847 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:34,847 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:34,847 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:12:34,847 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:12:34,847 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:12:34 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:12:34,850 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:12:34.847212', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:12:34,852 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:12:34.850212', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:12:34,853 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:12:34,853 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:13:04,854 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:13:04,854 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:13:04,854 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:13:04,854 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:04,856 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:13:04,856 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:04,856 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:13:04,857 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:13:04,857 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:13:04,857 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:13:04,857 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:04,857 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:13:04,857 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:04,858 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:13:04,858 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:13:04,858 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:13:04,858 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:04,859 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:04,859 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:04,859 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:04,859 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:13:04,859 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:13:04 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:13:04,860 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:13:04.859008', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:13:04,863 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:13:04.860999', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:13:04,864 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:13:04,864 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:13:34,865 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:13:34,865 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:13:34,865 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:13:34,865 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:34,865 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:13:34,865 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:34,865 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:13:34,866 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:13:34,866 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:13:34,866 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:13:34,866 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:34,866 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:13:34,866 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:13:34,866 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:13:34,867 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:13:34,867 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:13:34,867 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:34,868 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:34,868 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:34,868 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:13:34,868 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:13:34,868 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:13:34 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:13:34,870 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:13:34.868526', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:13:34,873 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:13:34.870518', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:13:34,874 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:13:34,874 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 10:14:04,875 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 10:14:04,875 - __main__ - INFO - Requesting historical data for ES-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:14:04,875 - __main__ - INFO - Created continuous futures contract: ES-CONTFUT-CME
+2025-03-21 10:14:04,875 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:14:04,875 - __main__ - INFO - Trying fallback with simpler contract for ES-CONTFUT-CME
+2025-03-21 10:14:04,875 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:14:04,875 - __main__ - INFO - Creating synthetic data from current prices for ES-CONTFUT-CME
+2025-03-21 10:14:04,876 - __main__ - WARNING - Using synthetic price data for ES-CONTFUT-CME
+2025-03-21 10:14:04,876 - __main__ - INFO - Requesting historical data for NQ-CONTFUT-CME (2 h, 5 mins)
+2025-03-21 10:14:04,876 - __main__ - INFO - Created continuous futures contract: NQ-CONTFUT-CME
+2025-03-21 10:14:04,876 - __main__ - ERROR - Error requesting historical data: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:14:04,876 - __main__ - INFO - Trying fallback with simpler contract for NQ-CONTFUT-CME
+2025-03-21 10:14:04,876 - __main__ - ERROR - Fallback historical data request failed: 'Client' object has no attribute 'setTimeout'
+2025-03-21 10:14:04,877 - __main__ - INFO - Creating synthetic data from current prices for NQ-CONTFUT-CME
+2025-03-21 10:14:04,877 - __main__ - WARNING - Using synthetic price data for NQ-CONTFUT-CME
+2025-03-21 10:14:04,877 - __main__ - INFO - Limiting historical data requests to 2 symbols per refresh
+2025-03-21 10:14:04,877 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:14:04,877 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-CONTFUT-CME: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:14:04,878 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:14:04,878 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for SI-CONTFUT-COMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 10:14:04,878 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:14:04,878 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 10:14:04 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 10:14:04,880 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T10:14:04.878841', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'ES-202406-FUT-GLOBEX', 'symbol2': 'NQ-202406-FUT-GLOBEX'}
+2025-03-21 10:14:04,882 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T10:14:04.880849', 'ml_signal': 'pending', 'signal_strength': 0.0, 'regime': 'unknown', 'entry_threshold': 2.0, 'status': 'monitoring', 'symbol1': 'GC-202406-FUT-NYMEX', 'symbol2': 'SI-202406-FUT-NYMEX'}
+2025-03-21 10:14:04,883 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 10:14:04,883 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None

@@ -1,0 +1,1566 @@
+[
+  {
+    "timestamp": "2025-03-21 09:44:36",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:44:36.038238",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:44:36",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:44:36.039241",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:45:06",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:45:06.037376",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:45:06",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:45:06.037376",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:45:36",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:45:36.041668",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:45:36",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:45:36.042673",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:47:36",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:47:36.084997",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:47:36",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:47:36.085996",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:48:06",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:48:06.083699",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:48:06",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:48:06.084701",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:48:36",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:48:36.088963",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:48:36",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:48:36.089955",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:50:16",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:50:16.697062",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:50:16",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:50:16.699564",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:54:46",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:54:46.723828",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:54:46",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:54:46.731842",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": null,
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:56:48",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T09:56:48.296706",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 09:56:48",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T09:56:48.297707",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:00:19",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:00:19.367266",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:00:19",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:00:19.369266",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:01:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:01:54.834228",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:01:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:01:54.836229",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:02:24",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:02:24.836297",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:02:24",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:02:24.837287",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:02:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:02:54.844615",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:02:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:02:54.846122",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:03:24",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:03:24.852914",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:03:24",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:03:24.853906",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:03:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:03:54.866224",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:03:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:03:54.868217",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:04:24",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:04:24.880157",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:04:24",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:04:24.881157",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:04:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:04:54.889393",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:04:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:04:54.891393",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:05:24",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:05:24.899173",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:05:24",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:05:24.901174",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:05:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:05:54.911163",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:05:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:05:54.913162",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:06:24",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:06:24.922914",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:06:24",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:06:24.924913",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:06:54",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:06:54.932479",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:06:54",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:06:54.934491",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:07:41",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:07:41.721567",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:07:41",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:07:41.723567",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:10:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:10:04.805763",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:10:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:10:04.808761",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:10:34",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:10:34.808960",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:10:34",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:10:34.810961",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:11:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:11:04.818601",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:11:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:11:04.820601",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:11:34",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:11:34.827651",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:11:34",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:11:34.829660",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:12:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:12:04.836926",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:12:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:12:04.838918",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:12:34",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:12:34.847212",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:12:34",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:12:34.850212",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:13:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:13:04.859008",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:13:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:13:04.860999",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:13:34",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:13:34.868526",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:13:34",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:13:34.870518",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:14:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:14:04.878841",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:14:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:14:04.880849",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "unknown",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:14:37",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:14:37.937087",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:14:37",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:14:37.940086",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:15:07",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:15:07.943708",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:15:07",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:15:07.946622",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:15:37",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:15:37.961521",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:15:37",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:15:37.963529",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:23:04",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:23:04.164354",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:23:04",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:23:04.167353",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:32:41",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:32:41.647073",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:32:41",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:32:41.650092",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:36:41",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:36:41.717870",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:36:41",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:36:41.719876",
+      "ml_signal": "pending",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:39:53",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:39:53.577436",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:39:53",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:39:53.580436",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:45:16",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:45:16.314192",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:45:16",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:45:16.320373",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:47:16",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:47:16.332248",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:47:16",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:47:16.334249",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:48:39",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T10:48:39.631139",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 10:48:39",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T10:48:39.635237",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:01:03",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:01:03.606082",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:01:03",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:01:03.609076",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:03:03",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:03:03.631103",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:03:03",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:03:03.634106",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:07:22",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:07:22.893924",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:07:22",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:07:22.901367",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:10:22",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:10:22.927730",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:10:22",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:10:22.930712",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:14:26",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:14:26.369444",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:14:26",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:14:26.373553",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:16:00",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:16:00.460300",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:16:00",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:16:00.464299",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:19:00",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:19:00.470730",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "ES-202406-FUT-GLOBEX",
+      "symbol2": "NQ-202406-FUT-GLOBEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:19:00",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:19:00.473727",
+      "ml_signal": "waiting_for_data",
+      "signal_strength": 0.0,
+      "regime": "Low Volatility / Weak Trend",
+      "entry_threshold": 2.0,
+      "status": "waiting_for_data",
+      "note": "Waiting for market data",
+      "symbol1": "GC-202406-FUT-NYMEX",
+      "symbol2": "SI-202406-FUT-NYMEX"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:22:52",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:22:52.187016",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:22:52",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:22:52.191017",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:25:42",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:25:42.613462",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:25:42",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:25:42.616463",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:34:57",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:34:57.589532",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:34:57",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:34:57.593525",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:44:37",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T11:44:37.290490",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 11:44:37",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T11:44:37.294587",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 12:01:41",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T12:01:41.372269",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 12:01:41",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T12:01:41.378276",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 14:08:12",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-21T14:08:12.622523",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-21 14:08:12",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-21T14:08:12.625533",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "pairs": [
+    {
+      "pair_id": "ES_NQ",
+      "symbol1": "ES",
+      "symbol2": "NQ",
+      "full_symbol1": "ES-202406-FUT-CME",
+      "full_symbol2": "NQ-202406-FUT-CME",
+      "config": {
+        "hedge_ratio": 1.0,
+        "lookback": 50,
+        "use_rolling_regression": false,
+        "entry_zscore": 2.0,
+        "exit_zscore": 0.5,
+        "stop_loss_std": 3.0
+      },
+      "max_holding_period_minutes": 180,
+      "time_filters": {
+        "entry_allowed": {
+          "start": "09:30",
+          "end": "15:30"
+        },
+        "exit_allowed": {
+          "start": "09:30",
+          "end": "15:59"
+        }
+      },
+      "ml_settings": {
+        "use_signal_filter": true,
+        "use_entry_timing": true,
+        "use_exit_timing": true,
+        "use_regime_adaptation": true,
+        "prediction_threshold": 0.6
+      },
+      "position_sizing": {
+        "method": "fixed_contracts", 
+        "contracts_per_trade": 1
+      },
+      "transaction_costs": {
+        "commission_per_contract": 2.50,
+        "slippage_ticks": 1
+      }
+    },
+    {
+      "pair_id": "GC_SI",
+      "symbol1": "GC",
+      "symbol2": "SI",
+      "full_symbol1": "GC-202406-FUT-COMEX",
+      "full_symbol2": "SI-202406-FUT-COMEX",
+      "config": {
+        "hedge_ratio": 0.1,
+        "lookback": 50,
+        "use_rolling_regression": false,
+        "entry_zscore": 2.0,
+        "exit_zscore": 0.5,
+        "stop_loss_std": 3.0
+      },
+      "max_holding_period_minutes": 180,
+      "time_filters": {
+        "entry_allowed": {
+          "start": "09:30",
+          "end": "15:30"
+        },
+        "exit_allowed": {
+          "start": "09:30",
+          "end": "15:59"
+        }
+      },
+      "ml_settings": {
+        "use_signal_filter": true,
+        "use_entry_timing": true,
+        "use_exit_timing": true,
+        "use_regime_adaptation": true,
+        "prediction_threshold": 0.6
+      },
+      "position_sizing": {
+        "method": "fixed_contracts", 
+        "contracts_per_trade": 1
+      },
+      "transaction_costs": {
+        "commission_per_contract": 2.50,
+        "slippage_ticks": 1
+      }
+    }
+  ],
+  "ml_system": {
+    "models_dir": "models/intraday",
+    "feature_lookback": 20,
+    "prediction_threshold": 0.6,
+    "use_regime_detection": true,
+    "regime_adaptation": {
+      "enabled": true,
+      "update_frequency": "daily",
+      "parameter_ranges": {
+        "entry_zscore": [1.5, 3.0],
+        "exit_zscore": [0.0, 1.0]
+      }
+    }
+  },
+  "market_data": {
+    "refresh_interval_seconds": 60,
+    "data_store_days": 5
+  },
+  "dashboard": {
+    "update_interval_seconds": 300,
+    "metrics_to_display": [
+      "equity_curve",
+      "drawdown",
+      "win_rate",
+      "profit_factor",
+      "sharpe_ratio",
+      "trade_analysis"
+    ]
+  },
+  "alerts": {
+    "enabled": true,
+    "channels": ["console"],
+    "events": [
+      "regime_change",
+      "parameter_update",
+      "trade_execution",
+      "drawdown_threshold"
+    ],
+    "drawdown_threshold": 5.0
+  },
+  "logging": {
+    "level": "INFO",
+    "console_output": true,
+    "file_output": true
+  }
+} 

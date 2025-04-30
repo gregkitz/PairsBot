@@ -1,0 +1,168 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="refresh" content="60">
+                <title>ML-Enhanced Paper Trading Dashboard</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1, h2 { color: #333; }
+                    .metric { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+                    .metric h2 { margin-top: 0; color: #0066cc; }
+                    .value { font-size: 24px; font-weight: bold; margin: 10px 0; }
+                    .status { display: inline-block; padding: 5px 10px; border-radius: 3px; color: white; }
+                    .good { background-color: #4CAF50; }
+                    .warning { background-color: #FF9800; }
+                    .bad { background-color: #F44336; }
+                    .neutral { background-color: #2196F3; }
+                    .last-updated { color: #666; font-size: 12px; margin-top: 30px; }
+                    table { width: 100%; border-collapse: collapse; }
+                    th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+                    th { background-color: #f2f2f2; }
+                    tr:hover { background-color: #f5f5f5; }
+                    .signal-table { margin-top: 20px; }
+                    pre { white-space: pre-wrap; word-wrap: break-word; }
+                </style>
+            </head>
+            <body>
+                <h1>ML-Enhanced Paper Trading Dashboard</h1>
+                <p>Running paper trading for pairs: ES_NQ, GC_SI</p>
+                
+                <div class="metric">
+                    <h2>Status</h2>
+                    <div class="value">
+                        <span class="status good">ACTIVE</span>
+                    </div>
+                    <p>Paper trading is currently active and monitoring the market</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Market Data Subscriptions</h2>
+                    <div class="value">
+                        4 symbols
+                    </div>
+                    <p>Currently subscribed to: ES-20250620-CONTFUT-QBALGO, NQ-20250620-CONTFUT-CME, GC-20250428-CONTFUT-QBALGO, SI-20250528-CONTFUT-COMEX</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Market Regime</h2>
+                    <div class="value">
+                        <span class="status good">Low Volatility / Weak Trend</span>
+                    </div>
+                    <p>Current detected market regime</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Account Value</h2>
+                    <div class="value">$100000.00</div>
+                    <p>Current account equity</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Open Positions</h2>
+                    <div class="value">0</div>
+                    <p>Number of currently open positions</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Today's P&L</h2>
+                    <div class="value">$0.00</div>
+                    <p>Profit & Loss for the current trading day</p>
+                </div>
+                
+                <div class="metric">
+                    <h2>Signal Monitoring</h2>
+                    <table class="signal-table">
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Pair</th>
+                            <th>Signal Info</th>
+                        </tr>
+            
+                        <tr>
+                            <td>2025-03-21 11:25:42</td>
+                            <td>GC_SI</td>
+                            <td><pre>{
+  "pair": "GC_SI",
+  "timestamp": "2025-03-21T11:25:42.616463",
+  "ml_signal": "neutral",
+  "signal_strength": 0.45,
+  "regime": "ranging",
+  "entry_threshold": 2.0,
+  "status": "monitoring",
+  "note": "Demo signal - no actual market data available"
+}</pre></td>
+                        </tr>
+                
+                        <tr>
+                            <td>2025-03-21 11:25:42</td>
+                            <td>ES_NQ</td>
+                            <td><pre>{
+  "pair": "ES_NQ",
+  "timestamp": "2025-03-21T11:25:42.613462",
+  "ml_signal": "neutral",
+  "signal_strength": 0.45,
+  "regime": "ranging",
+  "entry_threshold": 2.0,
+  "status": "monitoring",
+  "note": "Demo signal - no actual market data available"
+}</pre></td>
+                        </tr>
+                
+                        <tr>
+                            <td>2025-03-21 11:22:52</td>
+                            <td>GC_SI</td>
+                            <td><pre>{
+  "pair": "GC_SI",
+  "timestamp": "2025-03-21T11:22:52.191017",
+  "ml_signal": "neutral",
+  "signal_strength": 0.45,
+  "regime": "ranging",
+  "entry_threshold": 2.0,
+  "status": "monitoring",
+  "note": "Demo signal - no actual market data available"
+}</pre></td>
+                        </tr>
+                
+                        <tr>
+                            <td>2025-03-21 11:22:52</td>
+                            <td>ES_NQ</td>
+                            <td><pre>{
+  "pair": "ES_NQ",
+  "timestamp": "2025-03-21T11:22:52.187016",
+  "ml_signal": "neutral",
+  "signal_strength": 0.45,
+  "regime": "ranging",
+  "entry_threshold": 2.0,
+  "status": "monitoring",
+  "note": "Demo signal - no actual market data available"
+}</pre></td>
+                        </tr>
+                
+                        <tr>
+                            <td>2025-03-21 11:19:00</td>
+                            <td>GC_SI</td>
+                            <td><pre>{
+  "pair": "GC_SI",
+  "timestamp": "2025-03-21T11:19:00.473727",
+  "ml_signal": "waiting_for_data",
+  "signal_strength": 0.0,
+  "regime": "Low Volatility / Weak Trend",
+  "entry_threshold": 2.0,
+  "status": "waiting_for_data",
+  "note": "Waiting for market data",
+  "symbol1": "GC-202406-FUT-NYMEX",
+  "symbol2": "SI-202406-FUT-NYMEX"
+}</pre></td>
+                        </tr>
+                
+                    </table>
+                </div>
+                
+                <p class="last-updated">Last updated: 2025-03-21 11:28:11</p>
+                <p>This page automatically refreshes every minute.</p>
+                <p>For detailed logs, check the logs directory. Signal history is in the signals directory.</p>
+            </body>
+            </html>
+            

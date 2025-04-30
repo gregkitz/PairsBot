@@ -1,0 +1,104 @@
+2025-03-21 11:25:39,749 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 11:25:39,749 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 11:25:40,116 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 11:25:40,423 - __main__ - INFO - Successfully enhanced IntradayMLPaperTrader with better logging and dashboard
+2025-03-21 11:25:40,423 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 11:25:40,424 - src.paper_trading.paper_trader - INFO - Loaded account data: Capital=$100000.00
+2025-03-21 11:25:40,425 - src.paper_trading.paper_trader - INFO - Loaded 0 positions
+2025-03-21 11:25:40,425 - src.paper_trading.paper_trader - INFO - Loaded 0 historical trades
+2025-03-21 11:25:40,425 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 11:25:40,426 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 11:25:40,426 - src.paper_trading.intraday_ml_paper_trader - INFO - Loading market regime classifier from models/intraday\market_regime_classifier.joblib
+2025-03-21 11:25:40,429 - src.paper_trading.intraday_ml_paper_trader - INFO - Successfully loaded market regime classifier model
+2025-03-21 11:25:40,430 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded current regime: Low Volatility / Weak Trend
+2025-03-21 11:25:40,430 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 11:25:40,445 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 11:25:40,460 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 11:25:40,474 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 11:25:40,475 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:25:40,475 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:25:40,475 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 11:25:40,476 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:25:40,476 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:25:40,481 - ib_insync.client - INFO - Connected
+2025-03-21 11:25:40,484 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:25:40,485 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:25:40,486 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:25:40,486 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:25:40,486 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:25:40,487 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:25:40,689 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:25:40,689 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 11:25:40,690 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:25:40,690 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:25:40,691 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 11:25:40,691 - __main__ - INFO - Starting enhanced refresh loop for ML monitoring
+2025-03-21 11:25:40,691 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 11:25:40,691 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 11:25:40,692 - __main__ - INFO - Added example pairs for monitoring: ['ES_NQ', 'GC_SI']
+2025-03-21 11:25:40,692 - __main__ - INFO - Got IB connection for contract search
+2025-03-21 11:25:40,692 - __main__ - INFO - Searching for continuous future: ES
+2025-03-21 11:25:41,042 - __main__ - INFO - Found continuous future for ES: Contract(secType='CONTFUT', conId=620731015, symbol='ES', lastTradeDateOrContractMonth='20250620', multiplier='50', exchange='QBALGO', currency='USD', localSymbol='ESM5', tradingClass='ES')
+2025-03-21 11:25:41,043 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='CONTFUT', conId=620731015, symbol='ES', lastTradeDateOrContractMonth='20250620', multiplier='50', exchange='QBALGO', currency='USD', localSymbol='ESM5', tradingClass='ES')
+2025-03-21 11:25:41,212 - __main__ - INFO - Using qualified contract: Contract(secType='CONTFUT', conId=620731015, symbol='ES', lastTradeDateOrContractMonth='20250620', multiplier='50', exchange='QBALGO', currency='USD', localSymbol='ESM5', tradingClass='ES')
+2025-03-21 11:25:41,213 - __main__ - INFO - Subscribed to market data for ES-20250620-CONTFUT-QBALGO
+2025-03-21 11:25:41,213 - __main__ - INFO - Subscribed to continuous future for ES
+2025-03-21 11:25:41,213 - __main__ - INFO - Searching for continuous future: NQ
+2025-03-21 11:25:41,482 - __main__ - INFO - Found continuous future for NQ: Contract(secType='CONTFUT', conId=672387474, symbol='NQ', lastTradeDateOrContractMonth='20250620', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM5', tradingClass='NQ')
+2025-03-21 11:25:41,482 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='CONTFUT', conId=672387474, symbol='NQ', lastTradeDateOrContractMonth='20250620', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM5', tradingClass='NQ')
+2025-03-21 11:25:41,650 - __main__ - INFO - Using qualified contract: Contract(secType='CONTFUT', conId=672387474, symbol='NQ', lastTradeDateOrContractMonth='20250620', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM5', tradingClass='NQ')
+2025-03-21 11:25:41,653 - __main__ - INFO - Subscribed to market data for NQ-20250620-CONTFUT-CME
+2025-03-21 11:25:41,653 - __main__ - INFO - Subscribed to continuous future for NQ
+2025-03-21 11:25:41,653 - __main__ - INFO - Searching for continuous future: GC
+2025-03-21 11:25:41,779 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2025-03-21 11:25:41,999 - __main__ - INFO - Found continuous future for GC: Contract(secType='CONTFUT', conId=633994080, symbol='GC', lastTradeDateOrContractMonth='20250428', multiplier='100', exchange='QBALGO', currency='USD', localSymbol='GCJ5', tradingClass='GC')
+2025-03-21 11:25:42,000 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='CONTFUT', conId=633994080, symbol='GC', lastTradeDateOrContractMonth='20250428', multiplier='100', exchange='QBALGO', currency='USD', localSymbol='GCJ5', tradingClass='GC')
+2025-03-21 11:25:42,170 - __main__ - INFO - Using qualified contract: Contract(secType='CONTFUT', conId=633994080, symbol='GC', lastTradeDateOrContractMonth='20250428', multiplier='100', exchange='QBALGO', currency='USD', localSymbol='GCJ5', tradingClass='GC')
+2025-03-21 11:25:42,170 - __main__ - INFO - Subscribed to market data for GC-20250428-CONTFUT-QBALGO
+2025-03-21 11:25:42,170 - __main__ - INFO - Subscribed to continuous future for GC
+2025-03-21 11:25:42,170 - __main__ - INFO - Searching for continuous future: SI
+2025-03-21 11:25:42,444 - __main__ - INFO - Found continuous future for SI: Contract(secType='CONTFUT', conId=706903692, symbol='SI', lastTradeDateOrContractMonth='20250528', multiplier='1000', exchange='COMEX', currency='USD', localSymbol='SILK5', tradingClass='SIL')
+2025-03-21 11:25:42,445 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='CONTFUT', conId=706903692, symbol='SI', lastTradeDateOrContractMonth='20250528', multiplier='1000', exchange='COMEX', currency='USD', localSymbol='SILK5', tradingClass='SIL')
+2025-03-21 11:25:42,612 - __main__ - INFO - Using qualified contract: Contract(secType='CONTFUT', conId=706903692, symbol='SI', lastTradeDateOrContractMonth='20250528', multiplier='1000', exchange='COMEX', currency='USD', localSymbol='SILK5', tradingClass='SIL')
+2025-03-21 11:25:42,612 - __main__ - INFO - Subscribed to market data for SI-20250528-CONTFUT-COMEX
+2025-03-21 11:25:42,612 - __main__ - INFO - Subscribed to continuous future for SI
+2025-03-21 11:25:42,612 - __main__ - INFO - Subscribed to 4 contracts
+2025-03-21 11:25:42,613 - __main__ - INFO - Checking market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 11:25:42,613 - __main__ - INFO - Checking market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 11:25:42,616 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T11:25:42.613462', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:25:42,616 - __main__ - INFO - Created demo signal for ES_NQ
+2025-03-21 11:25:42,621 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T11:25:42.616463', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:25:42,622 - __main__ - INFO - Created demo signal for GC_SI
+2025-03-21 11:25:42,622 - __main__ - INFO - Loaded current regime from file: Low Volatility / Weak Trend
+2025-03-21 11:25:42,623 - __main__ - INFO - Current market regime: Low Volatility / Weak Trend
+2025-03-21 11:25:42,624 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 11:25:42,624 - __main__ - INFO - Dashboard available at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 11:25:42,624 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 11:26:40,692 - __main__ - INFO - Refreshing ML system and checking for trading signals...
+2025-03-21 11:26:40,692 - __main__ - INFO - Searching for contract details for ES
+2025-03-21 11:28:11,010 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 11:28:11,682 - __main__ - INFO - Stopping ML-enhanced paper trader...
+2025-03-21 11:28:11,717 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 11:28:11,717 - ib_insync.ib - INFO - Disconnecting from localhost:7496, 921 B sent in 20 messages, 28.5 kB received in 446 messages, session time 151 s.
+2025-03-21 11:28:11,717 - ib_insync.client - INFO - Disconnecting
+2025-03-21 11:28:11,717 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 11:28:11,717 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 11:28:11,718 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:28:11,718 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:28:11,718 - ib_insync.client - INFO - Disconnected.
+2025-03-21 11:28:11,721 - ib_insync.client - INFO - Connected
+2025-03-21 11:28:11,724 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:28:11,725 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:28:11,725 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2025-03-21 11:28:11,725 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:28:11,726 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:28:11,726 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:28:11,726 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:28:11,827 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:28:11,828 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:28:11,830 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:28:11,830 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 11:28:11,831 - src.paper_trading.paper_trader - INFO - Paper trader stopped
+2025-03-21 11:28:11,832 - __main__ - INFO - Updated dashboard at: output/paper_trading\dashboard\index.html
+2025-03-21 11:28:11,832 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader stopped
+2025-03-21 11:28:11,832 - __main__ - INFO - ML-enhanced paper trader stopped.

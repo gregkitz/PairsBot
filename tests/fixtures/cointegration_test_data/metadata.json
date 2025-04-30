@@ -1,0 +1,79 @@
+{
+    "strong_cointegration": {
+        "hedge_ratio": 0.7,
+        "noise_ratio": 0.1,
+        "mean_rev_strength": 0.2,
+        "expected_half_life": 5,
+        "expected_p_value": 0.01,
+        "description": "Strong cointegration with fast mean reversion"
+    },
+    "weak_cointegration": {
+        "hedge_ratio": 0.8,
+        "noise_ratio": 0.3,
+        "mean_rev_strength": 0.05,
+        "expected_half_life": 20,
+        "expected_p_value": 0.04,
+        "description": "Weak cointegration with slow mean reversion"
+    },
+    "non_cointegrated": {
+        "initial_correlation": 0.4,
+        "expected_p_value": 0.3,
+        "description": "Correlated but non-cointegrated random walks"
+    },
+    "regime_shifts": {
+        "hedge_ratio": 0.75,
+        "noise_ratio": 0.2,
+        "mean_rev_strength": 0.15,
+        "breakpoints": [
+            150,
+            300
+        ],
+        "description": "Cointegrated pair with regime shifts in the mean"
+    },
+    "structural_break": {
+        "initial_hedge_ratio": 0.65,
+        "noise_ratio": 0.2,
+        "mean_rev_strength": 0.1,
+        "breakpoints": [
+            250
+        ],
+        "description": "Pair with structural break in cointegration relationship"
+    },
+    "spurious_cointegration": {
+        "trending": true,
+        "description": "Pair with spurious cointegration due to common trends"
+    },
+    "seasonal_cointegration": {
+        "hedge_ratio": 0.6,
+        "noise_ratio": 0.15,
+        "mean_rev_strength": 0.15,
+        "seasonal_pattern": true,
+        "description": "Cointegrated pair with seasonal patterns"
+    },
+    "multivariate_cointegration": {
+        "hedge_ratios": [
+            0.65,
+            0.9
+        ],
+        "expected_coint_relations": 2,
+        "description": "System with multiple cointegrating relationships for Johansen testing"
+    },
+    "borderline_cointegration": {
+        "hedge_ratio": 0.75,
+        "noise_ratio": 0.35,
+        "mean_rev_strength": 0.03,
+        "expected_half_life": 25,
+        "expected_p_value": 0.049,
+        "description": "Borderline case that tests robustness of cointegration methods"
+    },
+    "drift_term": {
+        "hedge_ratio": 0.8,
+        "drift": 0.01,
+        "description": "Cointegrated with drift term (model 1 in Johansen)"
+    },
+    "linear_trend": {
+        "hedge_ratio": 0.7,
+        "has_trend": true,
+        "description": "Cointegrated with linear trend (model 3-4 in Johansen)"
+    }
+}

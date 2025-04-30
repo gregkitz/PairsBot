@@ -1,0 +1,1453 @@
+2025-03-21 00:24:27,195 - data_download - ERROR - Error importing required modules: No module named 'src.config.config_manager'
+2025-03-21 00:27:04,881 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:27:04,881 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:27:04,881 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:27:04,881 - data_download - INFO - Using symbols ['ES', 'NQ'] from command line
+2025-03-21 00:27:04,882 - data_download - INFO - Downloading data for ['ES', 'NQ'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:27:04,882 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:27:04,882 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:27:04,883 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:27:04,883 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:27:04,884 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:04,886 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:04,887 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:27:04,887 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:27:04,887 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:27:04,888 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:27:04,888 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:27:04,888 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:27:04,888 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:27:05,090 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:27:05,090 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:27:05,091 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:27:05,091 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:27:05,091 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:27:05,091 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:27:05,091 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 112 B sent in 7 messages, 18.3 kB received in 388 messages, session time 209 ms.
+2025-03-21 00:27:05,091 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:05,091 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:27:05,092 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:27:05,092 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:27:05,092 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:27:05,092 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:27:05,093 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,145 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:05,146 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:27:05,146 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:27:05,147 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:27:05,147 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:27:05,147 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:27:05,147 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:27:05,147 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:27:05,249 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:27:05,250 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:27:05,250 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:27:05,251 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:27:05,251 - src.data_processor.data_loader - INFO - Downloading data for 2 symbols and 5 timeframes in parallel
+2025-03-21 00:27:05,252 - src.data_processor.data_loader - INFO - Downloading ES 1min data from Interactive Brokers...
+2025-03-21 00:27:05,253 - src.data_processor.data_loader - INFO - Downloading ES 5min data from Interactive Brokers...
+2025-03-21 00:27:05,253 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:05,253 - src.data_processor.data_loader - INFO - Downloading ES 15min data from Interactive Brokers...
+2025-03-21 00:27:05,254 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:05,254 - src.data_processor.data_loader - INFO - Downloading ES 1hour data from Interactive Brokers...
+2025-03-21 00:27:05,255 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:05,255 - src.data_processor.data_loader - INFO - Downloading ES 1day data from Interactive Brokers...
+2025-03-21 00:27:05,256 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:05,256 - src.data_processor.data_loader - INFO - Downloading NQ 1min data from Interactive Brokers...
+2025-03-21 00:27:05,256 - src.data_processor.data_loader - INFO - Downloading NQ 5min data from Interactive Brokers...
+2025-03-21 00:27:05,257 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:05,257 - src.data_processor.data_loader - INFO - Downloading NQ 15min data from Interactive Brokers...
+2025-03-21 00:27:05,257 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:05,258 - src.data_processor.data_loader - INFO - Downloading NQ 1hour data from Interactive Brokers...
+2025-03-21 00:27:05,259 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:05,259 - src.data_processor.data_loader - INFO - Downloading NQ 1day data from Interactive Brokers...
+2025-03-21 00:27:05,259 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:05,260 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:05,260 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:05,261 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 112 B sent in 7 messages, 18.3 kB received in 388 messages, session time 169 ms.
+2025-03-21 00:27:05,262 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:05,262 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:05,262 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:05,263 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,263 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:05,265 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,265 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:05,265 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:05,266 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,266 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:05,267 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,268 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,268 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:05,301 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:05,301 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:05,301 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,301 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:05,301 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:05,302 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:05,303 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,304 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,305 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:05,306 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,307 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:05,811 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:06,321 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:06,326 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,326 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,329 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,331 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,332 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,333 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,334 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:06,846 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:07,453 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:07,456 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:27:07,456 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:27:07,456 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:27:07,456 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:27:07,457 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:27:07,457 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:27:07,457 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:27:07,559 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:27:07,559 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:27:07,561 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:27:07,561 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:27:07,562 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:27:07,810 - src.data_processor.data_loader - INFO - Successfully downloaded 1 rows for ES 1day
+2025-03-21 00:27:07,968 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:08,474 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:08,991 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:09,500 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:09,525 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:27:09,525 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:27:09,526 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:27:09,526 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:27:09,526 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:27:09,526 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:27:09,526 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:27:09,629 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:27:09,629 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:27:09,630 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:27:09,630 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:27:09,630 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:27:09,762 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Stock(symbol='NQ', exchange='SMART', currency='USD')
+2025-03-21 00:27:09,762 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: NQ-STK-SMART
+2025-03-21 00:27:09,763 - src.connectors.ib.ib_connector - WARNING - No historical data found for NQ
+2025-03-21 00:27:09,764 - src.data_processor.data_loader - WARNING - No data returned from IB for NQ 15min, falling back to synthetic data
+2025-03-21 00:27:09,764 - src.data_processor.data_loader - INFO - Generating synthetic data for NQ 15min
+2025-03-21 00:27:09,767 - src.data_processor.data_loader - INFO - Successfully generated 2 rows of synthetic data for NQ 15min
+2025-03-21 00:27:35,263 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,263 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,263 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,263 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,279 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,279 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,279 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,280 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,310 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,310 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,310 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,311 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,311 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,311 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,311 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,311 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,312 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,312 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,312 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,312 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,326 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,326 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,326 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:27:35,326 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,327 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,327 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:27:35,327 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,328 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,328 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:27:35,328 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,328 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:35,328 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:27:40,264 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:40,264 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:40,266 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,270 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,280 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:40,280 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:40,281 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,313 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:40,313 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:40,313 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:40,313 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:40,313 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:40,314 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:40,315 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,315 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,315 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,329 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5001)
+2025-03-21 00:27:40,329 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5001...
+2025-03-21 00:27:40,329 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:40,329 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5002)
+2025-03-21 00:27:40,329 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:40,330 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5002...
+2025-03-21 00:27:40,330 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,330 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,332 - ib_insync.client - INFO - Connected
+2025-03-21 00:27:40,787 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:40,793 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,794 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,794 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,794 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,797 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,798 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:40,799 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:27:41,300 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:41,811 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:42,320 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:42,831 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:43,344 - ib_insync.client - ERROR - Peer closed connection. clientId 5001 already in use?
+2025-03-21 00:27:43,858 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:27:44,372 - ib_insync.client - ERROR - Peer closed connection. clientId 5002 already in use?
+2025-03-21 00:28:39,434 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:28:39,434 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:28:39,434 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:28:39,435 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:28:39,435 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:28:39,435 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:28:39,435 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:28:39,435 - data_download - INFO - Parallel processing: False
+2025-03-21 00:28:39,435 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:28:39,436 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:28:39,436 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:28:39,436 - ib_insync.client - INFO - Connected
+2025-03-21 00:28:39,441 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:28:39,442 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:28:39,442 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:28:39,442 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:28:39,442 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:28:39,442 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:28:39,443 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:28:39,443 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:28:39,544 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:28:39,544 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:28:39,545 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:28:39,545 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:28:39,545 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:28:39,545 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:28:39,545 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 112 B sent in 7 messages, 18.3 kB received in 388 messages, session time 110 ms.
+2025-03-21 00:28:39,545 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:28:39,545 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:28:39,545 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:28:39,546 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:28:39,546 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:28:39,546 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:28:39,546 - ib_insync.client - INFO - Connected
+2025-03-21 00:28:39,549 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:28:39,550 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:28:39,551 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:28:39,753 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:28:39,753 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:28:39,754 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:28:39,754 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:28:39,754 - src.data_processor.data_loader - INFO - Downloading data for 1 symbols and 5 timeframes sequentially
+2025-03-21 00:28:39,755 - src.data_processor.data_loader - INFO - Downloading ES 1min data from Interactive Brokers...
+2025-03-21 00:28:39,755 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:28:39,755 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:28:39,755 - ib_insync.client - INFO - Connected
+2025-03-21 00:28:39,758 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:28:40,267 - ib_insync.client - ERROR - Peer closed connection. clientId 5000 already in use?
+2025-03-21 00:28:53,683 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 112 B sent in 7 messages, 18.3 kB received in 388 messages, session time 14.1 s.
+2025-03-21 00:28:53,684 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:31:54,471 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:31:54,472 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:31:54,472 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:31:54,472 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:31:54,472 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:31:54,472 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:31:54,473 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:31:54,473 - data_download - INFO - Parallel processing: False
+2025-03-21 00:31:54,473 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:31:54,473 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:31:54,473 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:31:54,474 - ib_insync.client - INFO - Connected
+2025-03-21 00:31:54,505 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:31:54,513 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:31:54,517 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:31:54,517 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:31:54,518 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:31:54,825 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:31:54,825 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:31:54,827 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:31:54,827 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 112 B sent in 7 messages, 18.1 kB received in 385 messages, session time 354 ms.
+2025-03-21 00:31:54,827 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:31:54,827 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 5000)
+2025-03-21 00:31:54,827 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:31:54,827 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 5000...
+2025-03-21 00:31:54,828 - ib_insync.client - INFO - Connected
+2025-03-21 00:31:54,830 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:31:55,344 - ib_insync.client - ERROR - Peer closed connection. clientId 5000 already in use?
+2025-03-21 00:34:52,712 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:34:52,712 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:34:52,712 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:34:52,712 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:34:52,712 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:34:52,712 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:34:52,712 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:34:52,712 - data_download - INFO - Parallel processing: False
+2025-03-21 00:34:52,712 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:34:52,714 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:34:52,714 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:34:52,714 - ib_insync.client - INFO - Connected
+2025-03-21 00:34:52,716 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:34:52,719 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:34:52,720 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:34:52,720 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:34:52,720 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:34:52,930 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:34:52,930 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:34:52,931 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:34:52,932 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:34:52,932 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:34:52,932 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:34:52,932 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 220 ms.
+2025-03-21 00:34:52,932 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:34:52,932 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:34:52,932 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:34:52,932 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:34:52,933 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:34:52,933 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:34:52,933 - ib_insync.client - INFO - Connected
+2025-03-21 00:34:52,934 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:34:52,937 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:34:52,938 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:34:52,938 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:34:52,938 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:35:23,160 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 104 B sent in 6 messages, 18.1 kB received in 383 messages, session time 30.2 s.
+2025-03-21 00:35:23,160 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:35:23,160 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:35:23,160 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:35:23,160 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:23,161 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:35:23,161 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:23,161 - ib_insync.client - INFO - Connected
+2025-03-21 00:35:23,163 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:35:23,265 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:35:23,265 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:35:23,265 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:35:23,266 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:35:23,473 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:35:23,474 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:35:23,474 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:35:23,474 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:35:23,474 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:35:28,476 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:28,476 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:28,476 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:35:28,476 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:35:28,476 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:35:28,476 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:28,477 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:35:28,477 - ib_insync.client - ERROR - API connection failed: CancelledError()
+2025-03-21 00:35:28,477 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:28,478 - ib_insync.client - INFO - Connected
+2025-03-21 00:35:28,480 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:35:28,482 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:35:28,483 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:35:28,483 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:35:28,483 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:35:28,694 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:35:28,695 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:35:28,696 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:35:28,696 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: Socket disconnect
+2025-03-21 00:35:28,697 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:35:33,697 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:33,697 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:33,698 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:35:33,698 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:35:33,698 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:35:33,698 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:33,698 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:35:33,699 - ib_insync.client - ERROR - API connection failed: CancelledError()
+2025-03-21 00:35:33,699 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:33,699 - ib_insync.client - INFO - Connected
+2025-03-21 00:35:33,701 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:35:33,706 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:35:33,706 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:35:33,706 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:35:33,707 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:35:33,912 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:35:33,913 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:35:33,913 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:35:33,914 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: Socket disconnect
+2025-03-21 00:35:33,914 - src.connectors.ib.ib_connector - ERROR - Failed to connect after 3 attempts
+2025-03-21 00:35:33,914 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:35:33,914 - src.data_processor.data_loader - INFO - Downloading data for 1 symbols and 5 timeframes sequentially
+2025-03-21 00:35:33,914 - src.data_processor.data_loader - INFO - Downloading ES 1min data from Interactive Brokers...
+2025-03-21 00:35:33,915 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:35:33,915 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:35:33,915 - ib_insync.client - INFO - Connected
+2025-03-21 00:35:33,916 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:35:34,418 - ib_insync.client - ERROR - Peer closed connection. clientId 10000 already in use?
+2025-03-21 00:36:03,928 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:36:03,928 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:36:03,928 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:36:03,928 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:36:08,929 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:36:08,929 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:36:08,929 - ib_insync.client - INFO - Connected
+2025-03-21 00:36:08,931 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:36:09,431 - ib_insync.client - ERROR - Peer closed connection. clientId 10000 already in use?
+2025-03-21 00:36:38,946 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:36:38,946 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:36:38,946 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:36:38,946 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:36:43,947 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 10000)
+2025-03-21 00:36:43,947 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 10000...
+2025-03-21 00:36:43,949 - ib_insync.client - INFO - Connected
+2025-03-21 00:36:43,952 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:36:44,452 - ib_insync.client - ERROR - Peer closed connection. clientId 10000 already in use?
+2025-03-21 00:38:52,479 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:38:52,479 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:38:52,479 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:38:52,479 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:38:52,479 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:38:52,480 - data_download - INFO - Using unique base client ID: 13437
+2025-03-21 00:38:52,480 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:38:52,480 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:38:52,480 - data_download - INFO - Parallel processing: False
+2025-03-21 00:38:52,480 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497 with client ID 13437
+2025-03-21 00:38:52,480 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 13437)
+2025-03-21 00:38:52,480 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 13437...
+2025-03-21 00:38:52,481 - ib_insync.client - INFO - Connected
+2025-03-21 00:38:52,483 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:38:52,487 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:38:52,487 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:38:52,489 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:38:52,489 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:38:52,489 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:38:52,791 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:38:52,791 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:38:52,792 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:38:52,792 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:38:52,792 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:38:52,792 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:38:52,792 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 385 messages, session time 312 ms.
+2025-03-21 00:38:52,792 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:38:52,792 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:38:52,792 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:38:52,793 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 13437)
+2025-03-21 00:38:52,793 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:38:52,793 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 13437...
+2025-03-21 00:38:52,793 - ib_insync.client - INFO - Connected
+2025-03-21 00:38:52,796 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:38:52,802 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:38:52,803 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:38:52,803 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:38:52,803 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:38:52,803 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:38:53,012 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:38:53,013 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:38:53,013 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:38:53,013 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:38:53,013 - src.data_processor.data_loader - INFO - Downloading data for 1 symbols and 5 timeframes sequentially
+2025-03-21 00:38:53,014 - src.data_processor.data_loader - INFO - Downloading ES 1min data from Interactive Brokers...
+2025-03-21 00:38:53,014 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 13437)
+2025-03-21 00:38:53,014 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 13437...
+2025-03-21 00:38:53,014 - ib_insync.client - INFO - Connected
+2025-03-21 00:38:53,016 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:38:53,518 - ib_insync.client - ERROR - Peer closed connection. clientId 13437 already in use?
+2025-03-21 00:39:23,021 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:39:23,021 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:39:23,021 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:39:23,021 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:39:28,022 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 13437)
+2025-03-21 00:39:28,022 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 13437...
+2025-03-21 00:39:28,023 - ib_insync.client - INFO - Connected
+2025-03-21 00:39:28,025 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:39:28,526 - ib_insync.client - ERROR - Peer closed connection. clientId 13437 already in use?
+2025-03-21 00:39:58,039 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:39:58,039 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:39:58,040 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:39:58,040 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:40:03,041 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 13437)
+2025-03-21 00:40:03,041 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 13437...
+2025-03-21 00:40:03,041 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:03,043 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:03,545 - ib_insync.client - ERROR - Peer closed connection. clientId 13437 already in use?
+2025-03-21 00:40:33,063 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:33,063 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:40:33,063 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:40:33,063 - src.connectors.ib.ib_connector - ERROR - Failed to connect after 3 attempts
+2025-03-21 00:40:33,063 - src.data_processor.data_loader - ERROR - Failed to connect to Interactive Brokers
+2025-03-21 00:40:33,063 - src.data_processor.data_loader - ERROR - Not connected to Interactive Brokers
+2025-03-21 00:40:33,063 - src.data_processor.data_loader - INFO - Generating synthetic data for ES 1min
+2025-03-21 00:40:33,066 - src.data_processor.data_loader - INFO - Successfully generated 390 rows of synthetic data for ES 1min
+2025-03-21 00:40:33,066 - src.data_processor.data_loader - INFO - Downloading ES 5min data from Interactive Brokers...
+2025-03-21 00:40:33,067 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 14437)
+2025-03-21 00:40:33,067 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 14437...
+2025-03-21 00:40:33,067 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:33,069 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:33,072 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:33,072 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:33,073 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:40:33,073 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:40:33,073 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:33,375 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:33,375 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:40:33,376 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:33,376 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:33,376 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:40:34,792 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:34,792 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:35,205 - src.data_processor.data_loader - INFO - Successfully downloaded 78 rows for ES 5min
+2025-03-21 00:40:35,205 - src.data_processor.data_loader - INFO - Downloading ES 15min data from Interactive Brokers...
+2025-03-21 00:40:35,205 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 15437)
+2025-03-21 00:40:35,206 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 15437...
+2025-03-21 00:40:35,206 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:35,207 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:35,210 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:35,211 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:35,212 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:35,213 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:35,516 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:35,517 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:40:35,517 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:35,517 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:35,518 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:40:35,708 - src.data_processor.data_loader - INFO - Successfully downloaded 1 rows for ES 15min
+2025-03-21 00:40:35,708 - src.data_processor.data_loader - INFO - Downloading ES 1hour data from Interactive Brokers...
+2025-03-21 00:40:35,708 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16437)
+2025-03-21 00:40:35,708 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16437...
+2025-03-21 00:40:35,709 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:35,711 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:35,714 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:35,715 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:35,715 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:35,715 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:35,926 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:35,927 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:40:35,928 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:35,928 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:35,928 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:40:36,123 - src.data_processor.data_loader - INFO - Successfully downloaded 7 rows for ES 1hour
+2025-03-21 00:40:36,124 - src.data_processor.data_loader - INFO - Downloading ES 1day data from Interactive Brokers...
+2025-03-21 00:40:36,124 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17437)
+2025-03-21 00:40:36,125 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17437...
+2025-03-21 00:40:36,125 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:36,128 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:36,132 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:36,133 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:36,134 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:36,135 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:36,438 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:36,439 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:40:36,440 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:36,440 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:36,440 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:40:36,631 - src.data_processor.data_loader - INFO - Successfully downloaded 1 rows for ES 1day
+2025-03-21 00:40:36,631 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:40:36,632 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 200 B sent in 8 messages, 18.7 kB received in 386 messages, session time 924 ms.
+2025-03-21 00:40:36,632 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:36,632 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:40:36,632 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:40:36,632 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16437)
+2025-03-21 00:40:36,632 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:40:36,632 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16437...
+2025-03-21 00:40:36,633 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:36,636 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:36,642 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:36,642 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:36,643 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:36,643 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:36,856 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:36,858 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:36,858 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:36,859 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:40:36,859 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:40:36,860 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 199 B sent in 8 messages, 18.3 kB received in 386 messages, session time 1.66 s.
+2025-03-21 00:40:36,860 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:36,860 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:40:36,861 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:40:36,861 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 15437)
+2025-03-21 00:40:36,861 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:40:36,861 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 15437...
+2025-03-21 00:40:36,861 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:36,865 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:36,869 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:36,870 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:36,870 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:36,870 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:37,084 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:37,085 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:37,085 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:37,085 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:40:37,086 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:40:37,086 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 200 B sent in 8 messages, 23.6 kB received in 387 messages, session time 4.02 s.
+2025-03-21 00:40:37,086 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,086 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:40:37,087 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:40:37,087 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 14437)
+2025-03-21 00:40:37,087 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:40:37,087 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 14437...
+2025-03-21 00:40:37,088 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:37,090 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:37,094 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:37,095 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:37,095 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:37,095 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:37,304 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:37,305 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:37,305 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:37,305 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:40:37,305 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:40:37,305 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 199 B sent in 8 messages, 18.3 kB received in 386 messages, session time 1.18 s.
+2025-03-21 00:40:37,306 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,306 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:40:37,306 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:40:37,306 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17437)
+2025-03-21 00:40:37,306 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:40:37,306 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17437...
+2025-03-21 00:40:37,307 - ib_insync.client - INFO - Connected
+2025-03-21 00:40:37,308 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:40:37,312 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:40:37,312 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:40:37,312 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:40:37,313 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:40:37,521 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:40:37,522 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:40:37,522 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:40:37,522 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:40:37,522 - data_download - INFO - Successfully downloaded 390 rows for ES 1min
+2025-03-21 00:40:37,523 - data_download - INFO - Successfully downloaded 78 rows for ES 5min
+2025-03-21 00:40:37,523 - data_download - INFO - Successfully downloaded 1 rows for ES 15min
+2025-03-21 00:40:37,523 - data_download - INFO - Successfully downloaded 7 rows for ES 1hour
+2025-03-21 00:40:37,523 - data_download - INFO - Successfully downloaded 1 rows for ES 1day
+2025-03-21 00:40:37,523 - data_download - INFO - Data download completed successfully
+2025-03-21 00:40:37,523 - data_download - INFO - Data download completed successfully in 105.04 seconds
+2025-03-21 00:40:37,551 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.3 kB received in 390 messages, session time 105 s.
+2025-03-21 00:40:37,551 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,551 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 464 ms.
+2025-03-21 00:40:37,552 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,553 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 692 ms.
+2025-03-21 00:40:37,553 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,553 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 922 ms.
+2025-03-21 00:40:37,553 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:40:37,554 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 248 ms.
+2025-03-21 00:40:37,554 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:43:49,346 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:43:49,346 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:43:49,346 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:43:49,346 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:43:49,346 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:43:49,346 - data_download - INFO - Using unique base client ID: 19962
+2025-03-21 00:43:49,346 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:43:49,346 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:43:49,347 - data_download - INFO - Parallel processing: False
+2025-03-21 00:43:49,347 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497 with client ID 19962
+2025-03-21 00:43:49,347 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19962)
+2025-03-21 00:43:49,347 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19962...
+2025-03-21 00:43:49,348 - ib_insync.client - INFO - Connected
+2025-03-21 00:43:49,349 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:43:49,353 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:43:49,353 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:43:49,353 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:43:49,354 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:43:49,559 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:43:49,559 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:43:49,561 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:43:49,561 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:43:49,561 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:43:49,561 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:43:49,561 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 214 ms.
+2025-03-21 00:43:49,561 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:43:49,562 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:43:49,562 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:43:49,562 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19962)
+2025-03-21 00:43:49,562 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:43:49,562 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19962...
+2025-03-21 00:43:49,563 - ib_insync.client - INFO - Connected
+2025-03-21 00:43:49,564 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:43:49,569 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:43:49,570 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:43:49,570 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:43:49,570 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:43:49,676 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:43:49,677 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:43:49,678 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:43:49,678 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:43:49,678 - src.data_processor.data_loader - INFO - Downloading data for 1 symbols and 5 timeframes sequentially
+2025-03-21 00:43:49,678 - src.data_processor.data_loader - INFO - Downloading ES 1min data from Interactive Brokers...
+2025-03-21 00:43:49,679 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19962)
+2025-03-21 00:43:49,679 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19962...
+2025-03-21 00:43:49,679 - ib_insync.client - INFO - Connected
+2025-03-21 00:43:49,681 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:43:50,182 - ib_insync.client - ERROR - Peer closed connection. clientId 19962 already in use?
+2025-03-21 00:44:19,686 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:44:19,686 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:44:19,687 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:44:19,687 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:44:24,688 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19962)
+2025-03-21 00:44:24,688 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19962...
+2025-03-21 00:44:24,688 - ib_insync.client - INFO - Connected
+2025-03-21 00:44:24,690 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:44:25,190 - ib_insync.client - ERROR - Peer closed connection. clientId 19962 already in use?
+2025-03-21 00:44:54,701 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:44:54,701 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:44:54,701 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:44:54,701 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:44:59,702 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19962)
+2025-03-21 00:44:59,702 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19962...
+2025-03-21 00:44:59,703 - ib_insync.client - INFO - Connected
+2025-03-21 00:44:59,704 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:45:00,206 - ib_insync.client - ERROR - Peer closed connection. clientId 19962 already in use?
+2025-03-21 00:45:08,401 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 78.8 s.
+2025-03-21 00:45:08,401 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:45:16,747 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:45:16,748 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:45:16,748 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:45:16,748 - data_download - INFO - Using symbols ['RTY'] from command line
+2025-03-21 00:45:16,748 - data_download - INFO - Using sequential processing from command line
+2025-03-21 00:45:16,748 - data_download - INFO - Using unique base client ID: 16792
+2025-03-21 00:45:16,748 - data_download - INFO - Downloading data for ['RTY'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:45:16,748 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:45:16,748 - data_download - INFO - Parallel processing: False
+2025-03-21 00:45:16,749 - data_download - INFO - Testing connection to Interactive Brokers at 127.0.0.1:7497 with client ID 16792
+2025-03-21 00:45:16,749 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16792)
+2025-03-21 00:45:16,749 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16792...
+2025-03-21 00:45:16,749 - ib_insync.client - INFO - Connected
+2025-03-21 00:45:16,751 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:45:16,754 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:45:16,755 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:45:16,756 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:45:16,757 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:45:17,058 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:45:17,058 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:45:17,059 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:45:17,059 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:45:17,059 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:45:17,059 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:45:17,059 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 310 ms.
+2025-03-21 00:45:17,059 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:45:17,060 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:45:17,060 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:45:17,060 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16792)
+2025-03-21 00:45:17,060 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:45:17,060 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16792...
+2025-03-21 00:45:17,061 - ib_insync.client - INFO - Connected
+2025-03-21 00:45:17,062 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:45:17,065 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:45:17,066 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:45:17,066 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:45:17,066 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:45:17,274 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:45:17,275 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:45:17,275 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:45:17,275 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:45:17,275 - src.data_processor.data_loader - INFO - Downloading data for 1 symbols and 5 timeframes sequentially
+2025-03-21 00:45:17,275 - src.data_processor.data_loader - INFO - Downloading RTY 1min data from Interactive Brokers...
+2025-03-21 00:45:17,276 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16792)
+2025-03-21 00:45:17,276 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16792...
+2025-03-21 00:45:17,276 - ib_insync.client - INFO - Connected
+2025-03-21 00:45:17,278 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:45:17,778 - ib_insync.client - ERROR - Peer closed connection. clientId 16792 already in use?
+2025-03-21 00:45:47,278 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:45:47,278 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:45:47,278 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:45:47,278 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:45:52,280 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16792)
+2025-03-21 00:45:52,281 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16792...
+2025-03-21 00:45:52,281 - ib_insync.client - INFO - Connected
+2025-03-21 00:45:52,284 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:45:52,785 - ib_insync.client - ERROR - Peer closed connection. clientId 16792 already in use?
+2025-03-21 00:46:22,270 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:22,271 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:46:22,271 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:46:22,271 - src.connectors.ib.ib_connector - INFO - Retrying connection in 5 seconds...
+2025-03-21 00:46:27,272 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16792)
+2025-03-21 00:46:27,272 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16792...
+2025-03-21 00:46:27,273 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:27,275 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:27,776 - ib_insync.client - ERROR - Peer closed connection. clientId 16792 already in use?
+2025-03-21 00:46:57,290 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:57,290 - ib_insync.client - ERROR - API connection failed: TimeoutError()
+2025-03-21 00:46:57,292 - src.connectors.ib.ib_connector - ERROR - Error connecting to IB: 
+2025-03-21 00:46:57,292 - src.connectors.ib.ib_connector - ERROR - Failed to connect after 3 attempts
+2025-03-21 00:46:57,292 - src.data_processor.data_loader - ERROR - Failed to connect to Interactive Brokers
+2025-03-21 00:46:57,292 - src.data_processor.data_loader - ERROR - Not connected to Interactive Brokers
+2025-03-21 00:46:57,293 - src.data_processor.data_loader - ERROR - Error downloading data for RTY 1min from IB: 'DataLoader' object has no attribute '_generate_synthetic_data'
+2025-03-21 00:46:57,293 - src.data_processor.data_loader - INFO - Falling back to synthetic data
+2025-03-21 00:46:57,293 - src.data_processor.data_loader - ERROR - Error downloading RTY 1min data: 'DataLoader' object has no attribute '_generate_synthetic_data'
+2025-03-21 00:46:57,293 - src.data_processor.data_loader - INFO - Downloading RTY 5min data from Interactive Brokers...
+2025-03-21 00:46:57,294 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17792)
+2025-03-21 00:46:57,294 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17792...
+2025-03-21 00:46:57,294 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:57,296 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:57,300 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:57,301 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:57,301 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:57,301 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:57,526 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:57,526 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:46:57,527 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:57,527 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:57,527 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:46:57,615 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Stock(symbol='RTY', exchange='SMART', currency='USD')
+2025-03-21 00:46:57,616 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: RTY-STK-SMART
+2025-03-21 00:46:57,616 - src.connectors.ib.ib_connector - WARNING - No historical data found for RTY
+2025-03-21 00:46:57,617 - src.data_processor.data_loader - INFO - Successfully downloaded 0 rows for RTY 5min
+2025-03-21 00:46:57,617 - src.data_processor.data_loader - INFO - Downloading RTY 15min data from Interactive Brokers...
+2025-03-21 00:46:57,617 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 18792)
+2025-03-21 00:46:57,617 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 18792...
+2025-03-21 00:46:57,618 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:57,620 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:57,625 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:57,626 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:57,626 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:57,626 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:57,835 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:57,835 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:46:57,836 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:57,836 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:57,836 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:46:57,923 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Stock(symbol='RTY', exchange='SMART', currency='USD')
+2025-03-21 00:46:57,924 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: RTY-STK-SMART
+2025-03-21 00:46:57,924 - src.connectors.ib.ib_connector - WARNING - No historical data found for RTY
+2025-03-21 00:46:57,925 - src.data_processor.data_loader - INFO - Successfully downloaded 0 rows for RTY 15min
+2025-03-21 00:46:57,925 - src.data_processor.data_loader - INFO - Downloading RTY 1hour data from Interactive Brokers...
+2025-03-21 00:46:57,925 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19792)
+2025-03-21 00:46:57,925 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19792...
+2025-03-21 00:46:57,926 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:57,928 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:57,933 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:57,933 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:57,933 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:57,933 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:58,233 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:58,233 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:46:58,234 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:58,234 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:58,234 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:46:58,320 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Stock(symbol='RTY', exchange='SMART', currency='USD')
+2025-03-21 00:46:58,321 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: RTY-STK-SMART
+2025-03-21 00:46:58,322 - src.connectors.ib.ib_connector - WARNING - No historical data found for RTY
+2025-03-21 00:46:58,322 - src.data_processor.data_loader - INFO - Successfully downloaded 0 rows for RTY 1hour
+2025-03-21 00:46:58,322 - src.data_processor.data_loader - INFO - Downloading RTY 1day data from Interactive Brokers...
+2025-03-21 00:46:58,322 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 20792)
+2025-03-21 00:46:58,322 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 20792...
+2025-03-21 00:46:58,323 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:58,325 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:58,328 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:58,328 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:58,328 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:58,329 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:58,630 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:58,630 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:46:58,631 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:58,631 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:58,631 - src.data_processor.data_loader - INFO - Connected to Interactive Brokers at 127.0.0.1:7497
+2025-03-21 00:46:58,718 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Stock(symbol='RTY', exchange='SMART', currency='USD')
+2025-03-21 00:46:58,718 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: RTY-STK-SMART
+2025-03-21 00:46:58,718 - src.connectors.ib.ib_connector - WARNING - No historical data found for RTY
+2025-03-21 00:46:58,719 - src.data_processor.data_loader - INFO - Successfully downloaded 0 rows for RTY 1day
+2025-03-21 00:46:58,719 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:46:58,719 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 201 B sent in 8 messages, 18.2 kB received in 386 messages, session time 793 ms.
+2025-03-21 00:46:58,719 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:58,719 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:46:58,719 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:46:58,719 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 19792)
+2025-03-21 00:46:58,720 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:46:58,720 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 19792...
+2025-03-21 00:46:58,720 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:58,726 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:58,733 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:58,734 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:58,734 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:58,734 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:58,941 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:58,941 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:58,941 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:58,941 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:46:58,941 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:46:58,941 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 200 B sent in 8 messages, 18.2 kB received in 386 messages, session time 1.32 s.
+2025-03-21 00:46:58,941 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:58,941 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:46:58,943 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:46:58,943 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 18792)
+2025-03-21 00:46:58,943 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:46:58,943 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 18792...
+2025-03-21 00:46:58,944 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:58,945 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:58,948 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:58,948 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:58,948 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:58,949 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:59,156 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:59,157 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:59,157 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:59,158 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:46:59,158 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:46:59,158 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 201 B sent in 8 messages, 18.2 kB received in 386 messages, session time 1.86 s.
+2025-03-21 00:46:59,158 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,158 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:46:59,158 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:46:59,159 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17792)
+2025-03-21 00:46:59,159 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:46:59,159 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17792...
+2025-03-21 00:46:59,160 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:59,161 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:59,166 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:59,166 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:59,166 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:59,166 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:59,272 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:59,274 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:59,274 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:59,274 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:46:59,274 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:46:59,274 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 200 B sent in 8 messages, 18.2 kB received in 386 messages, session time 953 ms.
+2025-03-21 00:46:59,274 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,275 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:46:59,275 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:46:59,275 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 20792)
+2025-03-21 00:46:59,275 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:46:59,275 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 20792...
+2025-03-21 00:46:59,275 - ib_insync.client - INFO - Connected
+2025-03-21 00:46:59,277 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:46:59,281 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:46:59,281 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:46:59,281 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 00:46:59,282 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:46:59,489 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:46:59,489 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:46:59,490 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:46:59,490 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:46:59,490 - data_download - ERROR - Downloaded empty data for RTY 1min
+2025-03-21 00:46:59,490 - data_download - ERROR - Downloaded empty data for RTY 5min
+2025-03-21 00:46:59,490 - data_download - ERROR - Downloaded empty data for RTY 15min
+2025-03-21 00:46:59,490 - data_download - ERROR - Downloaded empty data for RTY 1hour
+2025-03-21 00:46:59,490 - data_download - ERROR - Downloaded empty data for RTY 1day
+2025-03-21 00:46:59,490 - data_download - WARNING - Data download completed with some errors
+2025-03-21 00:46:59,490 - data_download - ERROR - Data download failed after 102.74 seconds
+2025-03-21 00:46:59,511 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 389 messages, session time 102 s.
+2025-03-21 00:46:59,511 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,511 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 352 ms.
+2025-03-21 00:46:59,512 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,512 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 569 ms.
+2025-03-21 00:46:59,512 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,512 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 792 ms.
+2025-03-21 00:46:59,512 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:46:59,513 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.1 kB received in 385 messages, session time 236 ms.
+2025-03-21 00:46:59,513 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:53:16,553 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:53:16,553 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:53:16,553 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:53:16,553 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:53:16,553 - data_download - INFO - Using unique client ID: 16605
+2025-03-21 00:53:16,553 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:53:16,553 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:53:16,553 - data_download - INFO - Using sequential processing with a single IB connection
+2025-03-21 00:53:16,553 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16605)
+2025-03-21 00:53:16,554 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16605...
+2025-03-21 00:53:16,554 - ib_insync.client - INFO - Connected
+2025-03-21 00:53:16,556 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:53:16,560 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:53:16,560 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:53:16,560 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:53:16,561 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:53:16,561 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:53:16,863 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:53:16,863 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:53:16,864 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:53:16,864 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:53:16,864 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:53:16,864 - data_download - INFO - Processing ES with contract specs: {'symbol': 'ES', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 00:53:16,864 - data_download - INFO - Downloading ES 1min data...
+2025-03-21 00:53:16,867 - ib_insync.wrapper - ERROR - Error 321, reqId 3: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:53:16,867 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 3, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:53:16,867 - data_download - ERROR - No data returned for ES 1min
+2025-03-21 00:53:16,870 - data_download - INFO - Downloading ES 5min data...
+2025-03-21 00:53:16,872 - ib_insync.wrapper - ERROR - Error 321, reqId 4: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:53:16,872 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 4, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:53:16,872 - data_download - ERROR - No data returned for ES 5min
+2025-03-21 00:53:16,872 - data_download - INFO - Downloading ES 15min data...
+2025-03-21 00:53:16,875 - ib_insync.wrapper - ERROR - Error 321, reqId 5: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:53:16,876 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 5, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:53:16,877 - data_download - ERROR - No data returned for ES 15min
+2025-03-21 00:53:16,877 - data_download - INFO - Downloading ES 1hour data...
+2025-03-21 00:53:16,879 - ib_insync.wrapper - ERROR - Error 321, reqId 6: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:53:16,879 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 6, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:53:16,879 - data_download - ERROR - No data returned for ES 1hour
+2025-03-21 00:53:16,879 - data_download - INFO - Downloading ES 1day data...
+2025-03-21 00:53:16,881 - ib_insync.wrapper - ERROR - Error 321, reqId 7: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:53:16,881 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 7, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:53:16,881 - data_download - ERROR - No data returned for ES 1day
+2025-03-21 00:53:16,882 - data_download - INFO - Disconnecting from Interactive Brokers
+2025-03-21 00:53:16,882 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:53:16,882 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 552 B sent in 12 messages, 18.7 kB received in 390 messages, session time 330 ms.
+2025-03-21 00:53:16,882 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:53:16,882 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:53:16,882 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:53:16,882 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 16605)
+2025-03-21 00:53:16,882 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:53:16,884 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 16605...
+2025-03-21 00:53:16,884 - ib_insync.client - INFO - Connected
+2025-03-21 00:53:16,886 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:53:16,890 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:53:16,890 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:53:16,890 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:53:16,891 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:53:16,891 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:53:17,096 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:53:17,096 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:53:17,096 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:53:17,098 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:53:17,098 - data_download - WARNING - Data download completed with some errors
+2025-03-21 00:53:17,098 - data_download - ERROR - Data download failed after 0.54 seconds
+2025-03-21 00:53:17,115 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 385 messages, session time 232 ms.
+2025-03-21 00:53:17,116 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:56:18,188 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 00:56:18,188 - data_download - INFO - Using port 7497 from command line
+2025-03-21 00:56:18,188 - data_download - INFO - Using 1 days from command line
+2025-03-21 00:56:18,188 - data_download - INFO - Using symbols ['ES'] from command line
+2025-03-21 00:56:18,189 - data_download - INFO - Using unique client ID: 18653
+2025-03-21 00:56:18,189 - data_download - INFO - Downloading data for ['ES'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 00:56:18,189 - data_download - INFO - Date range: 2025-03-20 to 2025-03-21
+2025-03-21 00:56:18,189 - data_download - INFO - Using sequential processing with a single IB connection
+2025-03-21 00:56:18,189 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 18653)
+2025-03-21 00:56:18,189 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 18653...
+2025-03-21 00:56:18,190 - ib_insync.client - INFO - Connected
+2025-03-21 00:56:18,193 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:56:18,198 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:56:18,198 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:56:18,198 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:56:18,198 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:56:18,199 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:56:18,404 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:56:18,404 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 00:56:18,405 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:56:18,405 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:56:18,405 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 00:56:18,405 - data_download - INFO - Processing ES with contract specs: {'symbol': 'ES', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 00:56:18,405 - data_download - INFO - Qualifying future contract for ES...
+2025-03-21 00:56:18,502 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,502 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,502 - data_download - ERROR - No contract details found for ES
+2025-03-21 00:56:18,502 - data_download - INFO - Downloading ES 1min data...
+2025-03-21 00:56:18,503 - ib_insync.wrapper - ERROR - Error 321, reqId 4: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,504 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 4, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,504 - data_download - ERROR - No data returned for ES 1min
+2025-03-21 00:56:18,504 - data_download - INFO - Downloading ES 5min data...
+2025-03-21 00:56:18,505 - ib_insync.wrapper - ERROR - Error 321, reqId 5: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,505 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 5, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,505 - data_download - ERROR - No data returned for ES 5min
+2025-03-21 00:56:18,506 - data_download - INFO - Downloading ES 15min data...
+2025-03-21 00:56:18,507 - ib_insync.wrapper - ERROR - Error 321, reqId 6: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,507 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 6, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,507 - data_download - ERROR - No data returned for ES 15min
+2025-03-21 00:56:18,507 - data_download - INFO - Downloading ES 1hour data...
+2025-03-21 00:56:18,508 - ib_insync.wrapper - ERROR - Error 321, reqId 7: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,508 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 7, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,508 - data_download - ERROR - No data returned for ES 1hour
+2025-03-21 00:56:18,508 - data_download - INFO - Downloading ES 1day data...
+2025-03-21 00:56:18,509 - ib_insync.wrapper - ERROR - Error 321, reqId 8: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 00:56:18,509 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 8, Symbol: ES--FUT-GLOBEX
+2025-03-21 00:56:18,509 - data_download - ERROR - No data returned for ES 1day
+2025-03-21 00:56:18,509 - data_download - INFO - Disconnecting from Interactive Brokers
+2025-03-21 00:56:18,510 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 00:56:18,510 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 597 B sent in 13 messages, 18.7 kB received in 391 messages, session time 321 ms.
+2025-03-21 00:56:18,510 - ib_insync.client - INFO - Disconnecting
+2025-03-21 00:56:18,510 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 00:56:18,510 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 00:56:18,510 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 18653)
+2025-03-21 00:56:18,510 - ib_insync.client - INFO - Disconnected.
+2025-03-21 00:56:18,510 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 18653...
+2025-03-21 00:56:18,511 - ib_insync.client - INFO - Connected
+2025-03-21 00:56:18,513 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 00:56:18,518 - ib_insync.client - INFO - API connection ready
+2025-03-21 00:56:18,518 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 00:56:18,519 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 00:56:18,519 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 00:56:18,519 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 00:56:18,725 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 00:56:18,726 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 00:56:18,726 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 00:56:18,726 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 00:56:18,726 - data_download - WARNING - Data download completed with some errors
+2025-03-21 00:56:18,726 - data_download - ERROR - Data download failed after 0.54 seconds
+2025-03-21 00:56:18,743 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 385 messages, session time 233 ms.
+2025-03-21 00:56:18,743 - ib_insync.client - INFO - Disconnecting
+2025-03-21 01:01:46,988 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 01:01:46,988 - data_download - INFO - Using 3 days from command line
+2025-03-21 01:01:46,988 - data_download - INFO - Using symbols ['ES', 'RTY'] from command line
+2025-03-21 01:01:46,988 - data_download - INFO - Forcing use of synthetic data
+2025-03-21 01:01:46,988 - data_download - INFO - Downloading data for ['ES', 'RTY'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 01:01:46,988 - data_download - INFO - Date range: 2025-03-18 to 2025-03-21
+2025-03-21 01:01:46,989 - data_download - INFO - Using unique client ID: 17739
+2025-03-21 01:01:46,989 - data_download - INFO - Attempting to use Interactive Brokers for data
+2025-03-21 01:01:46,989 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17739)
+2025-03-21 01:01:46,989 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17739...
+2025-03-21 01:01:46,989 - ib_insync.client - INFO - Connected
+2025-03-21 01:01:46,991 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 01:01:46,996 - ib_insync.client - INFO - API connection ready
+2025-03-21 01:01:46,997 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 01:01:46,997 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 01:01:46,997 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 01:01:46,998 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 01:01:47,297 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 01:01:47,297 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 01:01:47,298 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 01:01:47,298 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 01:01:47,298 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 01:01:47,298 - data_download - INFO - Processing ES with contract specs: {'symbol': 'ES', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 01:01:47,298 - data_download - INFO - Qualifying future contract for ES...
+2025-03-21 01:01:47,389 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,389 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,390 - data_download - ERROR - No contract details found for ES
+2025-03-21 01:01:47,390 - data_download - INFO - Downloading ES 1min data...
+2025-03-21 01:01:47,391 - ib_insync.wrapper - ERROR - Error 321, reqId 4: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,391 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 4, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,391 - data_download - ERROR - No data returned for ES 1min from IB
+2025-03-21 01:01:47,391 - data_download - INFO - Generating synthetic data for ES 1min
+2025-03-21 01:01:47,391 - data_download - INFO - Generating synthetic data for ES at 1min timeframe
+2025-03-21 01:01:47,402 - data_download - INFO - Generated 1620 rows of synthetic data for ES 1min
+2025-03-21 01:01:47,411 - data_download - INFO - Downloading ES 5min data...
+2025-03-21 01:01:47,412 - ib_insync.wrapper - ERROR - Error 321, reqId 5: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,412 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 5, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,412 - data_download - ERROR - No data returned for ES 5min from IB
+2025-03-21 01:01:47,412 - data_download - INFO - Generating synthetic data for ES 5min
+2025-03-21 01:01:47,412 - data_download - INFO - Generating synthetic data for ES at 5min timeframe
+2025-03-21 01:01:47,415 - data_download - INFO - Generated 324 rows of synthetic data for ES 5min
+2025-03-21 01:01:47,418 - data_download - INFO - Downloading ES 15min data...
+2025-03-21 01:01:47,419 - ib_insync.wrapper - ERROR - Error 321, reqId 6: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,419 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 6, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,419 - data_download - ERROR - No data returned for ES 15min from IB
+2025-03-21 01:01:47,419 - data_download - INFO - Generating synthetic data for ES 15min
+2025-03-21 01:01:47,419 - data_download - INFO - Generating synthetic data for ES at 15min timeframe
+2025-03-21 01:01:47,421 - data_download - INFO - Generated 108 rows of synthetic data for ES 15min
+2025-03-21 01:01:47,422 - data_download - INFO - Downloading ES 1hour data...
+2025-03-21 01:01:47,423 - ib_insync.wrapper - ERROR - Error 321, reqId 7: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,423 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 7, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,423 - data_download - ERROR - No data returned for ES 1hour from IB
+2025-03-21 01:01:47,424 - data_download - INFO - Generating synthetic data for ES 1hour
+2025-03-21 01:01:47,424 - data_download - INFO - Generating synthetic data for ES at 1hour timeframe
+2025-03-21 01:01:47,425 - data_download - INFO - Generated 28 rows of synthetic data for ES 1hour
+2025-03-21 01:01:47,426 - data_download - INFO - Downloading ES 1day data...
+2025-03-21 01:01:47,427 - ib_insync.wrapper - ERROR - Error 321, reqId 8: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,427 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 8, Symbol: ES--FUT-GLOBEX
+2025-03-21 01:01:47,427 - data_download - ERROR - No data returned for ES 1day from IB
+2025-03-21 01:01:47,427 - data_download - INFO - Generating synthetic data for ES 1day
+2025-03-21 01:01:47,427 - data_download - INFO - Generating synthetic data for ES at 1day timeframe
+2025-03-21 01:01:47,428 - data_download - INFO - Generated 4 rows of synthetic data for ES 1day
+2025-03-21 01:01:47,429 - data_download - INFO - Processing RTY with contract specs: {'symbol': 'RTY', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 01:01:47,429 - data_download - INFO - Qualifying future contract for RTY...
+2025-03-21 01:01:47,521 - ib_insync.wrapper - ERROR - Error 200, reqId 9: No security definition has been found for the request, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,521 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 9, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,521 - data_download - ERROR - No contract details found for RTY
+2025-03-21 01:01:47,521 - data_download - INFO - Downloading RTY 1min data...
+2025-03-21 01:01:47,523 - ib_insync.wrapper - ERROR - Error 321, reqId 10: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,523 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 10, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,523 - data_download - ERROR - No data returned for RTY 1min from IB
+2025-03-21 01:01:47,523 - data_download - INFO - Generating synthetic data for RTY 1min
+2025-03-21 01:01:47,523 - data_download - INFO - Generating synthetic data for RTY at 1min timeframe
+2025-03-21 01:01:47,550 - data_download - INFO - Generated 1620 rows of synthetic data for RTY 1min
+2025-03-21 01:01:47,556 - data_download - INFO - Downloading RTY 5min data...
+2025-03-21 01:01:47,558 - ib_insync.wrapper - ERROR - Error 321, reqId 11: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,558 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 11, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,559 - data_download - ERROR - No data returned for RTY 5min from IB
+2025-03-21 01:01:47,559 - data_download - INFO - Generating synthetic data for RTY 5min
+2025-03-21 01:01:47,559 - data_download - INFO - Generating synthetic data for RTY at 5min timeframe
+2025-03-21 01:01:47,562 - data_download - INFO - Generated 324 rows of synthetic data for RTY 5min
+2025-03-21 01:01:47,564 - data_download - INFO - Downloading RTY 15min data...
+2025-03-21 01:01:47,565 - ib_insync.wrapper - ERROR - Error 321, reqId 12: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,565 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 12, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,565 - data_download - ERROR - No data returned for RTY 15min from IB
+2025-03-21 01:01:47,565 - data_download - INFO - Generating synthetic data for RTY 15min
+2025-03-21 01:01:47,565 - data_download - INFO - Generating synthetic data for RTY at 15min timeframe
+2025-03-21 01:01:47,567 - data_download - INFO - Generated 108 rows of synthetic data for RTY 15min
+2025-03-21 01:01:47,569 - data_download - INFO - Downloading RTY 1hour data...
+2025-03-21 01:01:47,570 - ib_insync.wrapper - ERROR - Error 321, reqId 13: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,570 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 13, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,570 - data_download - ERROR - No data returned for RTY 1hour from IB
+2025-03-21 01:01:47,571 - data_download - INFO - Generating synthetic data for RTY 1hour
+2025-03-21 01:01:47,571 - data_download - INFO - Generating synthetic data for RTY at 1hour timeframe
+2025-03-21 01:01:47,572 - data_download - INFO - Generated 28 rows of synthetic data for RTY 1hour
+2025-03-21 01:01:47,573 - data_download - INFO - Downloading RTY 1day data...
+2025-03-21 01:01:47,573 - ib_insync.wrapper - ERROR - Error 321, reqId 14: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='RTY', exchange='GLOBEX', currency='USD')
+2025-03-21 01:01:47,573 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 14, Symbol: RTY--FUT-GLOBEX
+2025-03-21 01:01:47,573 - data_download - ERROR - No data returned for RTY 1day from IB
+2025-03-21 01:01:47,574 - data_download - INFO - Generating synthetic data for RTY 1day
+2025-03-21 01:01:47,574 - data_download - INFO - Generating synthetic data for RTY at 1day timeframe
+2025-03-21 01:01:47,574 - data_download - INFO - Generated 4 rows of synthetic data for RTY 1day
+2025-03-21 01:01:47,575 - data_download - INFO - Disconnecting from Interactive Brokers
+2025-03-21 01:01:47,575 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 01:01:47,575 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 1.09 kB sent in 19 messages, 19.3 kB received in 397 messages, session time 586 ms.
+2025-03-21 01:01:47,575 - ib_insync.client - INFO - Disconnecting
+2025-03-21 01:01:47,575 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 01:01:47,575 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 01:01:47,577 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 17739)
+2025-03-21 01:01:47,577 - ib_insync.client - INFO - Disconnected.
+2025-03-21 01:01:47,577 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 17739...
+2025-03-21 01:01:47,577 - ib_insync.client - INFO - Connected
+2025-03-21 01:01:47,579 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 01:01:47,585 - ib_insync.client - INFO - API connection ready
+2025-03-21 01:01:47,585 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 01:01:47,585 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 01:01:47,585 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 01:01:47,586 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 01:01:47,791 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 01:01:47,793 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 01:01:47,793 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 01:01:47,793 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 01:01:47,793 - data_download - INFO - Data download/generation completed successfully
+2025-03-21 01:01:47,793 - data_download - INFO - Data process completed successfully in 0.80 seconds
+2025-03-21 01:01:47,808 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 385 messages, session time 231 ms.
+2025-03-21 01:01:47,808 - ib_insync.client - INFO - Disconnecting
+2025-03-21 07:29:01,035 - data_download - INFO - Loaded configuration from C:\quant-trader\config\data_config.yaml
+2025-03-21 07:29:01,035 - data_download - INFO - Using client ID base 20001 from command line
+2025-03-21 07:29:01,035 - data_download - INFO - Downloading data for ['ES', 'NQ', 'YM', 'CL', 'GC'] with timeframes ['1min', '5min', '15min', '1hour', '1day']
+2025-03-21 07:29:01,036 - data_download - INFO - Date range: 2025-03-11 to 2025-03-21
+2025-03-21 07:29:01,036 - data_download - INFO - Using unique client ID: 21904
+2025-03-21 07:29:01,036 - data_download - INFO - Attempting to use Interactive Brokers for data
+2025-03-21 07:29:01,036 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 21904)
+2025-03-21 07:29:01,036 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 21904...
+2025-03-21 07:29:01,037 - ib_insync.client - INFO - Connected
+2025-03-21 07:29:01,039 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 07:29:01,047 - ib_insync.client - INFO - API connection ready
+2025-03-21 07:29:01,048 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 07:29:01,048 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 07:29:01,049 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 07:29:01,049 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 07:29:01,349 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 07:29:01,349 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 07:29:01,350 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 07:29:01,350 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 07:29:01,350 - data_download - INFO - Successfully connected to Interactive Brokers
+2025-03-21 07:29:01,350 - data_download - INFO - Processing ES with contract specs: {'symbol': 'ES', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 07:29:01,350 - data_download - INFO - Qualifying future contract for ES...
+2025-03-21 07:29:01,441 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,441 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 3, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,442 - data_download - ERROR - No contract details found for ES
+2025-03-21 07:29:01,442 - data_download - INFO - Downloading ES 1min data...
+2025-03-21 07:29:01,462 - ib_insync.wrapper - ERROR - Error 321, reqId 4: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,462 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 4, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,463 - data_download - ERROR - No data returned for ES 1min from IB
+2025-03-21 07:29:01,463 - data_download - INFO - Generating synthetic data for ES 1min
+2025-03-21 07:29:01,464 - data_download - INFO - Generating synthetic data for ES at 1min timeframe
+2025-03-21 07:29:01,508 - data_download - INFO - Generated 3645 rows of synthetic data for ES 1min
+2025-03-21 07:29:01,525 - data_download - INFO - Downloading ES 5min data...
+2025-03-21 07:29:01,527 - ib_insync.wrapper - ERROR - Error 321, reqId 5: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,527 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 5, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,527 - data_download - ERROR - No data returned for ES 5min from IB
+2025-03-21 07:29:01,527 - data_download - INFO - Generating synthetic data for ES 5min
+2025-03-21 07:29:01,527 - data_download - INFO - Generating synthetic data for ES at 5min timeframe
+2025-03-21 07:29:01,532 - data_download - INFO - Generated 729 rows of synthetic data for ES 5min
+2025-03-21 07:29:01,536 - data_download - INFO - Downloading ES 15min data...
+2025-03-21 07:29:01,538 - ib_insync.wrapper - ERROR - Error 321, reqId 6: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,538 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 6, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,538 - data_download - ERROR - No data returned for ES 15min from IB
+2025-03-21 07:29:01,538 - data_download - INFO - Generating synthetic data for ES 15min
+2025-03-21 07:29:01,538 - data_download - INFO - Generating synthetic data for ES at 15min timeframe
+2025-03-21 07:29:01,540 - data_download - INFO - Generated 243 rows of synthetic data for ES 15min
+2025-03-21 07:29:01,542 - data_download - INFO - Downloading ES 1hour data...
+2025-03-21 07:29:01,544 - ib_insync.wrapper - ERROR - Error 321, reqId 7: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,544 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 7, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,544 - data_download - ERROR - No data returned for ES 1hour from IB
+2025-03-21 07:29:01,544 - data_download - INFO - Generating synthetic data for ES 1hour
+2025-03-21 07:29:01,544 - data_download - INFO - Generating synthetic data for ES at 1hour timeframe
+2025-03-21 07:29:01,546 - data_download - INFO - Generated 63 rows of synthetic data for ES 1hour
+2025-03-21 07:29:01,547 - data_download - INFO - Downloading ES 1day data...
+2025-03-21 07:29:01,549 - ib_insync.wrapper - ERROR - Error 321, reqId 8: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='ES', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,549 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 8, Symbol: ES--FUT-GLOBEX
+2025-03-21 07:29:01,549 - data_download - ERROR - No data returned for ES 1day from IB
+2025-03-21 07:29:01,549 - data_download - INFO - Generating synthetic data for ES 1day
+2025-03-21 07:29:01,549 - data_download - INFO - Generating synthetic data for ES at 1day timeframe
+2025-03-21 07:29:01,553 - data_download - INFO - Generated 9 rows of synthetic data for ES 1day
+2025-03-21 07:29:01,554 - data_download - INFO - Processing NQ with contract specs: {'symbol': 'NQ', 'secType': 'FUT', 'exchange': 'GLOBEX', 'currency': 'USD'}
+2025-03-21 07:29:01,554 - data_download - INFO - Qualifying future contract for NQ...
+2025-03-21 07:29:01,642 - ib_insync.wrapper - ERROR - Error 200, reqId 9: No security definition has been found for the request, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,642 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 9, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,642 - data_download - ERROR - No contract details found for NQ
+2025-03-21 07:29:01,642 - data_download - INFO - Downloading NQ 1min data...
+2025-03-21 07:29:01,644 - ib_insync.wrapper - ERROR - Error 321, reqId 10: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,644 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 10, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,644 - data_download - ERROR - No data returned for NQ 1min from IB
+2025-03-21 07:29:01,644 - data_download - INFO - Generating synthetic data for NQ 1min
+2025-03-21 07:29:01,644 - data_download - INFO - Generating synthetic data for NQ at 1min timeframe
+2025-03-21 07:29:01,665 - data_download - INFO - Generated 3645 rows of synthetic data for NQ 1min
+2025-03-21 07:29:01,679 - data_download - INFO - Downloading NQ 5min data...
+2025-03-21 07:29:01,680 - ib_insync.wrapper - ERROR - Error 321, reqId 11: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,680 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 11, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,681 - data_download - ERROR - No data returned for NQ 5min from IB
+2025-03-21 07:29:01,681 - data_download - INFO - Generating synthetic data for NQ 5min
+2025-03-21 07:29:01,681 - data_download - INFO - Generating synthetic data for NQ at 5min timeframe
+2025-03-21 07:29:01,685 - data_download - INFO - Generated 729 rows of synthetic data for NQ 5min
+2025-03-21 07:29:01,689 - data_download - INFO - Downloading NQ 15min data...
+2025-03-21 07:29:01,690 - ib_insync.wrapper - ERROR - Error 321, reqId 12: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,690 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 12, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,690 - data_download - ERROR - No data returned for NQ 15min from IB
+2025-03-21 07:29:01,690 - data_download - INFO - Generating synthetic data for NQ 15min
+2025-03-21 07:29:01,692 - data_download - INFO - Generating synthetic data for NQ at 15min timeframe
+2025-03-21 07:29:01,694 - data_download - INFO - Generated 243 rows of synthetic data for NQ 15min
+2025-03-21 07:29:01,695 - data_download - INFO - Downloading NQ 1hour data...
+2025-03-21 07:29:01,697 - ib_insync.wrapper - ERROR - Error 321, reqId 13: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,697 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 13, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,697 - data_download - ERROR - No data returned for NQ 1hour from IB
+2025-03-21 07:29:01,697 - data_download - INFO - Generating synthetic data for NQ 1hour
+2025-03-21 07:29:01,697 - data_download - INFO - Generating synthetic data for NQ at 1hour timeframe
+2025-03-21 07:29:01,698 - data_download - INFO - Generated 63 rows of synthetic data for NQ 1hour
+2025-03-21 07:29:01,700 - data_download - INFO - Downloading NQ 1day data...
+2025-03-21 07:29:01,701 - ib_insync.wrapper - ERROR - Error 321, reqId 14: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='NQ', exchange='GLOBEX', currency='USD')
+2025-03-21 07:29:01,702 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 14, Symbol: NQ--FUT-GLOBEX
+2025-03-21 07:29:01,702 - data_download - ERROR - No data returned for NQ 1day from IB
+2025-03-21 07:29:01,702 - data_download - INFO - Generating synthetic data for NQ 1day
+2025-03-21 07:29:01,702 - data_download - INFO - Generating synthetic data for NQ at 1day timeframe
+2025-03-21 07:29:01,703 - data_download - INFO - Generated 9 rows of synthetic data for NQ 1day
+2025-03-21 07:29:01,704 - data_download - INFO - Processing YM with contract specs: {'symbol': 'YM', 'secType': 'FUT', 'exchange': 'ECBOT', 'currency': 'USD'}
+2025-03-21 07:29:01,704 - data_download - INFO - Qualifying future contract for YM...
+2025-03-21 07:29:01,791 - ib_insync.wrapper - ERROR - Error 200, reqId 15: No security definition has been found for the request, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,791 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 15, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,791 - data_download - ERROR - No contract details found for YM
+2025-03-21 07:29:01,791 - data_download - INFO - Downloading YM 1min data...
+2025-03-21 07:29:01,792 - ib_insync.wrapper - ERROR - Error 321, reqId 16: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,793 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 16, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,793 - data_download - ERROR - No data returned for YM 1min from IB
+2025-03-21 07:29:01,793 - data_download - INFO - Generating synthetic data for YM 1min
+2025-03-21 07:29:01,793 - data_download - INFO - Generating synthetic data for YM at 1min timeframe
+2025-03-21 07:29:01,813 - data_download - INFO - Generated 3645 rows of synthetic data for YM 1min
+2025-03-21 07:29:01,826 - data_download - INFO - Downloading YM 5min data...
+2025-03-21 07:29:01,828 - ib_insync.wrapper - ERROR - Error 321, reqId 17: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,828 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 17, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,828 - data_download - ERROR - No data returned for YM 5min from IB
+2025-03-21 07:29:01,828 - data_download - INFO - Generating synthetic data for YM 5min
+2025-03-21 07:29:01,828 - data_download - INFO - Generating synthetic data for YM at 5min timeframe
+2025-03-21 07:29:01,833 - data_download - INFO - Generated 729 rows of synthetic data for YM 5min
+2025-03-21 07:29:01,836 - data_download - INFO - Downloading YM 15min data...
+2025-03-21 07:29:01,837 - ib_insync.wrapper - ERROR - Error 321, reqId 18: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,837 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 18, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,837 - data_download - ERROR - No data returned for YM 15min from IB
+2025-03-21 07:29:01,837 - data_download - INFO - Generating synthetic data for YM 15min
+2025-03-21 07:29:01,838 - data_download - INFO - Generating synthetic data for YM at 15min timeframe
+2025-03-21 07:29:01,839 - data_download - INFO - Generated 243 rows of synthetic data for YM 15min
+2025-03-21 07:29:01,842 - data_download - INFO - Downloading YM 1hour data...
+2025-03-21 07:29:01,844 - ib_insync.wrapper - ERROR - Error 321, reqId 19: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,844 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 19, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,845 - data_download - ERROR - No data returned for YM 1hour from IB
+2025-03-21 07:29:01,845 - data_download - INFO - Generating synthetic data for YM 1hour
+2025-03-21 07:29:01,845 - data_download - INFO - Generating synthetic data for YM at 1hour timeframe
+2025-03-21 07:29:01,846 - data_download - INFO - Generated 63 rows of synthetic data for YM 1hour
+2025-03-21 07:29:01,847 - data_download - INFO - Downloading YM 1day data...
+2025-03-21 07:29:01,848 - ib_insync.wrapper - ERROR - Error 321, reqId 20: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='YM', exchange='ECBOT', currency='USD')
+2025-03-21 07:29:01,849 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 20, Symbol: YM--FUT-ECBOT
+2025-03-21 07:29:01,849 - data_download - ERROR - No data returned for YM 1day from IB
+2025-03-21 07:29:01,849 - data_download - INFO - Generating synthetic data for YM 1day
+2025-03-21 07:29:01,849 - data_download - INFO - Generating synthetic data for YM at 1day timeframe
+2025-03-21 07:29:01,850 - data_download - INFO - Generated 9 rows of synthetic data for YM 1day
+2025-03-21 07:29:01,851 - data_download - INFO - Processing CL with contract specs: {'symbol': 'CL', 'secType': 'FUT', 'exchange': 'NYMEX', 'currency': 'USD'}
+2025-03-21 07:29:01,851 - data_download - INFO - Qualifying future contract for CL...
+2025-03-21 07:29:02,545 - data_download - ERROR - Error qualifying contract for CL: 'ContractDetails' object has no attribute 'contractDetails'
+2025-03-21 07:29:02,546 - data_download - INFO - Downloading CL 1min data...
+2025-03-21 07:29:02,547 - ib_insync.wrapper - ERROR - Error 321, reqId 22: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='CL', exchange='NYMEX', currency='USD')
+2025-03-21 07:29:02,548 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 22, Symbol: CL--FUT-NYMEX
+2025-03-21 07:29:02,548 - data_download - ERROR - No data returned for CL 1min from IB
+2025-03-21 07:29:02,548 - data_download - INFO - Generating synthetic data for CL 1min
+2025-03-21 07:29:02,548 - data_download - INFO - Generating synthetic data for CL at 1min timeframe
+2025-03-21 07:29:02,569 - data_download - INFO - Generated 3645 rows of synthetic data for CL 1min
+2025-03-21 07:29:02,588 - data_download - INFO - Downloading CL 5min data...
+2025-03-21 07:29:02,590 - ib_insync.wrapper - ERROR - Error 321, reqId 23: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='CL', exchange='NYMEX', currency='USD')
+2025-03-21 07:29:02,590 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 23, Symbol: CL--FUT-NYMEX
+2025-03-21 07:29:02,590 - data_download - ERROR - No data returned for CL 5min from IB
+2025-03-21 07:29:02,590 - data_download - INFO - Generating synthetic data for CL 5min
+2025-03-21 07:29:02,590 - data_download - INFO - Generating synthetic data for CL at 5min timeframe
+2025-03-21 07:29:02,600 - data_download - INFO - Generated 729 rows of synthetic data for CL 5min
+2025-03-21 07:29:02,604 - data_download - INFO - Downloading CL 15min data...
+2025-03-21 07:29:02,606 - ib_insync.wrapper - ERROR - Error 321, reqId 24: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='CL', exchange='NYMEX', currency='USD')
+2025-03-21 07:29:02,606 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 24, Symbol: CL--FUT-NYMEX
+2025-03-21 07:29:02,606 - data_download - ERROR - No data returned for CL 15min from IB
+2025-03-21 07:29:02,606 - data_download - INFO - Generating synthetic data for CL 15min
+2025-03-21 07:29:02,607 - data_download - INFO - Generating synthetic data for CL at 15min timeframe
+2025-03-21 07:29:02,610 - data_download - INFO - Generated 243 rows of synthetic data for CL 15min
+2025-03-21 07:29:02,613 - data_download - INFO - Downloading CL 1hour data...
+2025-03-21 07:29:02,614 - ib_insync.wrapper - ERROR - Error 321, reqId 25: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='CL', exchange='NYMEX', currency='USD')
+2025-03-21 07:29:02,614 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 25, Symbol: CL--FUT-NYMEX
+2025-03-21 07:29:02,615 - data_download - ERROR - No data returned for CL 1hour from IB
+2025-03-21 07:29:02,615 - data_download - INFO - Generating synthetic data for CL 1hour
+2025-03-21 07:29:02,615 - data_download - INFO - Generating synthetic data for CL at 1hour timeframe
+2025-03-21 07:29:02,616 - data_download - INFO - Generated 63 rows of synthetic data for CL 1hour
+2025-03-21 07:29:02,618 - data_download - INFO - Downloading CL 1day data...
+2025-03-21 07:29:02,620 - ib_insync.wrapper - ERROR - Error 321, reqId 26: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='CL', exchange='NYMEX', currency='USD')
+2025-03-21 07:29:02,620 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 26, Symbol: CL--FUT-NYMEX
+2025-03-21 07:29:02,620 - data_download - ERROR - No data returned for CL 1day from IB
+2025-03-21 07:29:02,620 - data_download - INFO - Generating synthetic data for CL 1day
+2025-03-21 07:29:02,620 - data_download - INFO - Generating synthetic data for CL at 1day timeframe
+2025-03-21 07:29:02,621 - data_download - INFO - Generated 9 rows of synthetic data for CL 1day
+2025-03-21 07:29:02,622 - data_download - INFO - Processing GC with contract specs: {'symbol': 'GC', 'secType': 'FUT', 'exchange': 'COMEX', 'currency': 'USD'}
+2025-03-21 07:29:02,622 - data_download - INFO - Qualifying future contract for GC...
+2025-03-21 07:29:02,986 - data_download - ERROR - Error qualifying contract for GC: 'ContractDetails' object has no attribute 'contractDetails'
+2025-03-21 07:29:02,986 - data_download - INFO - Downloading GC 1min data...
+2025-03-21 07:29:02,987 - ib_insync.wrapper - ERROR - Error 321, reqId 28: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='GC', exchange='COMEX', currency='USD')
+2025-03-21 07:29:02,987 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 28, Symbol: GC--FUT-COMEX
+2025-03-21 07:29:02,988 - data_download - ERROR - No data returned for GC 1min from IB
+2025-03-21 07:29:02,988 - data_download - INFO - Generating synthetic data for GC 1min
+2025-03-21 07:29:02,988 - data_download - INFO - Generating synthetic data for GC at 1min timeframe
+2025-03-21 07:29:03,009 - data_download - INFO - Generated 3645 rows of synthetic data for GC 1min
+2025-03-21 07:29:03,022 - data_download - INFO - Downloading GC 5min data...
+2025-03-21 07:29:03,024 - ib_insync.wrapper - ERROR - Error 321, reqId 29: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='GC', exchange='COMEX', currency='USD')
+2025-03-21 07:29:03,025 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 29, Symbol: GC--FUT-COMEX
+2025-03-21 07:29:03,025 - data_download - ERROR - No data returned for GC 5min from IB
+2025-03-21 07:29:03,025 - data_download - INFO - Generating synthetic data for GC 5min
+2025-03-21 07:29:03,025 - data_download - INFO - Generating synthetic data for GC at 5min timeframe
+2025-03-21 07:29:03,030 - data_download - INFO - Generated 729 rows of synthetic data for GC 5min
+2025-03-21 07:29:03,033 - data_download - INFO - Downloading GC 15min data...
+2025-03-21 07:29:03,035 - ib_insync.wrapper - ERROR - Error 321, reqId 30: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='GC', exchange='COMEX', currency='USD')
+2025-03-21 07:29:03,035 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 30, Symbol: GC--FUT-COMEX
+2025-03-21 07:29:03,035 - data_download - ERROR - No data returned for GC 15min from IB
+2025-03-21 07:29:03,035 - data_download - INFO - Generating synthetic data for GC 15min
+2025-03-21 07:29:03,035 - data_download - INFO - Generating synthetic data for GC at 15min timeframe
+2025-03-21 07:29:03,037 - data_download - INFO - Generated 243 rows of synthetic data for GC 15min
+2025-03-21 07:29:03,039 - data_download - INFO - Downloading GC 1hour data...
+2025-03-21 07:29:03,040 - ib_insync.wrapper - ERROR - Error 321, reqId 31: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='GC', exchange='COMEX', currency='USD')
+2025-03-21 07:29:03,040 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 31, Symbol: GC--FUT-COMEX
+2025-03-21 07:29:03,040 - data_download - ERROR - No data returned for GC 1hour from IB
+2025-03-21 07:29:03,041 - data_download - INFO - Generating synthetic data for GC 1hour
+2025-03-21 07:29:03,041 - data_download - INFO - Generating synthetic data for GC at 1hour timeframe
+2025-03-21 07:29:03,042 - data_download - INFO - Generated 63 rows of synthetic data for GC 1hour
+2025-03-21 07:29:03,043 - data_download - INFO - Downloading GC 1day data...
+2025-03-21 07:29:03,044 - ib_insync.wrapper - ERROR - Error 321, reqId 32: Error validating request.-'bK' : cause - Please enter a local symbol or an expiry, contract: Future(symbol='GC', exchange='COMEX', currency='USD')
+2025-03-21 07:29:03,044 - src.connectors.ib.ib_connector - ERROR - IB Error (321): Error validating request.-'bK' : cause - Please enter a local symbol or an expiry - ReqID: 32, Symbol: GC--FUT-COMEX
+2025-03-21 07:29:03,044 - data_download - ERROR - No data returned for GC 1day from IB
+2025-03-21 07:29:03,045 - data_download - INFO - Generating synthetic data for GC 1day
+2025-03-21 07:29:03,045 - data_download - INFO - Generating synthetic data for GC at 1day timeframe
+2025-03-21 07:29:03,045 - data_download - INFO - Generated 9 rows of synthetic data for GC 1day
+2025-03-21 07:29:03,046 - data_download - INFO - Disconnecting from Interactive Brokers
+2025-03-21 07:29:03,047 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 07:29:03,047 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 2.56 kB sent in 37 messages, 152 kB received in 578 messages, session time 2.01 s.
+2025-03-21 07:29:03,047 - ib_insync.client - INFO - Disconnecting
+2025-03-21 07:29:03,047 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 07:29:03,047 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 07:29:03,047 - src.connectors.ib.ib_connector - INFO - Connecting to IB at 127.0.0.1:7497 (client ID: 21904)
+2025-03-21 07:29:03,047 - ib_insync.client - INFO - Disconnected.
+2025-03-21 07:29:03,047 - ib_insync.client - INFO - Connecting to 127.0.0.1:7497 with clientId 21904...
+2025-03-21 07:29:03,048 - ib_insync.client - INFO - Connected
+2025-03-21 07:29:03,049 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 07:29:03,053 - ib_insync.client - INFO - API connection ready
+2025-03-21 07:29:03,054 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 07:29:03,054 - ib_insync.wrapper - INFO - Warning 2107, reqId -1: HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-03-21 07:29:03,054 - src.connectors.ib.ib_connector - ERROR - IB Error (2107): HMDS data farm connection is inactive but should be available upon demand.ushmds - ReqID: -1, Symbol: None
+2025-03-21 07:29:03,054 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 07:29:03,263 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 07:29:03,264 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 07:29:03,264 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 07:29:03,264 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 07:29:03,265 - data_download - INFO - Data download/generation completed successfully
+2025-03-21 07:29:03,265 - data_download - INFO - Data process completed successfully in 2.23 seconds
+2025-03-21 07:29:03,284 - ib_insync.ib - INFO - Disconnecting from 127.0.0.1:7497, 113 B sent in 7 messages, 18.2 kB received in 385 messages, session time 238 ms.
+2025-03-21 07:29:03,284 - ib_insync.client - INFO - Disconnecting

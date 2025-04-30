@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data directory (contains large files)
+/data
+/data/raw/
+/data/*.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm, VSCode
+.idea/
+.vscode/
+
+# OS specific files
+.DS_Store
+*.swp
+*.swo
+
+# Hydra outputs
+outputs/
+.hydra/
+
+# Machine learning models
+/ml/*.pkl 
+
+# Data
+*.txt

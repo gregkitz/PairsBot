@@ -1,0 +1,39 @@
+think hard
+follow the <docs/plans/next_steps.md to understand current priorities and immediate focus items> and mark when you've completed something
+check <docs/context/implementation_status.md to see what components are already implemented> to avoid duplication
+refer to <docs/architecture_dir/PAIRS_DESIGN.md for the overall system design and architecture>
+remember to review <docs/architecture_dir/data_flow.md for understanding component interactions>
+check <docs/context/docker_migration.md for containerized distributed processing details>
+for multi-agent coordination, check <docs/context/agent_coordination.md for coordination guidelines> and your specific role
+if you're the Implementation Agent, follow <docs/context/agent1_tasks.md for your task list> and update <docs/context/agent1_status.md with your progress>
+if you're the Testing Agent, follow <docs/context/agent2_tasks.md for your task list> and update <docs/context/agent2_status.md with your progress>
+if you're the Environment and DevOps Agent, follow <docs/context/envdevops_tasks.md for your task list> and update <docs/context/envdevops_status.md with your progress>
+if you're the Project Manager Agent, follow <docs/context/project_manager/project_manager_tasks.md for your responsibilities> and enforce <docs/context/project_manager/phase_completion_criteria.md for phase transitions>
+for design alignment verification, check <docs/context/project_manager/design_alignment.md to ensure implementation matches design>
+verify component dependencies using <docs/context/project_manager/dependency_graph.md to enforce proper implementation order>
+enforce test coverage standards from <docs/context/project_manager/test_coverage_requirements.md>
+prioritize implementation based on <docs/context/project_manager/implementation_priorities.md>
+ensure proper component verification using <docs/context/project_manager/implementation_verification.md>
+for milestone tracking, maintain <docs/context/project_manager/milestone_tracking.md>
+if you lose context due to the ~200k context window limit, read <docs/context/implementation_notes.md for current implementation details>
+for avoiding AI blindspots, follow the principles in <docs/context/ai_blindspots_mitigation.md>
+when addressing technical debt, follow <docs/plans/technical_debt_resolution.md>
+we have 15 years futures data across the top 130 tickers please don't use synthetic data
+prefer getting the component we're working on working instead of quick workarounds
+periodically save notes for "future you" in the docs/context/ folder
+always prioritize integration with existing system components over creating new standalone solutions
+use consistent naming conventions with existing code
+if interrupted mid-implementation, document your current approach and thought process in docs/context/implementation_notes.md
+avoid circular dependencies as outlined in docs/architecture_dir/component_dependencies.md
+leave clear TODO comments for incomplete sections rather than implementing placeholders
+validate against real data early and often instead of deferring to synthetic data for testing
+if an implementation approach becomes too complicated, recognize when to stop and suggest a more straightforward alternative
+build a walking skeleton first - implement the minimum end-to-end version before refining individual components
+don't make unnecessary refactors while implementing a feature - suggest them separately
+respect existing specs and APIs - don't change them to make implementation easier
+keep files small and focused on a single responsibility
+prefer static typing where possible to improve maintainability
+if you have requests for external resources, infrastructure, or permissions, document them in <docs/asks_for_developer/> with detailed requirements
+for statistical implementations, include comprehensive docstrings with mathematical formulations and academic references
+when implementing statistical methods, consider edge cases and numerical stability
+when you have completed your changes please commit them to git

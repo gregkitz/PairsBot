@@ -1,0 +1,24 @@
+{
+  "id": "basic_pairs",
+  "name": "Basic Pairs Trading Strategy",
+  "description": "Standard statistical arbitrage strategy for cointegrated pairs",
+  "type": "pairs",
+  "pairs": [
+    {"leg1": "ES", "leg2": "NQ", "ratio": 1.0},
+    {"leg1": "GC", "leg2": "SI", "ratio": 0.1}
+  ],
+  "entry_threshold": 2.0,
+  "exit_threshold": 0.5,
+  "stop_loss_threshold": 3.0,
+  "max_holding_period_minutes": 180,
+  "entry_time_filter": {
+    "start": "09:30:00",
+    "end": "15:30:00"
+  },
+  "position_sizing": {
+    "method": "volatility",
+    "max_allocation_pct": 15.0,
+    "max_risk_pct": 1.0,
+    "volatility_lookback_days": [10, 20, 30]
+  }
+} 

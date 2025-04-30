@@ -1,0 +1,106 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 4gb --maxmemory-policy allkeys-lru
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 6G
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python -m src.api.main
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data:cached
+      - ./models:/app/models:cached
+      - ./output:/app/output:cached
+      - ./logs:/app/logs:cached
+      - ./config:/app/config:cached
+      - ./src:/app/src:cached
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: celery -A src.tasks.celery_app worker --loglevel=info --concurrency=8 --prefetch-multiplier=1
+    volumes:
+      - ./data:/app/data:cached
+      - ./models:/app/models:cached
+      - ./output:/app/output:cached
+      - ./logs:/app/logs:cached
+      - ./config:/app/config:cached
+      - ./src:/app/src:cached
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PYTHONUNBUFFERED=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '12'
+          memory: 32G
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  flower:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: celery -A src.tasks.celery_app flower
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+      - worker
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+
+volumes:
+  redis-data: 

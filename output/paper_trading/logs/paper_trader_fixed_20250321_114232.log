@@ -1,0 +1,223 @@
+2025-03-21 11:42:32,487 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 11:42:32,487 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 11:42:32,848 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 11:42:33,136 - __main__ - INFO - Added market data monitoring capability
+2025-03-21 11:42:33,136 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 11:42:33,137 - src.paper_trading.paper_trader - INFO - Loaded account data: Capital=$100000.00
+2025-03-21 11:42:33,137 - src.paper_trading.paper_trader - INFO - Loaded 0 positions
+2025-03-21 11:42:33,138 - src.paper_trading.paper_trader - INFO - Loaded 0 historical trades
+2025-03-21 11:42:33,138 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 11:42:33,138 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 11:42:33,139 - src.paper_trading.intraday_ml_paper_trader - INFO - Loading market regime classifier from models/intraday\market_regime_classifier.joblib
+2025-03-21 11:42:33,142 - src.paper_trading.intraday_ml_paper_trader - INFO - Successfully loaded market regime classifier model
+2025-03-21 11:42:33,143 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded current regime: Low Volatility / Weak Trend
+2025-03-21 11:42:33,143 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 11:42:33,163 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 11:42:33,179 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 11:42:33,193 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 11:42:33,194 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:42:33,194 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:42:33,194 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 11:42:33,194 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:42:33,195 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:42:33,203 - ib_insync.client - INFO - Connected
+2025-03-21 11:42:33,206 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:42:33,207 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:42:33,208 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:42:33,208 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2025-03-21 11:42:33,208 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:42:33,208 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:apachmds
+2025-03-21 11:42:33,208 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:42:33,209 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:42:33,310 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:42:33,311 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 11:42:33,311 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:42:33,312 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:42:33,312 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 11:42:33,313 - __main__ - INFO - Starting enhanced refresh loop for ML monitoring
+2025-03-21 11:42:33,313 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 11:42:33,313 - __main__ - INFO - Applied timeout to contract detail searches
+2025-03-21 11:42:33,314 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 11:42:33,314 - __main__ - INFO - Added example pairs for monitoring: ['ES_NQ', 'GC_SI']
+2025-03-21 11:42:33,314 - __main__ - INFO - Subscribing to ES with direct contract definition
+2025-03-21 11:42:33,314 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')
+2025-03-21 11:42:33,314 - __main__ - INFO - Requesting contract details for ES with 30s timeout
+2025-03-21 11:43:03,328 - __main__ - WARNING - reqContractDetails for ES timed out after 30s
+2025-03-21 11:43:03,328 - __main__ - WARNING - Could not qualify contract: Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')
+2025-03-21 11:43:03,328 - __main__ - INFO - Subscribed to market data for ES-202406-FUT-GLOBEX
+2025-03-21 11:43:03,329 - __main__ - INFO - Subscribing to NQ with direct contract definition
+2025-03-21 11:43:03,329 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')
+2025-03-21 11:43:03,329 - __main__ - INFO - Requesting contract details for NQ with 30s timeout
+2025-03-21 11:43:33,315 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-202406-FUT-GLOBEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 11:43:33,315 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 11:43:33,315 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 11:43:33 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 11:43:33,315 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 11:43:33,334 - __main__ - WARNING - reqContractDetails for NQ timed out after 30s
+2025-03-21 11:43:33,334 - __main__ - WARNING - Could not qualify contract: Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')
+2025-03-21 11:43:33,334 - __main__ - INFO - Subscribed to market data for NQ-202406-FUT-GLOBEX
+2025-03-21 11:43:33,334 - __main__ - INFO - Subscribing to GC with direct contract definition
+2025-03-21 11:43:33,334 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')
+2025-03-21 11:43:33,334 - __main__ - INFO - Requesting contract details for GC with 30s timeout
+2025-03-21 11:44:03,344 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 11:44:03,344 - __main__ - WARNING - reqContractDetails for GC timed out after 30s
+2025-03-21 11:44:03,344 - __main__ - WARNING - Could not qualify contract: Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')
+2025-03-21 11:44:03,344 - __main__ - INFO - Subscribed to market data for GC-202406-FUT-NYMEX
+2025-03-21 11:44:03,344 - __main__ - INFO - Subscribing to SI with direct contract definition
+2025-03-21 11:44:03,344 - __main__ - INFO - Attempting to subscribe to market data for contract: Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')
+2025-03-21 11:44:03,345 - __main__ - INFO - Requesting contract details for SI with 30s timeout
+2025-03-21 11:44:33,318 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for ES-202406-FUT-GLOBEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 11:44:33,318 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for NQ-202406-FUT-GLOBEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 11:44:33,318 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error getting historical data for GC-202406-FUT-NYMEX: get_historical_data() got an unexpected keyword argument 'start_date'
+2025-03-21 11:44:33,319 - src.paper_trading.intraday_ml_paper_trader - ERROR - Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 11:44:33,319 - src.paper_trading.intraday_ml_paper_trader - ERROR - [ERROR] 2025-03-21 11:44:33 - ML Refresh Error: Error refreshing ML system: cannot access local variable 'symbol1' where it is not associated with a value
+2025-03-21 11:44:33,319 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 11:44:33,356 - __main__ - WARNING - reqContractDetails for SI timed out after 30s
+2025-03-21 11:44:33,356 - __main__ - WARNING - Could not qualify contract: Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')
+2025-03-21 11:44:33,356 - __main__ - INFO - Subscribed to market data for SI-202406-FUT-NYMEX
+2025-03-21 11:44:33,356 - __main__ - INFO - Subscribed to 4 of 4 contracts
+2025-03-21 11:44:33,356 - __main__ - INFO - Trying basic market data subscription for ES
+2025-03-21 11:44:33,458 - ib_insync.wrapper - ERROR - Error 200, reqId 3: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')
+2025-03-21 11:44:33,458 - eventkit.event - ERROR - Value (3, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,561 - ib_insync.wrapper - ERROR - Error 200, reqId 4: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')
+2025-03-21 11:44:33,561 - eventkit.event - ERROR - Value (4, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='ES', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='ESM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,663 - ib_insync.wrapper - ERROR - Error 200, reqId 6: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')
+2025-03-21 11:44:33,663 - eventkit.event - ERROR - Value (6, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,664 - ib_insync.wrapper - ERROR - Error 200, reqId 5: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')
+2025-03-21 11:44:33,664 - eventkit.event - ERROR - Value (5, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='NQ', lastTradeDateOrContractMonth='202406', exchange='GLOBEX', currency='USD', localSymbol='NQM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,664 - ib_insync.wrapper - ERROR - Error 200, reqId 7: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')
+2025-03-21 11:44:33,664 - eventkit.event - ERROR - Value (7, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,765 - ib_insync.wrapper - ERROR - Error 200, reqId 8: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')
+2025-03-21 11:44:33,765 - eventkit.event - ERROR - Value (8, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='GC', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='GCM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,766 - ib_insync.wrapper - ERROR - Error 200, reqId 9: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')
+2025-03-21 11:44:33,766 - eventkit.event - ERROR - Value (9, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:33,867 - ib_insync.wrapper - ERROR - Error 200, reqId 10: No security definition has been found for the request, contract: Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')
+2025-03-21 11:44:33,867 - eventkit.event - ERROR - Value (10, 200, 'No security definition has been found for the request', Contract(secType='FUT', symbol='SI', lastTradeDateOrContractMonth='202406', exchange='NYMEX', currency='USD', localSymbol='SIM4')) caused exception for event Event<errorEvent, [[None, <weakref at 0x000001F97463ECF0; to 'IB' at 0x000001F9744783E0>, <function IB._onError at 0x000001F9720C1260>], [None, <weakref at 0x000001F97463EF20; to 'IBConnector' at 0x000001F973F3C740>, <function IBConnector._on_error at 0x000001F9730FE980>]]>
+Traceback (most recent call last):
+  File "C:\Users\grego\miniconda3\Lib\site-packages\eventkit\event.py", line 205, in emit
+    result = func(obj, *args)
+             ^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_connector.py", line 1175, in _on_error
+    symbol = contract_to_symbol(contract) if contract else None
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\quant-trader\src\connectors\ib\ib_utils.py", line 119, in contract_to_symbol
+    raise ValueError(f"Unsupported contract type: {type(contract)}")
+ValueError: Unsupported contract type: <class 'ib_insync.contract.Contract'>
+2025-03-21 11:44:34,270 - src.paper_trading.paper_trader - INFO - Subscribed to market data for ES
+2025-03-21 11:44:34,270 - __main__ - INFO - Trying basic market data subscription for NQ
+2025-03-21 11:44:34,371 - ib_insync.wrapper - ERROR - Error 200, reqId 12: No security definition has been found for the request, contract: Stock(symbol='NQ', exchange='SMART', currency='USD')
+2025-03-21 11:44:34,371 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 12, Symbol: NQ-STK-SMART
+2025-03-21 11:44:35,277 - src.paper_trading.paper_trader - INFO - Subscribed to market data for NQ
+2025-03-21 11:44:35,277 - __main__ - INFO - Trying basic market data subscription for GC
+2025-03-21 11:44:35,378 - ib_insync.wrapper - ERROR - Error 200, reqId 13: No security definition has been found for the request, contract: Stock(symbol='GC', exchange='SMART', currency='USD')
+2025-03-21 11:44:35,378 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 13, Symbol: GC-STK-SMART
+2025-03-21 11:44:36,282 - src.paper_trading.paper_trader - INFO - Subscribed to market data for GC
+2025-03-21 11:44:36,282 - __main__ - INFO - Trying basic market data subscription for SI
+2025-03-21 11:44:36,384 - ib_insync.wrapper - ERROR - Error 200, reqId 14: No security definition has been found for the request, contract: Stock(symbol='SI', exchange='SMART', currency='USD')
+2025-03-21 11:44:36,385 - src.connectors.ib.ib_connector - ERROR - IB Error (200): No security definition has been found for the request - ReqID: 14, Symbol: SI-STK-SMART
+2025-03-21 11:44:37,290 - src.paper_trading.paper_trader - INFO - Subscribed to market data for SI
+2025-03-21 11:44:37,293 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T11:44:37.290490', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:44:37,294 - __main__ - INFO - Created demo signal for ES_NQ
+2025-03-21 11:44:37,298 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T11:44:37.294587', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:44:37,298 - __main__ - INFO - Created demo signal for GC_SI
+2025-03-21 11:44:37,298 - __main__ - INFO - Loaded current regime from file: Low Volatility / Weak Trend
+2025-03-21 11:44:37,298 - __main__ - INFO - Current market regime: Low Volatility / Weak Trend
+2025-03-21 11:44:37,299 - src.paper_trading.intraday_ml_paper_trader - WARNING - No performance data to update dashboard
+2025-03-21 11:44:37,299 - __main__ - INFO - Dashboard available at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 11:44:37,299 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 11:44:37,299 - __main__ - INFO - Stopping ML-enhanced paper trader...
+2025-03-21 11:44:37,345 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 11:44:37,345 - ib_insync.ib - INFO - Disconnecting from localhost:7496, 806 B sent in 23 messages, 19.6 kB received in 424 messages, session time 124 s.
+2025-03-21 11:44:37,347 - ib_insync.client - INFO - Disconnecting
+2025-03-21 11:44:37,347 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 11:44:37,347 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 11:44:37,347 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:44:37,347 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:44:37,347 - ib_insync.client - INFO - Disconnected.
+2025-03-21 11:44:37,348 - ib_insync.client - INFO - Connected
+2025-03-21 11:44:37,354 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:44:37,748 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:44:37,748 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2025-03-21 11:44:37,748 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:44:37,749 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:apachmds
+2025-03-21 11:44:37,749 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:44:37,749 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:44:37,749 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:44:37,850 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:44:37,851 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:44:37,852 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:44:37,852 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 11:44:37,852 - src.paper_trading.paper_trader - INFO - Paper trader stopped
+2025-03-21 11:44:37,854 - src.paper_trading.intraday_ml_paper_trader - WARNING - No performance data to update dashboard
+2025-03-21 11:44:37,854 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader stopped
+2025-03-21 11:44:37,854 - __main__ - INFO - ML-enhanced paper trader stopped.
+2025-03-21 11:45:33,319 - __main__ - INFO - Removed timeout from contract detail searches

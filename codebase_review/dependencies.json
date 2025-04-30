@@ -1,0 +1,409 @@
+{
+  "run.py": [
+    "src.main.main"
+  ],
+  "test_adaptive_parameters.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.optimization.adaptive_parameter_manager.AdaptiveParameterManager",
+    "src.optimization.intraday_parameter_optimizer.IntradayParameterOptimizer"
+  ],
+  "test_intraday_model_training.py": [
+    "src.ml_enhancements.data_augmentation.TimeSeriesAugmentation",
+    "src.ml_enhancements.training_utils.generate_labels",
+    "src.data_processor.IntradayDataProcessor",
+    "src.ml_enhancements.intraday_model_trainer.IntradayModelTrainer",
+    "src.ml_enhancements.feature_engineering.IntradayFeatureEngineering",
+    "src.ml_enhancements.training_utils.WalkForwardValidator",
+    "src.ml_enhancements.training_utils.create_train_test_labels"
+  ],
+  "intraday_adaptation.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "test_intraday_pair_analyzer.py": [
+    "src.cointegration.IntradayPairAnalyzer"
+  ],
+  "run_intraday_strategy.py": [
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor"
+  ],
+  "run_paper_trader.py": [
+    "src.paper_trading.paper_trader.PaperTrader"
+  ],
+  "train_intraday_models.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor"
+  ],
+  "test_intraday_processor.py": [
+    "src.data_processor.IntradayDataProcessor"
+  ],
+  "test_intraday_features.py": [
+    "src.ml_enhancements.feature_engineering.IntradayFeatureEngineering",
+    "src.data_processor.IntradayDataProcessor"
+  ],
+  "run_pair_backtest.py": [
+    "src.backtest.backtest_engine.BacktestEngine"
+  ],
+  "process_more_data.py": [
+    "src.data_processor.futures_processor.FuturesDataProcessor"
+  ],
+  "adapt_regime_parameters.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "backtest_best_pair.py": [
+    "src.signal_generation.pairs_signal_generator.PairsSignalGenerator",
+    "src.backtest.backtest_engine.BacktestEngine"
+  ],
+  "run_ml_paper_trader.py": [
+    "src.paper_trading.intraday_ml_paper_trader.IntradayMLPaperTrader",
+    "src.paper_trading.intraday_ml_paper_trader.create_ml_paper_trader"
+  ],
+  "run_web.py": [
+    "src.web_interface.app.socketio",
+    "src.web_interface.create_app"
+  ],
+  "test_signal_generator.py": [
+    "src.signal_generation.pairs_signal_generator.PairsSignalGenerator"
+  ],
+  "run_intraday_parameter_optimization.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.optimization.intraday_parameter_optimizer.IntradayParameterOptimizer"
+  ],
+  "evaluate_intraday_models.py": [
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor"
+  ],
+  "simple_portfolio_test.py": [
+    "src.signal_generation.pairs_signal_generator.PairsSignalGenerator",
+    "src.portfolio.pairs_portfolio.PairsPortfolio"
+  ],
+  "test_model_refinement.py": [
+    "src.ml_enhancements.model_retraining.auto_retrain_if_needed",
+    "src.ml_enhancements.feature_engineering.advanced_features.AdvancedFeatureEngineering",
+    "src.ml_enhancements.ensemble_models.EnsembleModelFactory",
+    "src.ml_enhancements.ensemble_models.create_intraday_ensemble",
+    "src.ml_enhancements.model_retraining.ModelRetrainingManager",
+    "src.ml_enhancements.feature_engineering.advanced_features.create_advanced_feature_set"
+  ],
+  "run_optimized_backtest.py": [
+    "src.signal_generation.pairs_signal_generator.PairsSignalGenerator",
+    "src.backtest.backtest_engine.BacktestEngine"
+  ],
+  "portfolio_test.py": [
+    "src.signal_generation.pairs_signal_generator.PairsSignalGenerator",
+    "src.portfolio.pairs_portfolio.PairsPortfolio"
+  ],
+  "run_intraday_backtest.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor"
+  ],
+  "test_regime_detection.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "tests/test_intraday_backtest_engine.py": [
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine"
+  ],
+  "tests/unit/asset_classes/test_factory.py": [
+    "src.asset_classes.equities.equity_asset.EquityAssetClass",
+    "src.asset_classes.futures.futures_asset.FuturesAssetClass",
+    "src.asset_classes.futures.futures_asset.FuturesAsset",
+    "src.asset_classes.factory.get_asset_class",
+    "src.asset_classes.equities.equity_asset.EquityAsset",
+    "src.asset_classes.base.AssetClass",
+    "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAsset",
+    "src.asset_classes.factory.create_asset",
+    "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAssetClass",
+    "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAssetClass",
+    "src.asset_classes.base.Asset",
+    "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAsset"
+  ],
+  "tests/unit/asset_classes/test_base.py": [
+    "src.asset_classes.base.Asset",
+    "src.asset_classes.base.AssetClass"
+  ],
+  "tests/unit/asset_classes/futures/test_futures_asset.py": [
+    "tests.mocks.mock_ib_connector.MockIBConnector",
+    "src.asset_classes.futures.futures_asset.FuturesAsset"
+  ],
+  "tests/unit/asset_classes/cryptocurrencies/test_crypto_asset.py": [
+    "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAsset",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.cryptocurrencies.crypto_asset.CryptoAssetClass"
+  ],
+  "tests/unit/asset_classes/fixed_income/test_fixed_income_asset.py": [
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAssetClass",
+    "src.asset_classes.fixed_income.fixed_income_asset.FixedIncomeAsset"
+  ],
+  "tests/unit/asset_classes/equities/test_equity_asset.py": [
+    "src.asset_classes.equities.equity_asset.EquityAssetClass",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.equities.equity_asset.EquityAsset"
+  ],
+  "tests/unit/strategies/test_multi_pair_portfolio.py": [
+    "src.pair_trading.pair_finder.PairFinder",
+    "src.risk_management.risk_manager.RiskManager",
+    "src.risk_management.position_sizer.PositionSizer",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.strategies.multi_pair_portfolio.MultiPairPortfolio",
+    "src.asset_classes.base.Asset",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "tests/unit/signal_generation/test_signal_generator.py": [
+    "src.signal_generation.signal_generator.SignalGenerator"
+  ],
+  "tests/unit/cointegration/test_cointegration_tests.py": [
+    "src.cointegration.cointegration_tests.test_pairs_universe",
+    "src.cointegration.cointegration_tests.calculate_half_life",
+    "src.cointegration.cointegration_tests.test_cointegration",
+    "src.cointegration.cointegration_tests.engle_granger_test",
+    "src.cointegration.cointegration_tests.johansen_test"
+  ],
+  "tests/unit/strategy_variants/test_multi_pair_portfolio.py": [
+    "src.pair_trading.pair_finder.PairFinder",
+    "src.risk_management.risk_manager.RiskManager",
+    "src.risk_management.position_sizer.PositionSizer",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.strategies.multi_pair_portfolio.MultiPairPortfolio",
+    "src.asset_classes.base.Asset",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "tests/unit/risk_management/test_risk_manager.py": [
+    "src.risk_management.risk_manager.RiskManager"
+  ],
+  "tests/unit/paper_trading/test_paper_trader.py": [
+    "src.paper_trading.paper_trader.PaperTrader",
+    "tests.mocks.mock_ib_connector.MockIBConnector"
+  ],
+  "tests/unit/data_processor/test_data_processor.py": [
+    "src.data_processor.data_processor.DataProcessor",
+    "tests.mocks.mock_ib_connector.MockIBConnector"
+  ],
+  "tests/unit/spread_analytics/test_spread_analyzer.py": [
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "tests/integration/test_intraday_ml_system_integration.py": [
+    "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+    "src.paper_trading.intraday_ml_paper_trader.IntradayMLPaperTrader",
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.optimization.adaptive_parameter_manager.AdaptiveParameterManager",
+    "src.ml_enhancements.model_retraining.ModelRetrainingManager"
+  ],
+  "tests/integration/test_multi_asset_integration.py": [
+    "src.asset_classes.futures.futures_asset.FuturesAssetClass",
+    "src.asset_classes.futures.futures_asset.FuturesAsset",
+    "src.data_processor.data_processor.DataProcessor",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.asset_classes.base.AssetClass",
+    "src.asset_classes.factory.AssetFactory",
+    "tests.mocks.mock_ib_connector.MockIBConnector",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.asset_classes.base.Asset",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "tests/integration/test_strategy_execution.py": [
+    "src.data_processor.data_processor.DataProcessor",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "tests.mocks.mock_ib_connector.MockIBConnector",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "tests/integration/test_ib_integration.py": [
+    "src.connectors.ib.ib_connector.IBConnector",
+    "src.asset_classes.factory.create_asset"
+  ],
+  "tests/integration/test_intraday_ml_integration.py": [
+    "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+    "src.ml_enhancements.feature_engineering.advanced_features.AdvancedFeatureEngineering",
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.optimization.adaptive_parameter_manager.AdaptiveParameterManager"
+  ],
+  "tests/integration/test_data_flow.py": [
+    "src.data_processor.data_processor.DataProcessor",
+    "tests.mocks.mock_ib_connector.MockIBConnector",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.cointegration.pair_finder.PairFinder",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "examples/run_ml_integrated_intraday.py": [
+    "src.ml_enhancements.intraday_integration.IntradayMLSystem",
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor",
+    "src.ml_enhancements.intraday_integration.integrate_with_paper_trading",
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "examples/run_enhanced_intraday_backtest.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier",
+    "src.backtest.intraday_performance_visualization.save_performance_dashboard",
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+    "src.backtest.intraday_performance_visualization.create_intraday_performance_dashboard"
+  ],
+  "examples/use_strategy_variants.py": [
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.visualization.plot_equity_curve",
+    "src.backtest_engine.BacktestEngine",
+    "src.strategy_variants.TimeSeriesStrategy",
+    "src.strategy_variants.MLSignalStrategy",
+    "src.visualization.plot_trades",
+    "src.strategy_variants.create_strategy",
+    "src.data_processor.DataProcessor",
+    "src.visualization.plot_spread"
+  ],
+  "scripts/generate_test_data.py": [
+    "src.utils.create_directory"
+  ],
+  "src/pairs_trading_strategy.py": [
+    "src.risk_management.risk_manager.RiskManager",
+    "src.risk_management.position_sizer.PositionSizer",
+    "src.data_processing.data_processor.DataProcessor",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.signal_generation.spread_calculator.SpreadCalculator",
+    "src.cointegration.pair_finder.PairFinder"
+  ],
+  "src/test_pair_selection.py": [
+    "src.data_processing.data_processor.DataProcessor",
+    "src.cointegration.cointegration_tests.rolling_cointegration",
+    "src.cointegration.cointegration_tests.test_cointegration",
+    "src.cointegration.pair_finder.PairFinder"
+  ],
+  "src/main.py": [
+    "src.cointegration.PairFinder",
+    "src.backtest.BacktestEngine",
+    "src.signals.SignalGenerator",
+    "src.signals.SignalType",
+    "src.utils.create_directory",
+    "src.risk_management.RiskManager",
+    "src.spread_analytics.SpreadAnalyzer",
+    "src.data_processor.DataProcessor",
+    "src.risk_management.PositionSizer"
+  ],
+  "src/asset_classes/futures/futures_asset.py": [
+    "src.asset_classes.base.Asset",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.base.AssetClass"
+  ],
+  "src/asset_classes/cryptocurrencies/crypto_asset.py": [
+    "src.asset_classes.base.Asset",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.base.AssetClass"
+  ],
+  "src/asset_classes/fixed_income/fixed_income_asset.py": [
+    "src.asset_classes.base.Asset",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.base.AssetClass"
+  ],
+  "src/asset_classes/equities/equity_asset.py": [
+    "src.asset_classes.base.Asset",
+    "src.connectors.ib.IBConnector",
+    "src.asset_classes.base.AssetClass"
+  ],
+  "src/reporting/example.py": [
+    "src.reporting.BacktestReportGenerator",
+    "src.reporting.calculate_performance_metrics"
+  ],
+  "src/live_trading/example_with_position_tracking.py": [
+    "src.connectors.ib.contract_to_symbol",
+    "src.live_trading.PositionTracker",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.connectors.ib.symbol_to_contract",
+    "src.live_trading.LiveTrader"
+  ],
+  "src/live_trading/example_with_monitoring.py": [
+    "src.connectors.ib.contract_to_symbol",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.connectors.ib.symbol_to_contract",
+    "src.live_trading.monitoring.TradingMonitor",
+    "src.live_trading.LiveTrader"
+  ],
+  "src/live_trading/example.py": [
+    "src.connectors.ib.symbol_to_contract",
+    "src.connectors.ib.contract_to_symbol",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.live_trading.LiveTrader"
+  ],
+  "src/strategies/multi_pair_portfolio.py": [
+    "src.pair_trading.pair_finder.PairFinder",
+    "src.strategies.base.Strategy",
+    "src.risk_management.risk_manager.RiskManager",
+    "src.risk_management.position_sizer.PositionSizer",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.asset_classes.base.Asset",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "src/optimization/adaptive_parameter_manager.py": [
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "src/optimization/intraday_parameter_optimizer.py": [
+    "src.optimization.parameter_space.create_default_parameter_space",
+    "src.optimization.parameter_space.ParameterSpace",
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+    "src.optimization.grid_search.grid_search.GridSearchOptimizer",
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "src/optimization/genetic_algorithm/genetic_algorithm.py": [
+    "src.optimization.parameter_space.create_default_parameter_space",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.optimization.parameter_space.ParameterSpace"
+  ],
+  "src/optimization/grid_search/grid_search.py": [
+    "src.optimization.parameter_space.create_default_parameter_space",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.optimization.parameter_space.ParameterSpace"
+  ],
+  "src/optimization/walk_forward/walk_forward.py": [
+    "src.optimization.parameter_space.create_default_parameter_space",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.optimization.genetic_algorithm.genetic_algorithm.GeneticOptimizer",
+    "src.optimization.parameter_space.ParameterSpace",
+    "src.optimization.grid_search.grid_search.GridSearchOptimizer"
+  ],
+  "src/cointegration/intraday_pair_analyzer.py": [
+    "src.data_processor.intraday_processor.IntradayDataProcessor",
+    "src.cointegration.cointegration_tests.test_cointegration",
+    "src.cointegration.cointegration_tests.calculate_half_life"
+  ],
+  "src/strategy_variants/factory.py": [
+    "src.pairs_trading_strategy.PairsTradingStrategy"
+  ],
+  "src/strategy_variants/ml_signals/ml_signal_strategy.py": [
+    "src.data_processor.data_processor.DataProcessor",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.risk_management.risk_manager.RiskManager",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "src/strategy_variants/time_series/time_series_strategy.py": [
+    "src.data_processor.data_processor.DataProcessor",
+    "src.pairs_trading_strategy.PairsTradingStrategy",
+    "src.risk_management.risk_manager.RiskManager",
+    "src.signal_generation.signal_generator.SignalGenerator",
+    "src.spread_analytics.spread_analyzer.SpreadAnalyzer"
+  ],
+  "src/data_processing/data_processor.py": [
+    "data.data_loader.load_data"
+  ],
+  "src/backtest/intraday_backtest_engine.py": [
+    "src.backtest.backtest_engine.BacktestEngine"
+  ],
+  "src/paper_trading/example.py": [
+    "src.paper_trading.PaperTrader"
+  ],
+  "src/ml_enhancements/ensemble_models.py": [
+    "src.ml_enhancements.training_utils.WalkForwardValidator"
+  ],
+  "src/ml_enhancements/intraday_model_trainer.py": [
+    "src.ml_enhancements.training_utils.WalkForwardValidator"
+  ],
+  "src/ml_enhancements/intraday_integration.py": [
+    "src.backtest.intraday_performance_visualization.save_performance_dashboard",
+    "src.ml_enhancements.intraday_signals.IntradaySignalEnhancer",
+    "src.backtest.intraday_backtest_engine.IntradayBacktestEngine",
+    "src.backtest.intraday_performance_visualization.create_intraday_performance_dashboard",
+    "src.ml_enhancements.intraday_signals.IntradaySignalProcessor",
+    "src.ml_enhancements.regime_detection.market_regime_classifier.MarketRegimeClassifier"
+  ],
+  "src/ml_enhancements/feature_engineering/intraday_features.py": [
+    "src.ml_enhancements.feature_engineering.feature_generator.FeatureGenerator"
+  ],
+  "src/ml_enhancements/feature_engineering/advanced_features.py": [
+    "src.ml_enhancements.feature_engineering.intraday_features.IntradayFeatureEngineering"
+  ]
+}

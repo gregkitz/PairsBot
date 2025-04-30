@@ -1,0 +1,153 @@
+# Automation Configuration for Intraday ML Trading System
+
+# Task scheduling specifications
+task_schedules:
+  # Data tasks
+  download_data: "daily at 17:00"
+  generate_features: "daily at 17:30"
+  
+  # Analysis tasks
+  analyze_pairs: "weekly on sunday at 18:00"
+  train_ml_models: "weekly on sunday at 19:00"
+  detect_regime: "daily at 07:30"
+  optimize_parameters: "weekly on sunday at 20:00"
+  
+  # Trading tasks
+  run_paper_trading: "daily at 08:00"
+  
+  # Monitoring tasks
+  check_system_health: "daily at 07:00"
+  generate_performance_report: "daily at 17:45"
+  
+  # Maintenance tasks
+  cleanup_logs: "weekly on sunday at 23:00"
+
+# Retry policies by task category
+retry_policies:
+  data_tasks:
+    max_retries: 5
+    retry_delay_seconds: 60
+    backoff_factor: 1.5
+  
+  analysis_tasks:
+    max_retries: 3
+    retry_delay_seconds: 120
+    backoff_factor: 2.0
+  
+  trading_tasks:
+    max_retries: 5
+    retry_delay_seconds: 30
+    backoff_factor: 1.2
+  
+  monitoring_tasks:
+    max_retries: 3
+    retry_delay_seconds: 30
+    backoff_factor: 1.0
+  
+  maintenance_tasks:
+    max_retries: 2
+    retry_delay_seconds: 60
+    backoff_factor: 1.0
+
+# Task criticality configuration
+critical_tasks:
+  - download_data
+  - generate_features
+  - detect_regime
+  - run_paper_trading
+
+# Task timeouts (in seconds)
+task_timeouts:
+  download_data: 1800  # 30 minutes
+  generate_features: 3600  # 1 hour
+  analyze_pairs: 7200  # 2 hours
+  train_ml_models: 14400  # 4 hours
+  detect_regime: 600  # 10 minutes
+  optimize_parameters: 10800  # 3 hours
+  run_paper_trading: 28800  # 8 hours (full trading day)
+  check_system_health: 300  # 5 minutes
+  generate_performance_report: 900  # 15 minutes
+  cleanup_logs: 600  # 10 minutes
+
+# Task dependencies (in addition to those defined in code)
+additional_dependencies:
+  generate_performance_report:
+    - check_system_health
+
+# Global context defaults
+global_context:
+  log_level: "INFO"
+  data_dir: "./data"
+  output_dir: "./output"
+  model_dir: "./models"
+
+# Email notification settings for critical errors
+notifications:
+  email:
+    enabled: true
+    smtp_server: "smtp.example.com"
+    smtp_port: 587
+    sender: "trading-system@example.com"
+    recipients:
+      - "trader@example.com"
+      - "admin@example.com"
+    notify_on:
+      - task_failure
+      - system_startup
+      - system_shutdown
+
+# Monitoring configuration
+monitoring:
+  check_interval_seconds: 300  # 5 minutes
+  status_dir: "logs/status"
+  max_history_entries: 100
+  alert_thresholds:
+    task_failure_count: 3
+    max_task_delay_minutes: 30
+  resource_thresholds:
+    cpu_percent: 80
+    memory_percent: 85
+    disk_percent: 90
+  email_alerts:
+    enabled: true
+    smtp_server: "smtp.example.com"
+    smtp_port: 587
+    sender: "alerts@example.com"
+    recipients:
+      - "admin@example.com"
+    use_tls: true
+    username: "alerts@example.com"
+    password: "your_password_here"  # In production, use environment variables
+  dashboard:
+    enabled: true
+    update_interval_seconds: 60
+    port: 8050
+    host: "0.0.0.0"
+
+# Startup configuration
+startup:
+  recovery_enabled: true
+  max_recovery_attempts: 3
+  system_check_timeout: 30  # seconds
+  required_services:
+    # Add any required Windows services here
+  required_directories:
+    - "data"
+    - "models"
+    - "logs"
+    - "logs/status"
+    - "output"
+  startup_delay: 5  # seconds
+  notification_enabled: true
+
+# Shutdown configuration
+shutdown:
+  graceful_timeout: 30  # seconds
+  force_kill_timeout: 10  # seconds
+  save_state: true
+  cleanup_temp_files: true
+  notification_enabled: true
+  process_names:
+    - "python.exe"  # For Windows
+    - "python3"     # For Unix-like systems
+    - "python"      # Generic 

@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2025-03-22 13:51:36",
+    "pair": "ES_NQ",
+    "signal": {
+      "pair": "ES_NQ",
+      "timestamp": "2025-03-22T13:51:36.707606",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  },
+  {
+    "timestamp": "2025-03-22 13:51:36",
+    "pair": "GC_SI",
+    "signal": {
+      "pair": "GC_SI",
+      "timestamp": "2025-03-22T13:51:36.708605",
+      "ml_signal": "neutral",
+      "signal_strength": 0.45,
+      "regime": "ranging",
+      "entry_threshold": 2.0,
+      "status": "monitoring",
+      "note": "Demo signal - no actual market data available"
+    }
+  }
+]

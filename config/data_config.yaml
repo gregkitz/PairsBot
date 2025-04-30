@@ -1,0 +1,136 @@
+# Data Download Configuration for Interactive Brokers
+
+# Data download settings
+data_download:
+  # Interactive Brokers connection settings
+  ib_host: "127.0.0.1"
+  ib_port: 7497  # 7497 for TWS Paper, 7496 for TWS Live, 4002 for Gateway Paper, 4001 for Gateway Live
+  client_id_base: 10000  # Higher base client ID to avoid conflicts
+  
+  # Use synthetic data if IB connection fails
+  use_synthetic_data: false # Set to false to prevent synthetic data generation
+  
+  # NOTE: NinjaTrader Integration
+  # To integrate with NinjaTrader instead of IB:
+  # 1. Export data from NinjaTrader to CSV files
+  # 2. Place files in the data_dir with the structure: symbol/timeframe/data.csv
+  # 3. Or implement a direct NinjaTrader API connector
+  
+  # Data storage settings
+  data_dir: "data/historical"
+  
+  # Symbols to download (futures contracts)
+  symbols:
+    - ES  # E-mini S&P 500
+    - NQ  # E-mini NASDAQ-100
+    - YM  # E-mini Dow
+    - CL  # Crude Oil
+    - GC  # Gold
+  
+  # Contract specifications for proper symbol resolution
+  contracts:
+    ES:
+      symbol: "ES"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+    NQ:
+      symbol: "NQ"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+    YM:
+      symbol: "YM"
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    CL:
+      symbol: "CL"
+      secType: "FUT"
+      exchange: "NYMEX"
+      currency: "USD"
+    GC:
+      symbol: "GC"
+      secType: "FUT"
+      exchange: "COMEX"
+      currency: "USD"
+    RTY:
+      symbol: "RTY"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+    ZB:
+      symbol: "ZB"
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    ZN:
+      symbol: "ZN"
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    ZF:
+      symbol: "ZF"
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    SI:
+      symbol: "SI"
+      secType: "FUT"
+      exchange: "COMEX"
+      currency: "USD"
+    HG:
+      symbol: "HG"
+      secType: "FUT"
+      exchange: "COMEX"
+      currency: "USD"
+    NG:
+      symbol: "NG"
+      secType: "FUT"
+      exchange: "NYMEX"
+      currency: "USD"
+    ZC:
+      symbol: "ZC" 
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    ZS:
+      symbol: "ZS"
+      secType: "FUT"
+      exchange: "ECBOT"
+      currency: "USD"
+    6E:
+      symbol: "6E"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+    6J:
+      symbol: "6J"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+    6B:
+      symbol: "6B"
+      secType: "FUT"
+      exchange: "CME"
+      currency: "USD"
+  
+  # Timeframes to download
+  timeframes:
+    - 1min
+    - 5min
+    - 15min
+    - 1hour
+    - 1day
+  
+  # Days of historical data to download (from today)
+  days_to_download: 10
+  
+  # Maximum retries for failed downloads
+  max_retries: 3
+  
+  # Time to wait between retries in seconds
+  retry_delay: 30
+  
+  # Include after-hours data
+  include_after_hours: false 

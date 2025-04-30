@@ -1,0 +1,110 @@
+{
+    "general": {
+        "name": "Test Configuration",
+        "description": "Configuration for unit and integration tests",
+        "environment": "test",
+        "log_level": "INFO"
+    },
+    "data_processor": {
+        "cache_data": true,
+        "cache_dir": "data/cache",
+        "default_frequency": "1d",
+        "max_lookback_days": 365,
+        "missing_values_threshold": 0.1,
+        "fillna_method": "ffill",
+        "resample_rule": "D"
+    },
+    "pair_finder": {
+        "min_correlation": 0.7,
+        "max_half_life": 20,
+        "p_value_threshold": 0.05,
+        "test_method": "both",
+        "out_of_sample_validation": true,
+        "train_test_split": 0.8,
+        "rolling_window": 60,
+        "max_pairs": 10,
+        "auto_select": true
+    },
+    "spread_analyzer": {
+        "hedge_ratio_methods": ["ols", "kalman"],
+        "default_hedge_ratio_method": "kalman",
+        "z_score_window": 20,
+        "regime_detection": true,
+        "regime_window": 60,
+        "kalman_filter": {
+            "transition_covariance": 0.01,
+            "observation_covariance": 1.0,
+            "initial_state_mean": 0,
+            "initial_state_covariance": 1.0
+        }
+    },
+    "signal_generator": {
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5,
+        "stop_loss_threshold": 3.0,
+        "time_stop_bars": 20,
+        "confirmation_filter": true,
+        "min_volume_percentile": 20,
+        "min_spread_volatility": 0.005,
+        "max_spread_volatility": 0.05
+    },
+    "risk_manager": {
+        "max_position_size": 5,
+        "max_pair_exposure": 0.2,
+        "max_total_exposure": 0.5,
+        "max_drawdown": 0.05,
+        "position_sizing_method": "volatility",
+        "volatility_lookback": [10, 20, 30],
+        "apply_correlation_risk": true,
+        "correlation_lookback": 60,
+        "sector_exposure_limit": 0.3
+    },
+    "pairs": {
+        "ESM23_NQM23": {
+            "leg1": "ESM23",
+            "leg2": "NQM23",
+            "description": "E-mini S&P 500 vs E-mini NASDAQ 100",
+            "hedge_ratio_method": "kalman",
+            "z_score_window": 20,
+            "entry_threshold": 2.0,
+            "exit_threshold": 0.5,
+            "stop_loss_threshold": 3.0,
+            "time_stop_bars": 15,
+            "asset_class": "futures"
+        },
+        "CLM23_GCM23": {
+            "leg1": "CLM23",
+            "leg2": "GCM23",
+            "description": "Crude Oil vs Gold",
+            "hedge_ratio_method": "kalman",
+            "z_score_window": 25,
+            "entry_threshold": 2.2,
+            "exit_threshold": 0.5,
+            "stop_loss_threshold": 3.5,
+            "time_stop_bars": 20,
+            "asset_class": "futures"
+        }
+    },
+    "backtest": {
+        "start_date": "2023-01-01",
+        "end_date": "2023-03-31",
+        "initial_capital": 100000.0,
+        "commission_model": "per_contract",
+        "commission_amount": 2.0,
+        "slippage_model": "fixed",
+        "slippage_amount": 0.5,
+        "include_latency": true,
+        "latency_ms": 100,
+        "report_frequency": "daily"
+    },
+    "paper_trading": {
+        "initial_capital": 100000.0,
+        "ib_host": "127.0.0.1",
+        "ib_port": 7497,
+        "ib_client_id": 1,
+        "commission_model": "ibkr_pro",
+        "slippage_model": "fixed",
+        "slippage_factor": 0.0001,
+        "auto_shutdown_time": "17:00"
+    }
+} 

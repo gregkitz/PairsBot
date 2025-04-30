@@ -1,0 +1,1 @@
+# Cointegration tests package initialization.

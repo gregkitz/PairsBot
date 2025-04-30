@@ -1,0 +1,94 @@
+{
+    "pairs": [
+        {
+            "pair_id": "ESM23_NQM23",
+            "leg1": "ESM23",
+            "leg2": "NQM23",
+            "description": "E-mini S&P 500 vs E-mini NASDAQ 100",
+            "cointegration": {
+                "adf_statistic": -3.5401,
+                "p_value": 0.0083,
+                "critical_values": {
+                    "1%": -3.4350,
+                    "5%": -2.8634,
+                    "10%": -2.5677
+                },
+                "is_cointegrated": true,
+                "half_life": 5.2,
+                "hedge_ratio": 0.21
+            }
+        },
+        {
+            "pair_id": "CLM23_GCM23",
+            "leg1": "CLM23",
+            "leg2": "GCM23",
+            "description": "Crude Oil vs Gold",
+            "cointegration": {
+                "adf_statistic": -3.1283,
+                "p_value": 0.0245,
+                "critical_values": {
+                    "1%": -3.4350,
+                    "5%": -2.8634,
+                    "10%": -2.5677
+                },
+                "is_cointegrated": true,
+                "half_life": 8.7,
+                "hedge_ratio": 0.052
+            }
+        },
+        {
+            "pair_id": "ZBM23_ZNM23",
+            "leg1": "ZBM23",
+            "leg2": "ZNM23",
+            "description": "30Y T-Bond vs 10Y T-Note",
+            "cointegration": {
+                "adf_statistic": -4.2367,
+                "p_value": 0.0005,
+                "critical_values": {
+                    "1%": -3.4350, 
+                    "5%": -2.8634,
+                    "10%": -2.5677
+                },
+                "is_cointegrated": true,
+                "half_life": 3.1,
+                "hedge_ratio": 1.45
+            }
+        },
+        {
+            "pair_id": "SIM23_HGM23",
+            "leg1": "SIM23",
+            "leg2": "HGM23",
+            "description": "Silver vs Copper",
+            "cointegration": {
+                "adf_statistic": -2.9867,
+                "p_value": 0.0362,
+                "critical_values": {
+                    "1%": -3.4350,
+                    "5%": -2.8634,
+                    "10%": -2.5677
+                },
+                "is_cointegrated": true,
+                "half_life": 12.3,
+                "hedge_ratio": 0.37
+            }
+        },
+        {
+            "pair_id": "SPM23_XLFm23",
+            "leg1": "SPM23",
+            "leg2": "XLFM23",
+            "description": "S&P 500 vs Financial Sector ETF",
+            "cointegration": {
+                "adf_statistic": -2.4532,
+                "p_value": 0.1272,
+                "critical_values": {
+                    "1%": -3.4350,
+                    "5%": -2.8634,
+                    "10%": -2.5677
+                },
+                "is_cointegrated": false,
+                "half_life": 18.5,
+                "hedge_ratio": 0.95
+            }
+        }
+    ]
+} 

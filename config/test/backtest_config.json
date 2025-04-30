@@ -1,0 +1,45 @@
+{
+    "name": "test_backtest_config",
+    "description": "Configuration for quick testing of backtest functionality",
+    "test_mode": true,
+    "test_settings": {
+        "use_minimal_data": true,
+        "skip_result_saving": true,
+        "mock_execution": true
+    },
+    "backtest_params": {
+        "pair": "CL-HO",
+        "start_date": "2022-01-01",
+        "end_date": "2022-01-31",
+        "hedge_ratio": 0.8,
+        "entry_threshold": 2.0,
+        "exit_threshold": 0.5,
+        "stop_loss": 3.0,
+        "lookback_period": 20,
+        "max_holding_period": 10,
+        "position_sizing": {
+            "method": "fixed",
+            "size": 1,
+            "max_risk_pct": 0.01
+        }
+    },
+    "logging": {
+        "level": "DEBUG",
+        "console_output": true,
+        "file_output": false
+    },
+    "data_settings": {
+        "use_test_data": true,
+        "timeframe": "1day",
+        "price_field": "close",
+        "adjust_prices": false
+    },
+    "metrics": [
+        "total_pnl",
+        "sharpe_ratio",
+        "max_drawdown",
+        "win_rate",
+        "profit_factor",
+        "avg_trade_duration"
+    ]
+} 

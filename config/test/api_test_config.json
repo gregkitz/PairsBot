@@ -1,0 +1,66 @@
+{
+    "name": "api_test_config",
+    "description": "Configuration for API endpoint testing",
+    "test_mode": true,
+    "endpoints": {
+        "base_url": "http://localhost:5000/api",
+        "backtest": {
+            "submit": "/backtest/submit",
+            "status": "/backtest/status/",
+            "results": "/backtest/results/"
+        },
+        "optimization": {
+            "submit": "/optimization/submit",
+            "status": "/optimization/status/",
+            "results": "/optimization/results/"
+        },
+        "data": {
+            "historical": "/data/historical/",
+            "pairs": "/pairs"
+        },
+        "system": {
+            "status": "/system/status",
+            "health": "/health"
+        }
+    },
+    "test_data": {
+        "backtest_config": {
+            "pair": "CL-HO",
+            "start_date": "2022-01-01",
+            "end_date": "2022-01-10",
+            "hedge_ratio": 0.8,
+            "entry_threshold": 2.0,
+            "exit_threshold": 0.5,
+            "stop_loss": 3.0,
+            "lookback_period": 20
+        },
+        "optimization_config": {
+            "pair": "CL-HO",
+            "start_date": "2022-01-01",
+            "end_date": "2022-01-10",
+            "optimization_method": "grid",
+            "optimization_metric": "sharpe_ratio",
+            "parameters": {
+                "hedge_ratio": [0.7, 0.8],
+                "entry_threshold": [1.5, 2.0],
+                "exit_threshold": [0.3, 0.5]
+            }
+        }
+    },
+    "test_settings": {
+        "timeout": 5,
+        "use_mock_responses": true,
+        "retry_attempts": 3,
+        "retry_delay": 1
+    },
+    "authorization": {
+        "enabled": false,
+        "api_key": "test_api_key_123",
+        "header_name": "X-API-Key"
+    },
+    "logging": {
+        "level": "DEBUG",
+        "console_output": true,
+        "file_output": false
+    }
+} 

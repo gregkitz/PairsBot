@@ -1,0 +1,8 @@
+{
+  "regime": 1,
+  "regime_description": "Low Volatility / Weak Trend",
+  "entry_zscore": 1.5148830579212056,
+  "exit_zscore": 0.5146554461043342,
+  "stop_loss_std": 3.029766115842411,
+  "position_size_factor": 0.9950389806929314
+}

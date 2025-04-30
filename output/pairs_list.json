@@ -1,0 +1,36 @@
+{
+  "pairs": [
+    {
+      "ticker1": "GC",
+      "ticker2": "SI",
+      "hedge_ratio": 0.0178,
+      "correlation": 0.92,
+      "half_life": 3.5,
+      "p_value": 0.0012
+    },
+    {
+      "ticker1": "ES",
+      "ticker2": "NQ",
+      "hedge_ratio": 0.25,
+      "correlation": 0.89,
+      "half_life": 2.8,
+      "p_value": 0.0023
+    },
+    {
+      "ticker1": "ZB",
+      "ticker2": "ZN",
+      "hedge_ratio": 1.35,
+      "correlation": 0.95,
+      "half_life": 1.7,
+      "p_value": 0.0008
+    },
+    {
+      "ticker1": "CL",
+      "ticker2": "NG",
+      "hedge_ratio": 0.12,
+      "correlation": 0.78,
+      "half_life": 5.2,
+      "p_value": 0.0192
+    }
+  ]
+} 

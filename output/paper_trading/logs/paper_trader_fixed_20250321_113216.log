@@ -1,0 +1,121 @@
+2025-03-21 11:32:16,611 - __main__ - INFO - Successfully patched JSON encoder to handle datetime objects
+2025-03-21 11:32:16,611 - __main__ - INFO - Successfully patched JSON dump function to handle datetime objects
+2025-03-21 11:32:16,955 - __main__ - INFO - Successfully patched PaperTrader with additional methods
+2025-03-21 11:32:17,250 - __main__ - INFO - Added market data monitoring capability
+2025-03-21 11:32:17,250 - __main__ - INFO - Creating ML-enhanced paper trader...
+2025-03-21 11:32:17,252 - src.paper_trading.paper_trader - INFO - Loaded account data: Capital=$100000.00
+2025-03-21 11:32:17,253 - src.paper_trading.paper_trader - INFO - Loaded 0 positions
+2025-03-21 11:32:17,253 - src.paper_trading.paper_trader - INFO - Loaded 0 historical trades
+2025-03-21 11:32:17,254 - src.paper_trading.paper_trader - INFO - Auto-shutdown scheduled for 2025-03-21 16:00:00
+2025-03-21 11:32:17,254 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded ML configuration from config\paper_trading.json
+2025-03-21 11:32:17,255 - src.paper_trading.intraday_ml_paper_trader - INFO - Loading market regime classifier from models/intraday\market_regime_classifier.joblib
+2025-03-21 11:32:17,258 - src.paper_trading.intraday_ml_paper_trader - INFO - Successfully loaded market regime classifier model
+2025-03-21 11:32:17,258 - src.paper_trading.intraday_ml_paper_trader - INFO - Loaded current regime: Low Volatility / Weak Trend
+2025-03-21 11:32:17,258 - src.ml_enhancements.intraday_signals - INFO - Loading pre-trained models
+2025-03-21 11:32:17,276 - src.ml_enhancements.intraday_signals - INFO - Loaded signal filter model
+2025-03-21 11:32:17,291 - src.ml_enhancements.intraday_signals - INFO - Loaded entry timing model
+2025-03-21 11:32:17,306 - src.ml_enhancements.intraday_signals - INFO - Loaded exit timing model
+2025-03-21 11:32:17,306 - src.ml_enhancements.intraday_signals - WARNING - Could not load volume prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:32:17,308 - src.ml_enhancements.intraday_signals - WARNING - Could not load correlation prediction model: Can't get attribute '__pyx_unpickle_CyHalfSquaredError' on <module 'sklearn._loss._loss' from 'C:\\Users\\grego\\miniconda3\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-03-21 11:32:17,308 - __main__ - INFO - Starting ML-enhanced paper trader...
+2025-03-21 11:32:17,308 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:32:17,308 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:32:17,314 - ib_insync.client - INFO - Connected
+2025-03-21 11:32:17,317 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:32:17,319 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:32:17,319 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:32:17,319 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:32:17,320 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:32:17,320 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:32:17,521 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:32:17,522 - src.connectors.ib.ib_connector - INFO - Using account: DU2688615
+2025-03-21 11:32:17,523 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:32:17,523 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:32:17,523 - src.paper_trading.paper_trader - INFO - Paper trader started
+2025-03-21 11:32:17,524 - __main__ - INFO - Starting enhanced refresh loop for ML monitoring
+2025-03-21 11:32:17,524 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader started
+2025-03-21 11:32:17,524 - __main__ - INFO - Applied timeout to contract detail searches
+2025-03-21 11:32:17,524 - __main__ - INFO - ML-enhanced paper trader started successfully!
+2025-03-21 11:32:17,524 - __main__ - INFO - Added example pairs for monitoring: ['ES_NQ', 'GC_SI']
+2025-03-21 11:32:17,525 - __main__ - INFO - Got IB connection for contract search
+2025-03-21 11:32:17,525 - __main__ - INFO - Searching for continuous future: ES
+2025-03-21 11:32:37,528 - __main__ - INFO - Stopping paper trader (received interrupt signal)...
+2025-03-21 11:32:37,529 - __main__ - WARNING - reqContractDetails for ES timed out after 20s
+2025-03-21 11:32:37,529 - __main__ - WARNING - No continuous future found for ES
+2025-03-21 11:32:37,529 - __main__ - INFO - Searching for contract: ES
+2025-03-21 11:32:57,540 - __main__ - WARNING - reqContractDetails for ES timed out after 20s
+2025-03-21 11:32:57,540 - __main__ - WARNING - No contracts found for ES
+2025-03-21 11:32:57,540 - __main__ - INFO - Searching for continuous future: NQ
+2025-03-21 11:33:17,525 - __main__ - WARNING - No market data subscriptions found. Checking for configuration...
+2025-03-21 11:33:17,525 - __main__ - INFO - Subscribing to market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 11:33:17,525 - __main__ - ERROR - Error subscribing to market data: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:33:17,525 - __main__ - INFO - Subscribing to market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 11:33:17,525 - __main__ - ERROR - Error subscribing to market data: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:33:17,526 - src.paper_trading.intraday_ml_paper_trader - WARNING - No subscribed symbols found
+2025-03-21 11:33:17,526 - src.paper_trading.intraday_ml_paper_trader - WARNING - No market data available for ML refresh
+2025-03-21 11:33:17,526 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 11:33:17,551 - __main__ - WARNING - reqContractDetails for NQ timed out after 20s
+2025-03-21 11:33:17,551 - __main__ - WARNING - No continuous future found for NQ
+2025-03-21 11:33:17,551 - __main__ - INFO - Searching for contract: NQ
+2025-03-21 11:33:37,555 - __main__ - WARNING - reqContractDetails for NQ timed out after 20s
+2025-03-21 11:33:37,555 - __main__ - WARNING - No contracts found for NQ
+2025-03-21 11:33:37,555 - __main__ - INFO - Searching for continuous future: GC
+2025-03-21 11:33:57,560 - __main__ - WARNING - reqContractDetails for GC timed out after 20s
+2025-03-21 11:33:57,560 - __main__ - WARNING - No continuous future found for GC
+2025-03-21 11:33:57,560 - __main__ - INFO - Searching for contract: GC
+2025-03-21 11:34:17,527 - __main__ - WARNING - No market data subscriptions found. Checking for configuration...
+2025-03-21 11:34:17,527 - __main__ - INFO - Subscribing to market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 11:34:17,527 - __main__ - ERROR - Error subscribing to market data: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:34:17,527 - __main__ - INFO - Subscribing to market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 11:34:17,527 - __main__ - ERROR - Error subscribing to market data: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:34:17,528 - src.paper_trading.intraday_ml_paper_trader - WARNING - No subscribed symbols found
+2025-03-21 11:34:17,528 - src.paper_trading.intraday_ml_paper_trader - WARNING - No market data available for ML refresh
+2025-03-21 11:34:17,528 - __main__ - INFO - Actively monitoring market for trading opportunities. Current regime: None
+2025-03-21 11:34:17,571 - __main__ - WARNING - reqContractDetails for GC timed out after 20s
+2025-03-21 11:34:17,571 - __main__ - WARNING - No contracts found for GC
+2025-03-21 11:34:17,571 - __main__ - INFO - Searching for continuous future: SI
+2025-03-21 11:34:37,574 - __main__ - WARNING - reqContractDetails for SI timed out after 20s
+2025-03-21 11:34:37,574 - __main__ - WARNING - No continuous future found for SI
+2025-03-21 11:34:37,574 - __main__ - INFO - Searching for contract: SI
+2025-03-21 11:34:57,586 - __main__ - WARNING - reqContractDetails for SI timed out after 20s
+2025-03-21 11:34:57,586 - __main__ - WARNING - No contracts found for SI
+2025-03-21 11:34:57,586 - __main__ - INFO - Subscribed to 0 contracts
+2025-03-21 11:34:57,586 - __main__ - INFO - Checking market data for ES-202406-FUT-GLOBEX and NQ-202406-FUT-GLOBEX
+2025-03-21 11:34:57,587 - __main__ - INFO - Need to subscribe to: ES-202406-FUT-GLOBEX: True, NQ-202406-FUT-GLOBEX: True
+2025-03-21 11:34:57,587 - __main__ - ERROR - Error with direct symbol subscription: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:34:57,587 - __main__ - INFO - Checking market data for GC-202406-FUT-NYMEX and SI-202406-FUT-NYMEX
+2025-03-21 11:34:57,587 - __main__ - INFO - Need to subscribe to: GC-202406-FUT-NYMEX: True, SI-202406-FUT-NYMEX: True
+2025-03-21 11:34:57,589 - __main__ - ERROR - Error with direct symbol subscription: 'PaperTrader' object has no attribute 'subscribe_market_data_with_contract'
+2025-03-21 11:34:57,593 - __main__ - INFO - Signal check logged for ES_NQ: {'pair': 'ES_NQ', 'timestamp': '2025-03-21T11:34:57.589532', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:34:57,593 - __main__ - INFO - Created demo signal for ES_NQ
+2025-03-21 11:34:57,596 - __main__ - INFO - Signal check logged for GC_SI: {'pair': 'GC_SI', 'timestamp': '2025-03-21T11:34:57.593525', 'ml_signal': 'neutral', 'signal_strength': 0.45, 'regime': 'ranging', 'entry_threshold': 2.0, 'status': 'monitoring', 'note': 'Demo signal - no actual market data available'}
+2025-03-21 11:34:57,597 - __main__ - INFO - Created demo signal for GC_SI
+2025-03-21 11:34:57,597 - __main__ - ERROR - Failed to load market regime: 'IntradayMLPaperTrader' object has no attribute '_load_current_regime'
+2025-03-21 11:34:57,597 - src.paper_trading.intraday_ml_paper_trader - WARNING - No performance data to update dashboard
+2025-03-21 11:34:57,597 - __main__ - INFO - Dashboard available at: file://C:\quant-trader\output\paper_trading\dashboard\index.html
+2025-03-21 11:34:57,598 - __main__ - INFO - Paper trader is running. Press Ctrl+C to stop.
+2025-03-21 11:34:57,598 - __main__ - INFO - Stopping ML-enhanced paper trader...
+2025-03-21 11:34:57,620 - src.connectors.ib.ib_connector - INFO - Disconnecting from IB
+2025-03-21 11:34:57,620 - ib_insync.ib - INFO - Disconnecting from localhost:7496, 418 B sent in 15 messages, 18.2 kB received in 386 messages, session time 160 s.
+2025-03-21 11:34:57,620 - ib_insync.client - INFO - Disconnecting
+2025-03-21 11:34:57,620 - src.connectors.ib.ib_connector - WARNING - Disconnected from IB
+2025-03-21 11:34:57,620 - src.connectors.ib.ib_connector - INFO - Attempting to reconnect...
+2025-03-21 11:34:57,620 - src.connectors.ib.ib_connector - INFO - Connecting to IB at localhost:7496 (client ID: 54321)
+2025-03-21 11:34:57,621 - ib_insync.client - INFO - Connecting to localhost:7496 with clientId 54321...
+2025-03-21 11:34:57,621 - ib_insync.client - INFO - Disconnected.
+2025-03-21 11:34:57,622 - ib_insync.client - INFO - Connected
+2025-03-21 11:34:57,626 - ib_insync.client - INFO - Logged on to server version 176
+2025-03-21 11:34:57,921 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2025-03-21 11:34:57,922 - ib_insync.wrapper - INFO - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2025-03-21 11:34:57,922 - ib_insync.wrapper - INFO - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2025-03-21 11:34:57,922 - ib_insync.wrapper - INFO - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+2025-03-21 11:34:57,922 - ib_insync.client - INFO - API connection ready
+2025-03-21 11:34:58,024 - ib_insync.ib - INFO - Synchronization complete
+2025-03-21 11:34:58,025 - src.connectors.ib.ib_connector - INFO - Positions updated: 0 active positions
+2025-03-21 11:34:58,025 - src.connectors.ib.ib_connector - INFO - Successfully connected to IB
+2025-03-21 11:34:58,025 - src.connectors.ib.ib_connector - INFO - Disconnected from IB
+2025-03-21 11:34:58,026 - src.paper_trading.paper_trader - INFO - Paper trader stopped
+2025-03-21 11:34:58,026 - src.paper_trading.intraday_ml_paper_trader - WARNING - No performance data to update dashboard
+2025-03-21 11:34:58,027 - src.paper_trading.intraday_ml_paper_trader - INFO - ML-enhanced paper trader stopped
+2025-03-21 11:34:58,027 - __main__ - INFO - ML-enhanced paper trader stopped.
+2025-03-21 11:35:17,529 - __main__ - INFO - Removed timeout from contract detail searches

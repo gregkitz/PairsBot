@@ -708,6 +708,7 @@ class BacktestEngine:
         }, name='OVERALL')
         
         # Append overall statistics
-        stats_df = stats_df.append(overall)
+        # pd.DataFrame.append was removed in pandas 2.0; use concat instead
+        stats_df = pd.concat([stats_df, overall.to_frame().T])
         
         return stats_df 
